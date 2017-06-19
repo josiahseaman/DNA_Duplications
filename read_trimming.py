@@ -1,3 +1,11 @@
+#Original Step 1:
+# zcat /data/SBCS-BuggsLab/LauraKelly/HiSeq_data/Raw_reads_from_CGR/Raw/Fraxinus_anomala_FRAX27/350bp_library/13-2B_160615_L001_R1.fastq.gz
+#  | fastx_trimmer -Q33 -f 6 -v -o /data/SBCS-BuggsLab/LauraKelly/HiSeq_data/trimmed_reads/FRAX27_13-2B_160615_L001_R1_first_5bp_clipped.fastq
+
+# My modified Step 1:
+# zcat /data/SBCS-BuggsLab/Endymion/CGR-New-May2017/Raw-1/Sample_1/1_TCTCGCGC-AGGCTATA_L001_R1_001.fastq.gz
+#  | fastx_trimmer -Q33 -f 6 -v -o /data/SBCS-BuggsLab/Josiah/HiSeq_data/trimmed_reads/Raw-1/Sample_1/1_TCTCGCGC-AGGCTATA_L001_R1_001_first_5bp_clipped.fastq
+
 from subprocess import call
 call(["ls", "-l"])
 
@@ -54,9 +62,5 @@ call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
       '-q 20',
       '-l 50'])
 
-'zcat /data/SBCS-BuggsLab/LauraKelly/HiSeq_data/Raw_reads_from_CGR/Raw/Fraxinus_anomala_FRAX27/350bp_library/13-2B_160615_L001_R1.fastq.gz ' \
-'| ' \
-'fastx_trimmer -Q33 -f 6 -v -o /data/SBCS-BuggsLab/LauraKelly/HiSeq_data/trimmed_reads/FRAX27_13-2B_160615_L001_R1_first_5bp_clipped.fastq'
 
 
-'zcat /data/SBCS-BuggsLab/Endymion/CGR-New-May2017/Raw-1/Sample_1/1_TCTCGCGC-AGGCTATA_L001_R1_001.fastq.gz | fastx_trimmer -Q33 -f 6 -v -o /data/SBCS-BuggsLab/Josiah/HiSeq_data/trimmed_reads/Raw-1/Sample_1/1_TCTCGCGC-AGGCTATA_L001_R1_001_first_5bp_clipped.fastq'
