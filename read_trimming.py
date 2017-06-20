@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #Original Step 1:
 # zcat /data/SBCS-BuggsLab/LauraKelly/HiSeq_data/Raw_reads_from_CGR/Raw/Fraxinus_anomala_FRAX27/350bp_library/13-2B_160615_L001_R1.fastq.gz
 #  | fastx_trimmer -Q33 -f 6 -v -o /data/SBCS-BuggsLab/LauraKelly/HiSeq_data/trimmed_reads/FRAX27_13-2B_160615_L001_R1_first_5bp_clipped.fastq
@@ -11,13 +12,29 @@ call(["ls", "-l"])
 
 # Grammar: (L001, L002, L003, L004, L005, L006)  x  (R1, R2, Singletons) x (350bp, 550bp, 800bp)
 
+insert_size = '800bp_library_'
+sample_mapping = {
+    1: 'FRAX01',
+    2: 'FRAX02',
+    3: 'FRAX03',
+    4: 'FRAX04',
+    5: 'FRAX05',
+    6: 'FRAX06',
+    7: 'FRAX07',
+    8: 'FRAX08',
+    9: 'FRAX09',
+    10: 'FRAX11',
+    11: 'FRAX12',
+    12: 'FRAX13'}
+
+
 call(['module load fastx'])
 # Step 1, trimming reads with fast_trimmer [i.e. you have to load the fastx module]
 base_clipped_name = 'FRAX27_13-2B_160615_L001_'
 sample_name = base_clipped_name.replace('-', '_')
 trimmed_dir = '/data/SBCS-BuggsLab/LauraKelly/HiSeq_data/trimmed_reads/'
-R1_trimmed = trimmed_dir + sample_name + 'R1_350bp_library_first_5bp_clipped_adapters_cut'
-R2_trimmed = trimmed_dir + sample_name + 'R2_350bp_library_first_5bp_clipped_adapters_cut'
+R1_trimmed = trimmed_dir + sample_name + 'R1_' + insert_size + 'first_5bp_clipped_adapters_cut'
+R2_trimmed = trimmed_dir + sample_name + 'R2_' + insert_size + 'first_5bp_clipped_adapters_cut'
 source_fastq = '/data/SBCS-BuggsLab/LauraKelly/HiSeq_data/Raw_reads_from_CGR/Raw/Fraxinus_anomala_FRAX27/350bp_library/13-2B_160615_L001_R1.fastq.gz'
 call(['zcat', source_fastq,
       '|',
@@ -58,7 +75,7 @@ call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
       '-g',
       '-o ' + R1_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
       '-p ' + R2_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
-      '-s ' + trimmed_dir + sample_name + '350bp_library_first_5bp_clipped_adapters_cut_quality_trimmed_min_50bp_singletons.fastq.gz',
+      '-s ' + trimmed_dir + sample_name + insert_size + 'first_5bp_clipped_adapters_cut_quality_trimmed_min_50bp_singletons.fastq.gz',
       '-q 20',
       '-l 50'])
 
