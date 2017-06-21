@@ -15,10 +15,15 @@ def call(args):
     subprocess.call(command, shell=True)
 
 
+def remove_extensions(path):
+    """Remove extension and path"""
+    first_extension = os.path.splitext(path)[0]
+    return os.path.splitext(first_extension)[0]
+
+
 def just_the_name(path):
     """Remove extension and path"""
-    first_extension = os.path.splitext(os.path.basename(path))[0]
-    return os.path.splitext(first_extension)[0]
+    return remove_extensions(os.path.basename(path))
 
 
 def delete_file_contents(file_path):
@@ -27,7 +32,7 @@ def delete_file_contents(file_path):
             big_file.write('Contents deleted to save scratch space')
             print('File contents deleted:', file_path)
     else:
-        print('ERROR: Not blanking file because it is not in a scratch directory', file_path)
+        print('ERROR: Not blanking file because it is not in a scratch directory', file_path, file=sys.stderr)
 
 
 def trim_adapters(clipped_file_path, base_clipped_name, run):
@@ -55,14 +60,14 @@ def trim_adapters(clipped_file_path, base_clipped_name, run):
             ' -b CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA',
             ' -b TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG', ]
     }
-    trimmed_file = os.path.join(output_dir, base_clipped_name) + '_' + insert_size + 'first_5bp_clipped_adapters_cut'
+    trimmed_file = os.path.join(output_dir, base_clipped_name) + '_' + insert_size + 'first_5bp_clipped_adapters_cut.fastq'
     if run:
         if os.path.exists(trimmed_file):
             print(trimmed_file, "already exists")
         else:
             call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
                   ' '.join(adapters[side]),
-                  ' -o ' + trimmed_file + '.fastq',
+                  ' -o ' + trimmed_file,
                   clipped_file_path])
         delete_file_contents(clipped_file_path)
     return trimmed_file
@@ -104,17 +109,17 @@ def fastqc_report(final_R1, final_R2, run):
 
 def sickle(R1_trimmed, R2_trimmed, run):
     """Step 3, trimming the reads for quality score using sickle [sickle is in Laura's directory]"""
-    singletons_output = R1_trimmed.replace('R1', '') + '_quality_trimmed_min_50bp_singletons.fastq.gz'
-    R1_output = R1_trimmed + '_quality_trimmed_min_50bp.fastq.gz'
-    R2_output = R2_trimmed + '_quality_trimmed_min_50bp.fastq.gz'
+    singletons_output = remove_extensions(R1_trimmed).replace('R1', '') + '_quality_trimmed_min_50bp_singletons.fastq.gz'
+    R1_output = remove_extensions(R1_trimmed) + '_quality_trimmed_min_50bp.fastq.gz'
+    R2_output = remove_extensions(R2_trimmed) + '_quality_trimmed_min_50bp.fastq.gz'
     if run:
         if os.path.exists(singletons_output):
             print(singletons_output, "already exists")
         else:
             call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
                   'pe',
-                  '-f ' + R1_trimmed + '.fastq',
-                  '-r ' + R2_trimmed + '.fastq',
+                  '-f ' + R1_trimmed,
+                  '-r ' + R2_trimmed,
                   '-t sanger',
                   '-g',
                   '-o ' + R1_output,
@@ -135,9 +140,6 @@ def process_one_mate_pair_file(source_fastq_path, output_name, jobs):
 
     clipped_file_R1 = clip_5bp(source_fastq_path, R1_output, run='clip' in jobs)
     clipped_file_R2 = clip_5bp(source_fastq_path.replace('R1', 'R2'), R2_output, run='clip' in jobs)
-
-    print("Output", clipped_file_R1)
-    print("Output", clipped_file_R2)
 
     R1_trimmed = trim_adapters(clipped_file_R1, R1_output, run='trim' in jobs)
     R2_trimmed = trim_adapters(clipped_file_R2, R2_output, run='trim' in jobs)
