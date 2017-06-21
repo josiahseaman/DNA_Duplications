@@ -4,8 +4,7 @@ from __future__ import print_function
 import subprocess
 import os, sys
 
-# sys.argv[1:]
-jobs = ['clip', ]  # set of things to do: ['clip', 'trim', 'sickle']
+
 insert_size = '800bp_library_'
 output_dir = '/data/scratch/btx142/HiSeq_data/trimmed_reads/'
 
@@ -49,10 +48,13 @@ def trim_adapters(source_fastq_path, base_clipped_name, run):
     }
     trimmed_file = os.path.join(output_dir, base_clipped_name) + '_' + insert_size + 'first_5bp_clipped_adapters_cut'
     if run:
-        call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
-              ' '.join(adapters[side]),
-              ' -o ' + trimmed_file + '.fastq',
-              source_fastq_path])
+        if os.path.exists(trimmed_file):
+            print(trimmed_file, "already exists")
+        else:
+            call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
+                  ' '.join(adapters[side]),
+                  ' -o ' + trimmed_file + '.fastq',
+                  source_fastq_path])
     return trimmed_file
 
 
@@ -64,15 +66,18 @@ def clip_5bp(source_fastq_path, base_clipped_name, run):
     # Step 1, trimming reads with fast_trimmer [i.e. you have to load the fastx module]
     output_path = os.path.join(output_dir, base_clipped_name) + '_first_5bp_clipped.fastq'
     if run:
-        call(['zcat', source_fastq_path,
-              '|',
-              'fastx_trimmer -Q33 -f 6 -v',
-              '-o ' + output_path
-              ])
+        if os.path.exists(output_path):
+            print(output_path, "already exists")
+        else:
+            call(['zcat', source_fastq_path,
+                  '|',
+                  'fastx_trimmer -Q33 -f 6 -v',
+                  '-o ' + output_path
+                  ])
     return output_path
 
 
-def process_one_mate_pair_file(source_fastq_path, output_name):
+def process_one_mate_pair_file(source_fastq_path, output_name, jobs):
     # frax_name + '_' + just_the_name(source_fastq_path)  # add FRAX number
     call(['mkdir', '-p', os.path.join(output_dir, output_name)])
     R1_output = output_name
@@ -89,20 +94,29 @@ def process_one_mate_pair_file(source_fastq_path, output_name):
 
     # Step 3, trimming the reads for quality score using sickle [sickle is in Laura's directory]
     if 'sickle' in jobs:
-        call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
-              'pe',
-              '-f ' + R1_trimmed + '.fastq.gz',
-              '-r ' + R2_trimmed + '.fastq.gz',
-              '-t sanger',
-              '-g',
-              '-o ' + R1_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
-              '-p ' + R2_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
-              '-s ' + R1_trimmed.replace('R1', '') + '_quality_trimmed_min_50bp_singletons.fastq.gz',
-              '-q 20',
-              '-l 50'])
+        singletons_output = R1_trimmed.replace('R1', '') + '_quality_trimmed_min_50bp_singletons.fastq.gz'
+        if os.path.exists(singletons_output):
+            print(singletons_output, "already exists")
+        else:
+            call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
+                  'pe',
+                  '-f ' + R1_trimmed + '.fastq',
+                  '-r ' + R2_trimmed + '.fastq',
+                  '-t sanger',
+                  '-g',
+                  '-o ' + R1_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
+                  '-p ' + R2_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
+                  '-s ' + singletons_output,
+                  '-q 20',
+                  '-l 50'])
 
 
 def starter():
+    jobs = sys.argv[1:]  # set of things to do: ['clip', 'trim', 'sickle', 'fastq']
+    if not len(jobs):
+        jobs = ['clip', 'trim', 'sickle', 'fastq']
+        # raise EnvironmentError("The job(s) needs to be specified on the command line: 'python read_trimming.py clip trim sickle fastqc'")
+
     # source_directory = os.path.dirname(source_fastq_path)
     # sample_mapping = {
     #     'Sample_1':  'FRAX01',
@@ -158,10 +172,10 @@ def starter():
         ('/data/SBCS-BuggsLab/Endymion/CGR-New-May2017/Raw-1/Sample_12/12_AGCGATAG-TCAGAGCC_L001_R1_001.fastq.gz', 'FRAX13_L001_R1'),
         ('/data/SBCS-BuggsLab/Endymion/CGR-New-May2017/Raw-1/Sample_12/12_AGCGATAG-TCAGAGCC_L002_R1_001.fastq.gz', 'FRAX13_L002_R1'),
     ]
-    index = int(os.environ.get('SGE_TASK_ID'))
-    source_fastq_path, output_name = work_array[index]
-    print("Starting Job:", index, source_fastq_path, output_name)
-    process_one_mate_pair_file(source_fastq_path, output_name)
+    task_index = int(os.environ.get('SGE_TASK_ID'))
+    source_fastq_path, output_name = work_array[task_index]
+    print("Starting Job:", task_index, source_fastq_path, output_name)
+    process_one_mate_pair_file(source_fastq_path, output_name, jobs)
 
 
 if __name__ == '__main__':
