@@ -77,6 +77,44 @@ def clip_5bp(source_fastq_path, base_clipped_name, run):
     return output_path
 
 
+def fastqc_report(final_R1, final_R2, run):
+    report_dir = 'fastqc_reports'
+    R1_report = os.path.join(report_dir, just_the_name(final_R1) + '_fastqc.html')
+    R2_report = os.path.join(report_dir, just_the_name(final_R2) + '_fastqc.html')
+    if run:
+        if os.path.exists(R1_report) and os.path.exists(R2_report):
+            print(R1_report, 'already exists')
+        else:
+            call('module load fastqc')
+            os.makedirs(report_dir, exist_ok=True)
+            call(['fastqc --outdir', report_dir, final_R1])
+            call(['fastqc --outdir', report_dir, final_R2])
+    return R1_report, R2_report
+
+
+def sickle(R1_trimmed, R2_trimmed, run):
+    """Step 3, trimming the reads for quality score using sickle [sickle is in Laura's directory]"""
+    singletons_output = R1_trimmed.replace('R1', '') + '_quality_trimmed_min_50bp_singletons.fastq.gz'
+    R1_output = R1_trimmed + '_quality_trimmed_min_50bp.fastq.gz'
+    R2_output = R2_trimmed + '_quality_trimmed_min_50bp.fastq.gz'
+    if run:
+        if os.path.exists(singletons_output):
+            print(singletons_output, "already exists")
+        else:
+            call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
+                  'pe',
+                  '-f ' + R1_trimmed + '.fastq',
+                  '-r ' + R2_trimmed + '.fastq',
+                  '-t sanger',
+                  '-g',
+                  '-o ' + R1_output,
+                  '-p ' + R2_output,
+                  '-s ' + singletons_output,
+                  '-q 20',
+                  '-l 50'])
+    return R1_output, R2_output
+
+
 def process_one_mate_pair_file(source_fastq_path, output_name, jobs):
     # frax_name + '_' + just_the_name(source_fastq_path)  # add FRAX number
     call(['mkdir', '-p', os.path.join(output_dir, output_name)])
@@ -92,23 +130,9 @@ def process_one_mate_pair_file(source_fastq_path, output_name, jobs):
     R1_trimmed = trim_adapters(clipped_file_R1, R1_output, run='trim' in jobs)
     R2_trimmed = trim_adapters(clipped_file_R2, R2_output, run='trim' in jobs)
 
-    # Step 3, trimming the reads for quality score using sickle [sickle is in Laura's directory]
-    if 'sickle' in jobs:
-        singletons_output = R1_trimmed.replace('R1', '') + '_quality_trimmed_min_50bp_singletons.fastq.gz'
-        if os.path.exists(singletons_output):
-            print(singletons_output, "already exists")
-        else:
-            call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
-                  'pe',
-                  '-f ' + R1_trimmed + '.fastq',
-                  '-r ' + R2_trimmed + '.fastq',
-                  '-t sanger',
-                  '-g',
-                  '-o ' + R1_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
-                  '-p ' + R2_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
-                  '-s ' + singletons_output,
-                  '-q 20',
-                  '-l 50'])
+    final_R1, final_R2 = sickle(R1_trimmed, R2_trimmed, run='sickle' in jobs)
+
+    fastqc_report(final_R1, final_R2, run='fastqc' in jobs)
 
 
 def starter():
