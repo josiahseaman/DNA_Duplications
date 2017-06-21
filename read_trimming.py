@@ -21,8 +21,17 @@ def just_the_name(path):
     return os.path.splitext(first_extension)[0]
 
 
-def trim_adapters(source_fastq_path, base_clipped_name, run):
-    fastq_input_file_label = just_the_name(source_fastq_path)
+def delete_file_contents(file_path):
+    if 'scratch' in file_path:
+        with open(file_path, 'w') as big_file:
+            big_file.write('Contents deleted to save scratch space')
+            print('File contents deleted:', file_path)
+    else:
+        print('ERROR: Not blanking file because it is not in a scratch directory', file_path)
+
+
+def trim_adapters(clipped_file_path, base_clipped_name, run):
+    fastq_input_file_label = just_the_name(clipped_file_path)
 
     # Choose adapters based on if it is R1 or R2 (different adapters used)
     assert 'R1' in fastq_input_file_label or 'R2' in fastq_input_file_label, "File name should mention R1 or R2: " + fastq_input_file_label
@@ -54,7 +63,8 @@ def trim_adapters(source_fastq_path, base_clipped_name, run):
             call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
                   ' '.join(adapters[side]),
                   ' -o ' + trimmed_file + '.fastq',
-                  source_fastq_path])
+                  clipped_file_path])
+        delete_file_contents(clipped_file_path)
     return trimmed_file
 
 
@@ -112,6 +122,8 @@ def sickle(R1_trimmed, R2_trimmed, run):
                   '-s ' + singletons_output,
                   '-q 20',
                   '-l 50'])
+        delete_file_contents(R1_trimmed)
+        delete_file_contents(R2_trimmed)
     return R1_output, R2_output
 
 
@@ -132,13 +144,13 @@ def process_one_mate_pair_file(source_fastq_path, output_name, jobs):
 
     final_R1, final_R2 = sickle(R1_trimmed, R2_trimmed, run='sickle' in jobs)
 
-    fastqc_report(final_R1, final_R2, run='fastqc' in jobs)
+    R1_report, R2_report = fastqc_report(final_R1, final_R2, run='fastqc' in jobs)
 
 
 def starter():
-    jobs = sys.argv[1:]  # set of things to do: ['clip', 'trim', 'sickle', 'fastq']
+    jobs = sys.argv[1:]  # set of things to do: ['clip', 'trim', 'sickle', 'fastqc']
     if not len(jobs):
-        jobs = ['clip', 'trim', 'sickle', 'fastq']
+        jobs = ['clip', 'trim', 'sickle', 'fastqc']
         # raise EnvironmentError("The job(s) needs to be specified on the command line: 'python read_trimming.py clip trim sickle fastqc'")
 
     # source_directory = os.path.dirname(source_fastq_path)
