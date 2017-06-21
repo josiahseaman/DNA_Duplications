@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
 from __future__ import print_function
-import subprocess
-import os, sys
 
+import os
+import subprocess
+import sys
 
 insert_size = '800bp_library_'
 output_dir = '/data/scratch/btx142/HiSeq_data/trimmed_reads/'
@@ -28,9 +29,10 @@ def just_the_name(path):
 
 def delete_file_contents(file_path):
     if 'scratch' in file_path:
-        with open(file_path, 'w') as big_file:
-            big_file.write('Contents deleted to save scratch space')
-            print('File contents deleted:', file_path)
+        if os.path.exists(file_path):
+            with open(file_path, 'w') as big_file:
+                big_file.write('Contents deleted to save scratch space')
+                print('File contents deleted:', file_path)
     else:
         print('ERROR: Not blanking file because it is not in a scratch directory', file_path, file=sys.stderr)
 
@@ -65,6 +67,7 @@ def trim_adapters(clipped_file_path, base_clipped_name, run):
         if os.path.exists(trimmed_file):
             print(trimmed_file, "already exists")
         else:
+            print("Unable to find", trimmed_file)
             call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
                   ' '.join(adapters[side]),
                   ' -o ' + trimmed_file,
@@ -84,6 +87,7 @@ def clip_5bp(source_fastq_path, base_clipped_name, run):
         if os.path.exists(output_path):
             print(output_path, "already exists")
         else:
+            print("Unable to find", output_path)
             call(['zcat', source_fastq_path,
                   '|',
                   'fastx_trimmer -Q33 -f 6 -v',
@@ -101,7 +105,8 @@ def fastqc_report(final_R1, final_R2, run):
             print(R1_report, 'already exists')
         else:
             call('module load fastqc')
-            os.makedirs(report_dir, exist_ok=True)
+            if not os.path.exists(report_dir):
+                os.makedirs(report_dir)
             call(['fastqc --outdir', report_dir, final_R1])
             call(['fastqc --outdir', report_dir, final_R2])
     return R1_report, R2_report
@@ -116,6 +121,7 @@ def sickle(R1_trimmed, R2_trimmed, run):
         if os.path.exists(singletons_output):
             print(singletons_output, "already exists")
         else:
+            print("Unable to find", singletons_output)
             call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
                   'pe',
                   '-f ' + R1_trimmed,
@@ -138,14 +144,18 @@ def process_one_mate_pair_file(source_fastq_path, output_name, jobs):
     R1_output = output_name
     R2_output = output_name.replace('R1', 'R2')
 
+    # Average Run Time: 10 minutes  Memory: 70M
     clipped_file_R1 = clip_5bp(source_fastq_path, R1_output, run='clip' in jobs)
     clipped_file_R2 = clip_5bp(source_fastq_path.replace('R1', 'R2'), R2_output, run='clip' in jobs)
 
+    # Average Run Time: 1 hour    Memory: 100M
     R1_trimmed = trim_adapters(clipped_file_R1, R1_output, run='trim' in jobs)
     R2_trimmed = trim_adapters(clipped_file_R2, R2_output, run='trim' in jobs)
 
+    # Average Run Time: 2 hours    Memory: 100M
     final_R1, final_R2 = sickle(R1_trimmed, R2_trimmed, run='sickle' in jobs)
 
+    # Average Run Time: 1 hour    Memory: 2G
     R1_report, R2_report = fastqc_report(final_R1, final_R2, run='fastqc' in jobs)
 
 
@@ -154,7 +164,8 @@ def starter():
     if not len(jobs):
         jobs = ['clip', 'trim', 'sickle', 'fastqc']
         # raise EnvironmentError("The job(s) needs to be specified on the command line: 'python read_trimming.py clip trim sickle fastqc'")
-
+    print('Checking for previously calculated files')
+    print('Jobs', jobs)
     # source_directory = os.path.dirname(source_fastq_path)
     # sample_mapping = {
     #     'Sample_1':  'FRAX01',
