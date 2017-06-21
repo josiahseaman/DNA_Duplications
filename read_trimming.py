@@ -2,8 +2,10 @@
 
 from __future__ import print_function
 import subprocess
-import os
+import os, sys
 
+# sys.argv[1:]
+jobs = ['clip', ]  # set of things to do: ['clip', 'trim', 'sickle']
 insert_size = '800bp_library_'
 output_dir = '/data/scratch/btx142/HiSeq_data/trimmed_reads/'
 
@@ -20,7 +22,7 @@ def just_the_name(path):
     return os.path.splitext(first_extension)[0]
 
 
-def trim_adapters(source_fastq_path, base_clipped_name):
+def trim_adapters(source_fastq_path, base_clipped_name, run):
     fastq_input_file_label = just_the_name(source_fastq_path)
 
     # Choose adapters based on if it is R1 or R2 (different adapters used)
@@ -46,25 +48,27 @@ def trim_adapters(source_fastq_path, base_clipped_name):
             ' -b TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG', ]
     }
     trimmed_file = os.path.join(output_dir, base_clipped_name) + '_' + insert_size + 'first_5bp_clipped_adapters_cut'
-    call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
-          ' '.join(adapters[side]),
-          ' -o ' + trimmed_file + '.fastq',
-          source_fastq_path])
+    if run:
+        call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
+              ' '.join(adapters[side]),
+              ' -o ' + trimmed_file + '.fastq',
+              source_fastq_path])
     return trimmed_file
 
 
-def clip_5bp(source_fastq_path, base_clipped_name):
+def clip_5bp(source_fastq_path, base_clipped_name, run):
     try:
         call(['module load fastx'])
     except OSError:
         pass  # loaded in starter script
     # Step 1, trimming reads with fast_trimmer [i.e. you have to load the fastx module]
     output_path = os.path.join(output_dir, base_clipped_name) + '_first_5bp_clipped.fastq'
-    call(['zcat', source_fastq_path,
-          '|',
-          'fastx_trimmer -Q33 -f 6 -v',
-          '-o ' + output_path
-          ])
+    if run:
+        call(['zcat', source_fastq_path,
+              '|',
+              'fastx_trimmer -Q33 -f 6 -v',
+              '-o ' + output_path
+              ])
     return output_path
 
 
@@ -74,31 +78,31 @@ def process_one_mate_pair_file(source_fastq_path, output_name):
     R1_output = output_name
     R2_output = output_name.replace('R1', 'R2')
 
-    clipped_file_R1 = clip_5bp(source_fastq_path, R1_output)
-    clipped_file_R2 = clip_5bp(source_fastq_path.replace('R1', 'R2'), R2_output)
+    clipped_file_R1 = clip_5bp(source_fastq_path, R1_output, run='clip' in jobs)
+    clipped_file_R2 = clip_5bp(source_fastq_path.replace('R1', 'R2'), R2_output, run='clip' in jobs)
 
     print("Output", clipped_file_R1)
     print("Output", clipped_file_R2)
-    #
-    # R1_trimmed = trim_adapters(clipped_file_R1, R1_output)
-    # R2_trimmed = trim_adapters(clipped_file_R2, R2_output)
-    #
-    # # Step 3, trimming the reads for quality score using sickle [sickle is in Laura's directory]
-    # call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
-    #       'pe',
-    #       '-f ' + R1_trimmed + '.fastq.gz',
-    #       '-r ' + R2_trimmed + '.fastq.gz',
-    #       '-t sanger',
-    #       '-g',
-    #       '-o ' + R1_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
-    #       '-p ' + R2_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
-    #       '-s ' + R1_trimmed.replace('R1', '') + '_quality_trimmed_min_50bp_singletons.fastq.gz',
-    #       '-q 20',
-    #       '-l 50'])
+
+    R1_trimmed = trim_adapters(clipped_file_R1, R1_output, run='trim' in jobs)
+    R2_trimmed = trim_adapters(clipped_file_R2, R2_output, run='trim' in jobs)
+
+    # Step 3, trimming the reads for quality score using sickle [sickle is in Laura's directory]
+    if 'sickle' in jobs:
+        call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
+              'pe',
+              '-f ' + R1_trimmed + '.fastq.gz',
+              '-r ' + R2_trimmed + '.fastq.gz',
+              '-t sanger',
+              '-g',
+              '-o ' + R1_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
+              '-p ' + R2_trimmed + '_quality_trimmed_min_50bp.fastq.gz',
+              '-s ' + R1_trimmed.replace('R1', '') + '_quality_trimmed_min_50bp_singletons.fastq.gz',
+              '-q 20',
+              '-l 50'])
 
 
 def starter():
-    call(['mkdir', '-p', os.path.join('/data/scratch/btx142/HiSeq_data/trimmed_reads/', 'test_result')])
     # source_directory = os.path.dirname(source_fastq_path)
     # sample_mapping = {
     #     'Sample_1':  'FRAX01',
