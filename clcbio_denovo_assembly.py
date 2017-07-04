@@ -56,14 +56,16 @@ def import_pair(R1, R2, directory_url):
 def import_read_pairs_by_FRAX(frax_name):
     # create directory to stage all relevant read pairs in
     directory_url = make_clc_directory(frax_name)
-
     # import all reads as pairs (where appropriate) for one particular frax_name
     relevant_files = glob(os.path.join(read_folder, frax_name) + '*')
-    #TODO: shiv
-    R1 = read_folder + \
-         '1_S1_L001_R1_001_Run1_first_10bp_last_5bp_clipped_adapters_cut_quality_trimmed_min_50bp.fastq.gz'
-    R2 = R1.replace('R1', 'R2')
-    import_pair(R1, R2, directory_url)
+    stripped_number = str(int(frax_name.replace('FRAX', '')))  # strips the 01 if it's there
+    relevant_files += glob(os.path.join(read_folder, stripped_number) + '_*')  # The NextSeq reads don't
+    # have a proper FRAX01 prefix.  Renaming the files would allow you to remove this line
+    first_pairs = [x for x in relevant_files if '_R1_' in x]
+    for R1 in first_pairs:
+        R1 = os.path.join(read_folder, os.path.basename(R1))
+        R2 = R1.replace('R1', 'R2')
+        import_pair(R1, R2, directory_url)
     return directory_url
 
 
