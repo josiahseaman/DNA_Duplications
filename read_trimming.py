@@ -46,21 +46,23 @@ def trim_adapters(clipped_file_path, base_clipped_name, run):
     # Step 2, Trimming the adapters out of the reads [R1 reads]
     adapters = {
         'R1': [
-            ' -b AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC',
-            ' -b GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT',
-            ' -b GATCGGAAGAGCACACGTCTGAACTCCAGTCAC',
-            ' -b AGATCGGAAGAGCACACGTCT',
-            ' -b CTGTCTCTTATACACATCTCCGAGCCCACGAGAC',
-            ' -b CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA',
-            ' -b TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG', ],
+            'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC',
+            'GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT',
+            'GATCGGAAGAGCACACGTCTGAACTCCAGTCAC',
+            'AGATCGGAAGAGCACACGTCT',
+            'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC',
+            'CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA',
+            'TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG',
+        ],
         'R2': [
-            ' -b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT',
-            ' -b ACACTCTTTCCCTACACGACGCTCTTCCGATC',
-            ' -b GTGACTGGAGTTCAGACGTGTGCTCTTCCGATC',
-            ' -b GATCGTCGGACTGTAGAACTCTGAAC',
-            ' -b CTGTCTCTTATACACATCTGACGCTGCCGACGA',
-            ' -b CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA',
-            ' -b TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG', ]
+            'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT',
+            'ACACTCTTTCCCTACACGACGCTCTTCCGATC',
+            'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATC',
+            'GATCGTCGGACTGTAGAACTCTGAAC',
+            'CTGTCTCTTATACACATCTGACGCTGCCGACGA',
+            'CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA',
+            'TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG',
+        ]
     }
     trimmed_file = os.path.join(output_dir, base_clipped_name) + '_' + insert_size + 'first_5bp_clipped_adapters_cut.fastq'
     if run:
@@ -68,8 +70,9 @@ def trim_adapters(clipped_file_path, base_clipped_name, run):
             print(trimmed_file, "already exists")
         else:
             print("Unable to find", trimmed_file)
+            adapter_arguments = [' -b ' + x for x in adapters[side]]  # this should not be 'join' because it skips the first
             call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
-                  ' '.join(adapters[side]),
+                  ' '.join(adapter_arguments),
                   ' -o ' + trimmed_file,
                   clipped_file_path])
         delete_file_contents(clipped_file_path)
