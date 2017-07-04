@@ -10,10 +10,17 @@ insert_size = '800bp_library_'
 output_dir = '/data/scratch/btx142/HiSeq_data/trimmed_reads/'
 
 
+def call_output(args):
+    command = ' '.join(args) if isinstance(args, list) else args
+    print(command)
+    return subprocess.check_output(command, shell=True)
+
+
 def call(args):
     command = ' '.join(args) if isinstance(args, list) else args
     print(command)
     subprocess.call(command, shell=True)
+    # TODO: add error handling for bad return code
 
 
 def remove_extensions(path):
