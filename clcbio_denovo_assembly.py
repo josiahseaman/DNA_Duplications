@@ -70,22 +70,14 @@ def import_pair(R1, R2, directory_url):
     Files are made available in CLC folder @directory_url
     http://resources.qiagenbioinformatics.com/manuals/clcservercommandlinetools/current/index.php?manual=ngs_import_illumina.html"""
     print("Importing", R1, R2)
-    # First add the local files into the CLC server URL index system
-    call([server_cmd, '-A import',
-          '-s ', R1,
-          '--destination', clc_server_root,
-          '-f externalfile'])  # result can be retrieved with url(R1)
-    call([server_cmd, '-A import',
-          '-s ', R2,
-          '--destination', clc_server_root,
-          '-f externalfile'])  # result can be retrieved with url(R2)
     # Then read in the data
     call([server_cmd, '-A ngs_import_illumina',
+          '-f', R1,
+          '-f', R2,
           '--paired-reads true',  # <Boolean>	Paired-end reads (default: false)
           '--read-orientation FORWARD_REVERSE',  # Read orientation (default: FORWARD_REVERSE)
           '--destination ', directory_url,  # <ClcServerObjectUrl>	Destination file or folder on server.
-          '-f', url(R1),
-          '-f', url(R2)])
+          ])
 
 
 def import_read_pairs_by_FRAX(frax_name):
