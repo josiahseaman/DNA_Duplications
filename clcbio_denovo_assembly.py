@@ -5,8 +5,9 @@ from __future__ import print_function
 import os
 from glob import glob
 import subprocess
-
 import sys
+import datetime
+
 
 read_folder = '/home/jseaman/sequences/'
 output_dir = '/home/jseaman/assemblies/'
@@ -15,17 +16,24 @@ parse_cmd = "/usr/local/bin/clcresultparser"
 clc_server_root = 'clc://10.65.1.101:7777/clcserver/Fraxinus/'
 password_token = 'BAAAAAAAAAAAAAP5d9b3a807f99338e--260f6b54-15d0dbc6aad--8000'
 server_cmd = server_cmd_path + ' -S atta1.ad.kew.org -P 7777 -U jseaman -W %s ' % password_token
+log_file_name = str(datetime.datetime.now()).split('.')[0] + '.log'
+
+
+def log_command(args):
+    command = ' '.join(args) if isinstance(args, list) else args
+    print(command)
+    with open(log_file_name, 'a') as log:
+        log.writelines([command])
+    return command
 
 
 def call_output(args):
-    command = ' '.join(args) if isinstance(args, list) else args
-    print(command)
+    command = log_command(args)
     return subprocess.check_output(command, shell=True)
 
 
 def call(args):
-    command = ' '.join(args) if isinstance(args, list) else args
-    print(command)
+    command = log_command(args)
     return subprocess.call(command, shell=True)
     # TODO: add error handling for bad return code
 
@@ -181,7 +189,16 @@ def rsync_sequences(frax_number):
     f.communicate(input=password + '\n')
 
 
+def initialize_log_file():
+    with open(log_file_name, 'w') as log:
+        log.write('#############Source Code at time of execution###############\n')
+        with open(__file__) as source_code:
+            log.write(source_code.read())
+        log.write('\n\n\n\n#!/bin/bash\n#############Actual Commands executed###############\n')
+
+
 def main(frax_number):
+    initialize_log_file()
     # rsync_sequences(frax_number)
     # stage all the data to be used
     reads_directory_url = import_read_pairs_by_FRAX(frax_number)
@@ -193,4 +210,6 @@ def main(frax_number):
 
 if __name__ == '__main__':
     assert sys.argv[1], "Include Frax name: e.g. FRAX01"
-    main(sys.argv[1])
+    frax_name = sys.argv[1]
+    log_file_name = frax_name + ' ' + log_file_name
+    main(frax_name)
