@@ -114,9 +114,11 @@ def import_read_pairs_by_FRAX(frax_name):
     directory_url = make_clc_directory(frax_name)
     # import all reads as pairs (where appropriate) for one particular frax_name
     relevant_files = glob(os.path.join(read_folder, frax_name) + '*')
-    stripped_number = strip_frax(frax_name)
-    relevant_files += glob(os.path.join(read_folder, stripped_number) + '_*')  # The NextSeq reads don't
-    # have a proper FRAX01 prefix.  Renaming the files would allow you to remove this line
+    try:  # have a proper FRAX01 prefix.  Renaming the files would allow you to remove this line
+        stripped_number = strip_frax(frax_name)
+        relevant_files += glob(os.path.join(read_folder, stripped_number) + '_*')  # The NextSeq reads don't
+    except ValueError as e:
+        pass  # this must be a non-Frax name
     first_pairs = [x for x in relevant_files if '_R1_' in x and 'ssembly' not in x]
     for R1 in first_pairs:
         R1 = os.path.join(read_folder, os.path.basename(R1))
