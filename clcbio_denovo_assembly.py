@@ -67,8 +67,7 @@ def make_clc_directory(subdirectory):
     if not os.path.exists(os.path.join('/data/clcserver/Fraxinus/', subdirectory)):  # different from CLC URL
         call([server_cmd, '-A mkdir',
               '-n', subdirectory,
-              '-t', clc_server_root,
-              '-O mkdir_result.txt'])
+              '-t', clc_server_root])
     """Example output from the above command:
     Message: Trying to log on to server
     Message: Login successful
@@ -152,7 +151,8 @@ def denovo_assembly(reads_directory_url):
     # SNP's or systematic errors. (default: 50)
     mapping_type = '--map-reads-to-contigs SIMPLE'
 
-    # destination = '--destination ' + url(output_dir)
+    destination_url = '"' + os.path.join(reads_directory_url, just_the_name(log_file_name)) + '"'
+    destination = '--destination ' + destination_url
     # <ClcServerObjectUrl> Destination file or folder on server. If not specified the folder of the first
     # input object will be used.
     input_files_string = ' '.join(['--input "%s"' % url for url in input_urls])  # <ClcObjectUrl> Input data
@@ -162,14 +162,15 @@ def denovo_assembly(reads_directory_url):
     perform_scaffolding = '--perform-scaffolding false'
     # <Boolean>	Perform scaffolding based on paired reads. If the input data does not contain paired data,
     # scaffolding cannot be selected. (default: true)
-    assembly_url = call_output([server_cmd, '-A denovo_assembly',
-                                auto_detect_paired_distances,
-                                bubblesize,
-                                mapping_type,
-                                minimum_contig_length,
-                                perform_scaffolding,
-                                input_files_string, ])
-    return assembly_url
+    call([server_cmd, '-A denovo_assembly',
+          auto_detect_paired_distances,
+          bubblesize,
+          mapping_type,
+          minimum_contig_length,
+          perform_scaffolding,
+          input_files_string,
+          destination])
+    return destination_url
 
 
 def rsync_sequences(frax_number):
@@ -204,10 +205,9 @@ def main(frax_number):
     # rsync_sequences(frax_number)
     # stage all the data to be used
     reads_directory_url = import_read_pairs_by_FRAX(frax_number)
-    # reads_directory_url = "clc://10.65.1.101:7777/clcserver/Fraxinus/FRAX01"
     # do de novo assembly using all info
     assembly_url = denovo_assembly(reads_directory_url)
-    print('Done with Assembly ', frax_number, reads_directory_url, assembly_url)
+    log_command(['echo', 'Done with Assembly ', frax_number, reads_directory_url, assembly_url])
 
 
 if __name__ == '__main__':
