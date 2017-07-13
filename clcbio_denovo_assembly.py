@@ -23,7 +23,7 @@ def log_command(args):
     command = ' '.join(args) if isinstance(args, list) else args
     print(command)
     with open(log_file_name, 'a') as log:
-        log.writelines([command])
+        log.write(command + '\n')
     return command
 
 
@@ -151,7 +151,7 @@ def denovo_assembly(reads_directory_url):
     # SNP's or systematic errors. (default: 50)
     mapping_type = '--map-reads-to-contigs SIMPLE'
 
-    destination_url = '"' + os.path.join(reads_directory_url, just_the_name(log_file_name)) + '"'
+    destination_url = '"' + reads_directory_url + '"'
     destination = '--destination ' + destination_url
     # <ClcServerObjectUrl> Destination file or folder on server. If not specified the folder of the first
     # input object will be used.
