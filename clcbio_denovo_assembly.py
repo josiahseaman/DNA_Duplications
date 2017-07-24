@@ -206,8 +206,9 @@ def main(frax_number):
     # stage all the data to be used
     reads_directory_url = import_read_pairs_by_FRAX(frax_number)
     # do de novo assembly using all info
-    assembly_url = denovo_assembly(reads_directory_url)
-    log_command(['echo', 'Done with Assembly ', frax_number, reads_directory_url, assembly_url])
+    # assembly_url = denovo_assembly(reads_directory_url)
+    print("Done importing", frax_number, "\nAssembly is turned off in this version.")
+    # log_command(['echo', 'Done with Assembly ', frax_number, reads_directory_url, assembly_url])
 
 
 if __name__ == '__main__':
