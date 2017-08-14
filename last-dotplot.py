@@ -135,20 +135,24 @@ def tot_seq_pix(seq_sizes, bp_per_pix):
     '''Return the total pixels needed for sequences of the given sizes.'''
     return sum([div_ceil(i, bp_per_pix) for i in seq_sizes])
 
-def get_bp_per_pix(seq_sizes, pix_limit):
+def get_bp_per_pix(seq_sizes, pix_limit, fall_back_value=None):
     '''Get the minimum bp-per-pixel that fits in the size limit.'''
     seq_num = len(seq_sizes)
     seq_pix_limit = pix_limit - pix_tween_seqs * (seq_num - 1)
     if seq_pix_limit < seq_num:
-        sys.exit(my_name + ": can't fit the image: too many sequences?")
+        if fall_back_value is None:
+            sys.exit(my_name + ": can't fit the image: too many sequences?")
+        else:
+            return fall_back_value
     lower_bound = div_ceil(sum(seq_sizes), seq_pix_limit)
     for bp_per_pix in itertools.count(lower_bound):  # slow linear search
-        if tot_seq_pix(seq_sizes, bp_per_pix) <= seq_pix_limit: break
+        if tot_seq_pix(seq_sizes, bp_per_pix) <= seq_pix_limit:
+            break
     return bp_per_pix
 
 sys.stderr.write(my_name + ": choosing bp per pixel...\n")
 bp_per_pix1 = get_bp_per_pix(seq_sizes1, opts.width  - margin1)
-bp_per_pix2 = get_bp_per_pix(seq_sizes2, opts.height - margin2)
+bp_per_pix2 = get_bp_per_pix(seq_sizes2, opts.height - margin2, bp_per_pix1)
 bp_per_pix = max(bp_per_pix1, bp_per_pix2)
 sys.stderr.write(my_name + ": bp per pixel = " + str(bp_per_pix) + "\n")
 
