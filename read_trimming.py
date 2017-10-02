@@ -5,21 +5,30 @@ from __future__ import print_function
 import os
 import subprocess
 import sys
+import datetime
 
 insert_size = '800bp_library_'
 output_dir = '/data/scratch/btx142/HiSeq_data/trimmed_reads/'
+# one log file per day across all jobs
+log_file_name = "WHAT_I_DID_" + str(datetime.date.today()) + '.log'
+
+
+def log_command(args):
+    command = ' '.join(args) if isinstance(args, list) else args
+    print(command)
+    with open(log_file_name, 'a') as log:
+        log.write(command + '\n')
+    return command
 
 
 def call_output(args):
-    command = ' '.join(args) if isinstance(args, list) else args
-    print(command)
+    command = log_command(args)
     return subprocess.check_output(command, shell=True)
 
 
 def call(args):
-    command = ' '.join(args) if isinstance(args, list) else args
-    print(command)
-    subprocess.call(command, shell=True)
+    command = log_command(args)
+    return subprocess.call(command, shell=True)
     # TODO: add error handling for bad return code
 
 
