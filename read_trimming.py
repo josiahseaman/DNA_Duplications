@@ -7,8 +7,8 @@ import subprocess
 import sys
 import datetime
 
-insert_size = '800bp_library_'
-output_dir = '/data/scratch/btx142/HiSeq_data/trimmed_reads/'
+insert_size = '800bp_HiSeq2500_'
+output_dir = '/data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/processed/'
 # one log file per day across all jobs
 log_file_name = "WHAT_I_DID_" + str(datetime.date.today()) + '.log'
 
@@ -16,7 +16,7 @@ log_file_name = "WHAT_I_DID_" + str(datetime.date.today()) + '.log'
 def log_command(args):
     command = ' '.join(args) if isinstance(args, list) else args
     print(command)
-    with open(log_file_name, 'a') as log:
+    with open(os.path.join(output_dir, log_file_name), 'a') as log:
         log.write(command + '\n')
     return command
 
@@ -44,13 +44,13 @@ def just_the_name(path):
 
 
 def delete_file_contents(file_path):
-    if 'scratch' in file_path:
+    # if 'scratch' in file_path:
         if os.path.exists(file_path):
             with open(file_path, 'w') as big_file:
                 big_file.write('Contents deleted to save scratch space')
                 print('File contents deleted:', file_path)
-    else:
-        print('ERROR: Not blanking file because it is not in a scratch directory', file_path, file=sys.stderr)
+    # else:
+    #     print('ERROR: Not blanking file because it's not in a scratch folder', file_path, file=sys.stderr)
 
 
 def trim_adapters(clipped_file_path, base_clipped_name, run):
@@ -82,10 +82,11 @@ def trim_adapters(clipped_file_path, base_clipped_name, run):
     }
     trimmed_file = os.path.join(output_dir, base_clipped_name) + '_' + insert_size + 'first_5bp_clipped_adapters_cut.fastq'
     if run:
+        report_stage('Trim Adapters')
         if os.path.exists(trimmed_file):
             print(trimmed_file, "already exists")
         else:
-            print("Unable to find", trimmed_file)
+            print("Generating file:", trimmed_file)
             adapter_arguments = [' -b ' + x for x in adapters[side]]  # this should not be 'join' because it skips the first
             call(['/data/SBCS-BuggsLab/LauraKelly/tools/cutadapt-1.8.1/bin/cutadapt', '-O 5 ',
                   ' '.join(adapter_arguments),
@@ -96,17 +97,18 @@ def trim_adapters(clipped_file_path, base_clipped_name, run):
 
 
 def clip_5bp(source_fastq_path, base_clipped_name, run):
-    try:
-        call(['module load fastx'])
-    except OSError:
-        pass  # loaded in starter script
     # Step 1, trimming reads with fast_trimmer [i.e. you have to load the fastx module]
     output_path = os.path.join(output_dir, base_clipped_name) + '_first_5bp_clipped.fastq'
     if run:
+        try:
+            call(['module load fastx'])
+        except OSError:
+            pass  # loaded in starter script
+        report_stage('Clipping')
         if os.path.exists(output_path):
             print(output_path, "already exists")
         else:
-            print("Unable to find", output_path)
+            print("Generating file:", output_path)
             call(['zcat', source_fastq_path,
                   '|',
                   'fastx_trimmer -Q33 -f 6 -v',
@@ -120,6 +122,7 @@ def fastqc_report(final_R1, final_R2, run):
     R1_report = os.path.join(report_dir, just_the_name(final_R1) + '_fastqc.html')
     R2_report = os.path.join(report_dir, just_the_name(final_R2) + '_fastqc.html')
     if run:
+        report_stage('FAST_QC')
         if os.path.exists(R1_report) and os.path.exists(R2_report):
             print(R1_report, 'already exists')
         else:
@@ -137,10 +140,11 @@ def sickle(R1_trimmed, R2_trimmed, run):
     R1_output = remove_extensions(R1_trimmed) + '_quality_trimmed_min_50bp.fastq.gz'
     R2_output = remove_extensions(R2_trimmed) + '_quality_trimmed_min_50bp.fastq.gz'
     if run:
+        report_stage('Sickle Quality Thresholds')
         if os.path.exists(singletons_output):
             print(singletons_output, "already exists")
         else:
-            print("Unable to find", singletons_output)
+            print("Generating file:", singletons_output)
             call(['/data/SBCS-BuggsLab/LauraKelly/other/sickle-master/sickle',
                   'pe',
                   '-f ' + R1_trimmed,
@@ -155,6 +159,10 @@ def sickle(R1_trimmed, R2_trimmed, run):
         delete_file_contents(R1_trimmed)
         delete_file_contents(R2_trimmed)
     return R1_output, R2_output
+
+
+def report_stage(name):
+    print('===========', 'Starting Stage:', name, '===========\n')
 
 
 def process_one_mate_pair_file(source_fastq_path, output_name, jobs):
