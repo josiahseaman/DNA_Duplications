@@ -5,7 +5,6 @@ from __future__ import print_function
 import os
 import subprocess
 import datetime
-
 import sys
 
 output_dir = '/data/scratch/btx142/'
@@ -20,7 +19,7 @@ def log_command(args):
     command = ' '.join(args) if isinstance(args, list) else args
     print(command)
     with open(log_file_name, 'a') as log:
-        log.writelines([command])
+        log.write(command + '\n')
     return command
 
 
@@ -44,11 +43,10 @@ def SSPACE_scaffolding(frax_number, assembly_name, assembly_path):
     call(['cd', output_dir])
     call(['/data/SBCS-BuggsLab/Josiah/SSPACE-STANDARD-3.0_linux-x86_64/SSPACE_Standard_v3.0.pl',
           '-s', assembly_path,  # contigs
-          '-l /data/SBCS-BuggsLab/Josiah/DNA_Duplications/sspacelibraryfile_' + frax_number ,
+          '-l /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/sspacelibraryfile_' + frax_number ,
           '-b ', assembly_name,  # output folder to create
-          '-x 1',  # added by Josiah to enable extending contigs and help out gap filler
           '-T 24',  # -T = threads'])
-          '2>&1 >' + out_log_file_name(assembly_name),
+          '2>&1 > "' + out_log_file_name(assembly_name) + '"',
           ])
     print("Done Scaffolding")
 
@@ -68,7 +66,7 @@ def gap_closer(frax_number, name, scaffold_path):
     call(['cd', output_dir])
     call(['GapCloser',
           '-a', scaffold_path,
-          '-b /data/SBCS-BuggsLab/Josiah/scaffolding/' + frax_number + '-GapCloser01.config',
+          '-b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/' + frax_number + '-GapCloser01.config',
           '-o', name + '__GAPCLOSER',
           '-t 8',
           '> /data/SBCS-BuggsLab/Josiah/scaffolding/' + name + '__gapcloser.log 2>&1',

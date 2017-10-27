@@ -1,0 +1,8 @@
+D:\josiah\Projects\DDV\build\DDV.exe --fasta="D:\Genomes\Ash Finished Genomes\FRAX27_CLC_SSPACE_GAPCLOSER.fasta" --outname="F. anomala (FRAX27)"
+D:\josiah\Projects\DDV\build\DDV.exe --fasta="D:\Genomes\Ash Finished Genomes\FRAX28_CLC_SSPACE_GAPCLOSER.fasta" --outname="F. baroniana (FRAX28)"
+D:\josiah\Projects\DDV\build\DDV.exe --fasta="D:\Genomes\Ash Finished Genomes\FRAX29_CLC_SSPACE_GAPCLOSER.fasta" --outname="F. bungeana (FRAX29)"
+D:\josiah\Projects\DDV\build\DDV.exe --fasta="D:\Genomes\Ash Finished Genomes\FRAX30_CLC_SSPACE_GAPCLOSER.fasta" --outname="F. chinensis (FRAX30)"
+D:\josiah\Projects\DDV\build\DDV.exe --fasta="D:\Genomes\Ash Finished Genomes\FRAX31_CLC_SSPACE_GAPCLOSER.fasta" --outname="F. cuspidata  (FRAX31)"
+D:\josiah\Projects\DDV\build\DDV.exe --fasta="D:\Genomes\Ash Finished Genomes\FRAX32_CLC_SSPACE_GAPCLOSER.fasta" --outname="F. floribunda  (FRAX32)"
+D:\josiah\Projects\DDV\build\DDV.exe --fasta="D:\Genomes\Ash Finished Genomes\FRAX33_CLC_SSPACE_GAPCLOSER.fasta" --outname="F. platypoda (FRAX33)"
+D:\josiah\Projects\DDV\build\DDV.exe --fasta="D:\Genomes\Ash Finished Genomes\FRAX34_CLC_SSPACE_GAPCLOSER.fasta" --outname="F. uhdei (FRAX34)"
