@@ -87,6 +87,9 @@ def main(frax_number, name, path):
 if __name__ == '__main__':
     assert len(sys.argv) == 4, "Include Frax number, Assembly name, Input path: e.g. FRAX01 FRAX01__2017-07-10 /data/SBCS-BuggsLab/Josiah/assembly/FRAX01__2017-07-10__bubblesize_5000__mincontig_200__SIMPLE__assembly.fa"
     frax_number, name, path = sys.argv[1], sys.argv[2], sys.argv[3]
+    if frax_number == 'FRAX':
+        print("You forgot to label your FRAX number (first argument) e.g. scaffold.py FRAX03")
+        exit(1)
     log_file_name = frax_number + ' ' + log_file_name
     main(frax_number, name, path)
 
