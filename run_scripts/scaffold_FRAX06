@@ -10,4 +10,4 @@
 
 module load python/3.6.1
 module load perl5lib
-python /data/SBCS-BuggsLab/Josiah/DNA_Duplications/scaffolding.py FRAX FRAX_Oct2017_800bp_HiSeq2500 /data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/
+python /data/SBCS-BuggsLab/Josiah/DNA_Duplications/scaffolding.py FRAX06 FRAX06_Oct2017_800bp_HiSeq2500 /data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/FRAX06__HiSeq2500_800bp__42_file__SIMPLE__bubble_5000__asssembly.fa
