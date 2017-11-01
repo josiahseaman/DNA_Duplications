@@ -111,6 +111,8 @@ GapCloser -a /data/scratch/eex057/FRAX01/RUN1/RUN1.final.scaffolds.fasta \
         -t 8 >log-gapcloser01.txt 2>&1
         
         
-GapCloser -a /data1/SBCS-BuggsLab/Josiah/scaffolding/FRAX09_Oct2017_draft_80GB/FRAX09_Oct2017_draft_80GB.final.scaffolds.fasta -b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/FRAX09-GapCloser.config -o FRAX09_Oct2017_draft_80GB__GAPCLOSER -t 8 > /data/SBCS-BuggsLab/Josiah/scaffolding/FRAX09_Oct2017_draft_80GB__gapcloser.log 2>&1
+GapCloser -a /data1/SBCS-BuggsLab/Josiah/scaffolding/FRAX09_Oct2017_draft_80GB/FRAX09_Oct2017_draft_80GB.final.scaffolds.fasta \
+-b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/FRAX09-GapCloser.config -o FRAX09_Oct2017_draft_80GB__GAPCLOSER \
+-t 8 > /data/SBCS-BuggsLab/Josiah/scaffolding/FRAX09_Oct2017_draft_80GB__gapcloser.log 2>&1
          
 """
