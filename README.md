@@ -18,3 +18,15 @@ Currently a disorganized collection of scripts I'm using to work on data for my 
     - … because of Stoichiometric sensitivity
     - … measured by Protein Interactome (not available)
 9. Parsimony of WGD versus local duplication
+
+
+## Setup on the QMUL cluster
+
+```
+git clone 
+cd DNA_Duplications
+virtualenv script_env --include-lib
+source script_env/bin/activate
+pip install -r Requirements.txt
+```
+Refer to run_scripts/ for examples on how to load modules.
