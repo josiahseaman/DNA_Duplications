@@ -6,11 +6,11 @@
 #$ -M josiah.seaman@gmail.com
 #$ -l h_rt=24:0:0 # Request runtime
 #$ -pe smp 1      # Request 1 CPU cores
-#$ -l h_vmem=40G   # Request GB RAM
+#$ -l h_vmem=80G   # Request GB RAM
 
 module load soapdenovo2/r241
 
 GapCloser -a /data1/SBCS-BuggsLab/Josiah/scaffolding/FRAX09_Oct2017_draft_80GB/FRAX09_Oct2017_draft_80GB.final.scaffolds.fasta \
  -b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/FRAX09-GapCloser.config \
- -o FRAX09_Oct2017_draft_40GB__GAPCLOSER \
- -t 8 > /data/SBCS-BuggsLab/Josiah/scaffolding/FRAX09_Oct2017_draft_40GB__gapcloser.log 2>&1
+ -o FRAX09_Oct2017_draft_80GB__GAPCLOSER \
+ -t 8 > /data/SBCS-BuggsLab/Josiah/scaffolding/FRAX09_Oct2017_draft_80GB__gapcloser.log 2>&1
