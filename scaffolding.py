@@ -8,11 +8,11 @@ import datetime
 import sys
 
 output_dir = '/data/scratch/btx142/'
-log_file_name = 'scaffold ' + str(datetime.datetime.now()).split('.')[0] + '.log'
+log_file_name = 'scaffold_' + datetime.datetime.now().strftime('%y-%m-%d__%H.%M.%S') + '.log'
 
 
 def out_log_file_name(assembly_name):
-    return assembly_name + '__' + log_file_name[:-3] + 'out'
+    return assembly_name.strip() + '__' + log_file_name[:-3] + 'out'
 
 
 def log_command(args):
@@ -25,7 +25,14 @@ def log_command(args):
 
 def call(args):
     command = log_command(args)
-    return subprocess.check_output(command, shell=True)
+    (status, output) = subprocess.getstatusoutput(command)
+    if output:
+        print(output)
+    with open(log_file_name, 'a') as log:
+        log.write(output + '\n')
+    if status != 0:
+        raise subprocess.CalledProcessError(status, command, output=output)
+    return output
 
 
 def SSPACE_scaffolding(frax_number, assembly_name, assembly_path, do_extension=False):
@@ -43,7 +50,7 @@ def SSPACE_scaffolding(frax_number, assembly_name, assembly_path, do_extension=F
     call(['cd', output_dir])
     call(['/data/SBCS-BuggsLab/Josiah/SSPACE-STANDARD-3.0_linux-x86_64/SSPACE_Standard_v3.0.pl',
           '-s', assembly_path,  # contigs
-          '-l /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/sspacelibraryfile_' + frax_number ,
+          '-l /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/sspacelibraryfile_' + frax_number,
           '-b ', assembly_name,  # output folder to create
           '-x 1' if do_extension else '',  # extends read ends, added by Josiah
           '-T 24',  # -T = threads'])
@@ -96,7 +103,7 @@ if __name__ == '__main__':
     if frax_number == 'FRAX':
         print("You forgot to label your FRAX number (first argument) e.g. scaffold.py FRAX03")
         exit(1)
-    log_file_name = frax_number + ' ' + log_file_name
+    log_file_name = frax_number + '_' + log_file_name
     main(frax_number, name, path, options)
 
 

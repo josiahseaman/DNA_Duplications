@@ -5,7 +5,7 @@
 #$ -m aes
 #$ -M josiah.seaman@gmail.com
 #$ -l h_rt=08:0:0 # Request runtime
-#$ -pe smp 20      # Request 1 CPU cores
+#$ -pe smp 10      # Request 1 CPU cores
 #$ -l h_vmem=4G   # Request GB RAM
 
 module load python/3.6.3

@@ -11,4 +11,4 @@
 module load python/3.6.3
 module load perl5lib
 source /data/SBCS-BuggsLab/Josiah/DNA_Duplications/script_env/bin/activate
-python /data/SBCS-BuggsLab/Josiah/DNA_Duplications/scaffolding.py FRAX09sans800 FRAX09_without800_unfiltered_small /data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/FRAX09__HiSeq2500_800bp__42_file__SIMPLE__bubble_5000__asssembly.fa
+python /data/SBCS-BuggsLab/Josiah/DNA_Duplications/scaffolding.py FRAX09sans800 FRAX09_without800_unfiltered_small_fixed /data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/FRAX09__HiSeq2500_800bp__42_file__SIMPLE__bubble_5000__asssembly.fa
