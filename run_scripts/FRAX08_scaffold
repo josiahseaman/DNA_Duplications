@@ -8,7 +8,7 @@
 #$ -pe smp 20      # Request 1 CPU cores
 #$ -l h_vmem=4G   # Request GB RAM
 
-module load python/3.6.1
+module load python/3.6.3
 module load perl5lib
 source /data/SBCS-BuggsLab/Josiah/DNA_Duplications/script_env/bin/activate
 python /data/SBCS-BuggsLab/Josiah/DNA_Duplications/scaffolding.py FRAX08 FRAX08_Oct2017_800bp_HiSeq2500 /data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/FRAX08__HiSeq2500_800bp__42_file__SIMPLE__bubble_5000__asssembly.fa
