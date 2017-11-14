@@ -8,7 +8,7 @@
 #$ -pe smp 4      # Request 1 CPU cores
 #$ -l h_vmem=5G   # Request GB RAM
 
-module load python/3.6.1
+module load python/3.6.3
 module load perl5lib
 source /data/SBCS-BuggsLab/Josiah/DNA_Duplications/script_env/bin/activate
 /data/SBCS-BuggsLab/Josiah/SSPACE-STANDARD-3.0_linux-x86_64/SSPACE_Standard_v3.0.pl -s /data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/FRAX09__Oct2017_draft__GC_filtered_56__no_mito_or_plastid.fa -l /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/sspacelibraryfile_FRAX09 -b  FRAX09_Oct2017_filtered  -T 24 2>&1 > "FRAX09_Oct2017_filtered__FRAX09_scaffold_17-11-13__18.00.00.out"
