@@ -3,9 +3,9 @@
 from __future__ import print_function
 
 import os
-import subprocess
 import datetime
 import sys
+from DNASkittleUtils.CommandLineUtils import call
 
 output_dir = '/data/scratch/btx142/'
 log_file_name = 'scaffold_' + datetime.datetime.now().strftime('%y-%m-%d__%H.%M.%S') + '.log'
@@ -13,26 +13,6 @@ log_file_name = 'scaffold_' + datetime.datetime.now().strftime('%y-%m-%d__%H.%M.
 
 def out_log_file_name(assembly_name):
     return assembly_name.strip() + '__' + log_file_name[:-3] + 'out'
-
-
-def log_command(args):
-    command = ' '.join(args) if isinstance(args, list) else args
-    print(command)
-    with open(log_file_name, 'a') as log:
-        log.write(command + '\n')
-    return command
-
-
-def call(args):
-    command = log_command(args)
-    (status, output) = subprocess.getstatusoutput(command)
-    if output:
-        print(output)
-    with open(log_file_name, 'a') as log:
-        log.write(output + '\n')
-    if status != 0:
-        raise subprocess.CalledProcessError(status, command, output=output)
-    return output
 
 
 def SSPACE_scaffolding(frax_number, assembly_name, assembly_path, do_extension=False):

@@ -8,6 +8,8 @@ import subprocess
 import sys
 import datetime
 
+from DNASkittleUtils.CommandLineUtils import call, just_the_name
+
 
 read_folder = '/home/jseaman/sequences/'
 output_dir = '/home/jseaman/assemblies/'
@@ -19,39 +21,9 @@ server_cmd = server_cmd_path + ' -S atta1.ad.kew.org -P 7777 -U jseaman -W %s ' 
 log_file_name = str(datetime.datetime.now()).split('.')[0] + '.log'
 
 
-def log_command(args):
-    command = ' '.join(args) if isinstance(args, list) else args
-    print(command)
-    with open(log_file_name, 'a') as log:
-        log.write(command + '\n')
-    return command
-
-
-def call_output(args):
-    command = log_command(args)
-    return subprocess.check_output(command, shell=True)
-
-
-def call(args):
-    command = log_command(args)
-    return subprocess.call(command, shell=True)
-    # TODO: add error handling for bad return code
-
-
 def url(name):
     """Retrieves the CLC resource URL for a specific imported file.  Fails if the file is not imported"""
     return clc_server_root + os.path.basename(name)
-
-
-def remove_extensions(path):
-    """Remove extension and path"""
-    first_extension = os.path.splitext(path)[0]
-    return os.path.splitext(first_extension)[0]
-
-
-def just_the_name(path):
-    """Remove extension and path"""
-    return remove_extensions(os.path.basename(path))
 
 
 def make_clc_directory(subdirectory):
@@ -128,7 +100,7 @@ def import_read_pairs_by_FRAX(frax_name):
 
 def directory_listing_URLs(reads_directory_url):
     """clcserver -A ls --target clc://localhost:7777/clcserver/Fraxinus/FRAX01"""
-    raw_text = call_output([server_cmd, '-A ls',
+    raw_text = call([server_cmd, '-A ls',
                             '--target', reads_directory_url])
     # all lines with Simple but not log or assembly
     # or call_output('cat raw_directory_listing.tmp | grep -v "log" | grep -v "assembly')

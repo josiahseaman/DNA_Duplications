@@ -3,44 +3,11 @@
 from __future__ import print_function
 
 import os
-import subprocess
 import sys
-import datetime
+from DNASkittleUtils.CommandLineUtils import call, just_the_name, remove_extensions
 
 insert_size = '800bp_HiSeq2500_'
 output_dir = '/data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/processed/'
-# one log file per day across all jobs
-log_file_name = "WHAT_I_DID_" + str(datetime.date.today()) + '.log'
-
-
-def log_command(args):
-    command = ' '.join(args) if isinstance(args, list) else args
-    print(command)
-    with open(os.path.join(output_dir, log_file_name), 'a') as log:
-        log.write(command + '\n')
-    return command
-
-
-def call_output(args):
-    command = log_command(args)
-    return subprocess.check_output(command, shell=True)
-
-
-def call(args):
-    command = log_command(args)
-    return subprocess.call(command, shell=True)
-    # TODO: add error handling for bad return code
-
-
-def remove_extensions(path):
-    """Remove extension and path"""
-    first_extension = os.path.splitext(path)[0]
-    return os.path.splitext(first_extension)[0]
-
-
-def just_the_name(path):
-    """Remove extension and path"""
-    return remove_extensions(os.path.basename(path))
 
 
 def delete_file_contents(file_path):
