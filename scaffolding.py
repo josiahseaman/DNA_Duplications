@@ -3,12 +3,13 @@
 from __future__ import print_function
 
 import os
-import datetime
+from datetime import datetime
 import sys
 from DNASkittleUtils.CommandLineUtils import call
 
 output_dir = '/data/scratch/btx142/'
-log_file_name = 'scaffold_' + datetime.datetime.now().strftime('%y-%m-%d__%H.%M.%S') + '.log'
+time_stamp = datetime.now().strftime('%y-%m-%d__%H.%M.%S')
+log_file_name = 'scaffold_' + time_stamp + '.log'
 
 
 def out_log_file_name(assembly_name):
