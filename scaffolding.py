@@ -76,7 +76,7 @@ def preprocess_for_gapcloser(input_fasta):
         scaffolds.sort(key=lambda fragment: -len(fragment.seq))
         l_scaffolds = [c for c in scaffolds if len(c.seq) > 18000]
         short_scaff = [c for c in scaffolds if len(c.seq) <= 18000]
-        print(f"Eliminated {len(scaffolds) - len(l_scaffolds))} scaffolds")
+        print(f"Eliminated {len(scaffolds) - len(l_scaffolds)} scaffolds")
 
         write_contigs_to_file(output_name, l_scaffolds)
         leftover_name = splitext(input_fasta)[0] + '__remaining_short_scaffolds' + splitext(input_fasta)[1]
