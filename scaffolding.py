@@ -61,20 +61,28 @@ def gap_closer(frax_number, name, scaffold_path):
               '-a', scaffold_path,
               '-b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/' + frax_number + '-GapCloser.config',
               '-o', target_output_file,
-              '-t 8',
+              '-t 4',
               '>', os.path.join(working_dir, name + '__gapcloser.log'), '2>&1',
               ])
     else:
         print(target_output_file, "already exists.  Skipping gapclosing")
     print("Done with GapClosing")
 
+
 def preprocess_for_gapcloser(input_fasta):
-    scaffolds = read_contigs(input_fasta)
-    l_scaffolds = [c for c in scaffolds if len(c.seq) > 18000]
-    print("Eliminated", (len(scaffolds) - len(l_scaffolds)), "scaffolds")
-    l_scaffolds.sort(key=lambda fragment: -len(fragment.seq))
     output_name = splitext(input_fasta)[0] + '__pre_gapcloser' + splitext(input_fasta)[1]
-    write_contigs_to_file(output_name, l_scaffolds)
+    if not os.path.exists(output_name):
+        scaffolds = read_contigs(input_fasta)
+        scaffolds.sort(key=lambda fragment: -len(fragment.seq))
+        l_scaffolds = [c for c in scaffolds if len(c.seq) > 18000]
+        short_scaff = [c for c in scaffolds if len(c.seq) <= 18000]
+        print(f"Eliminated {len(scaffolds) - len(l_scaffolds))} scaffolds")
+
+        write_contigs_to_file(output_name, l_scaffolds)
+        leftover_name = splitext(input_fasta)[0] + '__remaining_short_scaffolds' + splitext(input_fasta)[1]
+        write_contigs_to_file(leftover_name, short_scaff)
+    else:
+        print(output_name, "already exists")
     return output_name
 
 

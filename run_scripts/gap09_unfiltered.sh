@@ -10,6 +10,6 @@
 
 module load soapdenovo2
 GapCloser -a /data/SBCS-BuggsLab/Josiah/scaffolding/FRAX09_Oct2017_unfiltered/FRAX09_Oct2017_unfiltered.final.scaffolds.fasta \
-	-b /data/home/btx142/BuggsLab/Josiah/DNA_Duplications/data/FRAX09-GapCloser.config \
+	-b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/FRAX09-GapCloser.config \
 	-o GAPCLOSER09_unfiltered \
         -t 8 > FRAX09-gapcloser_unfiltered.log 2>&1
