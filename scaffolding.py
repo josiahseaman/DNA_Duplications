@@ -7,7 +7,7 @@ from datetime import datetime
 import sys
 from DNASkittleUtils.CommandLineUtils import call
 from DNASkittleUtils.Contigs import read_contigs, write_contigs_to_file
-from os.path import splitext
+from os.path import splitext, join, dirname, exists
 
 
 output_dir = '/data/SBCS-BuggsLab/Josiah/scaffolding/'
@@ -43,7 +43,7 @@ def SSPACE_scaffolding(frax_number, assembly_name, assembly_path, do_extension=F
     print("Done Scaffolding")
 
 
-def gap_closer(frax_number, name, scaffold_path):
+def gap_closer(frax_number, prefile, gap_file):
     """
     module load SOAP/2.40
     cd /data/scratch/eex057/FRAX01/
@@ -52,56 +52,57 @@ def gap_closer(frax_number, name, scaffold_path):
     	-o GAPCLOSER01 \
             -t 8 >log-gapcloser01.txt 2>&1
     """
-    working_dir = os.path.dirname(scaffold_path)
-    target_output_file = os.path.join(working_dir, name + '__GAPCLOSER.fa')
-    if not os.path.exists(target_output_file):
-        call('module load soapdenovo2')
-        call(['cd', output_dir])
-        call(['GapCloser',
-              '-a', scaffold_path,
-              '-b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/' + frax_number + '-GapCloser.config',
-              '-o', target_output_file,
-              '-t 4',
-              '>', os.path.join(working_dir, name + '__gapcloser.log'), '2>&1',
-              ])
+    call('module load soapdenovo2')
+    call(['cd', output_dir])
+    call(['GapCloser',
+          '-a', prefile,
+          '-b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/' + frax_number + '-GapCloser.config',
+          '-o', gap_file,
+          '-t 4',
+          '>', splitext(gap_file)[0] + '.log', '2>&1',
+          ])
+
+
+def preprocess_for_gapcloser(input_fasta, output_name):
+    scaffolds = read_contigs(input_fasta)
+    scaffolds.sort(key=lambda fragment: -len(fragment.seq))
+    l_scaffolds = [c for c in scaffolds if len(c.seq) > 18000]
+    short_scaff = [c for c in scaffolds if len(c.seq) <= 18000]
+    print(f"Eliminated {len(scaffolds) - len(l_scaffolds)} scaffolds")
+
+    write_contigs_to_file(output_name, l_scaffolds)
+    leftover_name = splitext(input_fasta)[0] + '__remaining_short_scaffolds' + splitext(input_fasta)[1]
+    write_contigs_to_file(leftover_name, short_scaff)
+
+
+def check_if_done(target_output, do_job):
+    print("Checking for file", target_output)
+    if exists(target_output):
+        print(target_output, "already exists, skipping to next step.")
     else:
-        print(target_output_file, "already exists.  Skipping gapclosing")
-    print("Done with GapClosing")
-
-
-def preprocess_for_gapcloser(input_fasta):
-    output_name = splitext(input_fasta)[0] + '__pre_gapcloser' + splitext(input_fasta)[1]
-    if not os.path.exists(output_name):
-        scaffolds = read_contigs(input_fasta)
-        scaffolds.sort(key=lambda fragment: -len(fragment.seq))
-        l_scaffolds = [c for c in scaffolds if len(c.seq) > 18000]
-        short_scaff = [c for c in scaffolds if len(c.seq) <= 18000]
-        print(f"Eliminated {len(scaffolds) - len(l_scaffolds)} scaffolds")
-
-        write_contigs_to_file(output_name, l_scaffolds)
-        leftover_name = splitext(input_fasta)[0] + '__remaining_short_scaffolds' + splitext(input_fasta)[1]
-        write_contigs_to_file(leftover_name, short_scaff)
-    else:
-        print(output_name, "already exists")
-    return output_name
+        do_job()
+        assert exists(target_output), \
+            "Job didn't create the intended file\nThere may be a name mismatch"
+        print("Created", target_output)
 
 
 def main(frax_number, assembly_name, path, options):
     # Get CLC denovo assembly
 
     # Scaffold using long mate pairs
-    scaffold_path = os.path.join(output_dir, assembly_name, assembly_name + '.final.scaffolds.fasta')
+    scaffold_path = join(output_dir, assembly_name, assembly_name + '.final.scaffolds.fasta')
 
-    if os.path.exists(scaffold_path):
-        print(scaffold_path, "already exists, skipping to next step.")
-    else:
-        SSPACE_scaffolding(frax_number, assembly_name, path, 'extend' in options)
-        print("Created", scaffold_path)
+    check_if_done(scaffold_path,
+                  lambda: SSPACE_scaffolding(frax_number, assembly_name, path, 'extend' in options))
 
     # Close gaps in scaffolded assembly
-    preprocessed_file = preprocess_for_gapcloser(scaffold_path)
-    print("Created", preprocessed_file)
-    gap_closer(frax_number, assembly_name, scaffold_path)
+    prefile = splitext(scaffold_path)[0] + '__pre_gapcloser' + splitext(scaffold_path)[1]
+    check_if_done(prefile,
+                  lambda: preprocess_for_gapcloser(scaffold_path, prefile))
+    working_dir = dirname(prefile)
+    gap_file = join(working_dir, name + '__GAPCLOSER.fa')
+    check_if_done(gap_file,
+                  lambda: gap_closer(frax_number, prefile, gap_file))
     print("Done with everything")
 
 
