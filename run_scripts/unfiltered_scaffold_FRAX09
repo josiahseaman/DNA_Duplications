@@ -9,6 +9,6 @@
 #$ -l h_vmem=4G   # Request GB RAM
 
 module load python/3.6.3
-module load perl5lib
+module load perl5lib soapdenovo2
 source /data/SBCS-BuggsLab/Josiah/DNA_Duplications/script_env/bin/activate
 python /data/SBCS-BuggsLab/Josiah/DNA_Duplications/scaffolding.py FRAX09 FRAX09_Oct2017_unfiltered /data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/FRAX09__HiSeq2500_800bp__42_file__SIMPLE__bubble_5000__asssembly.fa
