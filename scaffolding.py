@@ -10,7 +10,7 @@ from DNASkittleUtils.Contigs import read_contigs, write_contigs_to_file
 from os.path import splitext
 
 
-output_dir = '/data/scratch/btx142/'
+output_dir = '/data/SBCS-BuggsLab/Josiah/scaffolding/'
 time_stamp = datetime.now().strftime('%y-%m-%d__%H.%M.%S')
 log_file_name = 'scaffold_' + time_stamp + '.log'
 
@@ -91,6 +91,7 @@ def main(frax_number, assembly_name, path, options):
 
     # Scaffold using long mate pairs
     scaffold_path = os.path.join(output_dir, assembly_name, assembly_name + '.final.scaffolds.fasta')
+
     if os.path.exists(scaffold_path):
         print(scaffold_path, "already exists, skipping to next step.")
     else:
