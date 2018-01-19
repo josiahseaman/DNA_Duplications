@@ -52,7 +52,6 @@ def gap_closer(frax_number, prefile, gap_file):
     	-o GAPCLOSER01 \
             -t 8 >log-gapcloser01.txt 2>&1
     """
-    call('module load soapdenovo2')
     call(['cd', output_dir])
     call(['GapCloser',
           '-a', prefile,
