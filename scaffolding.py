@@ -77,7 +77,8 @@ def preprocess_for_gapcloser(input_fasta, output_name):
 
 def check_if_done(target_output, do_job):
     print("Checking for file", target_output)
-    if exists(target_output):
+    # Checks if existing file is of Zero size
+    if exists(target_output) and os.path.getsize(target_output):
         print(target_output, "already exists, skipping to next step.")
     else:
         do_job()
