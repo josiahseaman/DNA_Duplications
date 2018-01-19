@@ -4,9 +4,9 @@
 #$ -j y           # Merge the standard output and standard error
 #$ -m aes
 #$ -M josiah.seaman@gmail.com
-#$ -l h_rt=08:0:0 # Request runtime
+#$ -l h_rt=16:0:0 # Request runtime
 #$ -pe smp 4      # Request 1 CPU cores
-#$ -l h_vmem=10G   # Request GB RAM
+#$ -l h_vmem=20G   # Request GB RAM
 
 module load python/3.6.3
 module load perl5lib soapdenovo2
