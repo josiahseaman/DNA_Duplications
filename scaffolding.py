@@ -65,9 +65,17 @@ def gap_closer(frax_number, prefile, gap_file):
 def preprocess_for_gapcloser(input_fasta, output_name):
     scaffolds = read_contigs(input_fasta)
     scaffolds.sort(key=lambda fragment: -len(fragment.seq))
-    l_scaffolds = [c for c in scaffolds if len(c.seq) > 18000]
-    short_scaff = [c for c in scaffolds if len(c.seq) <= 18000]
+    l_scaffolds, short_scaff = [], []
+    for scaff in scaffolds:
+        if scaff.seq.count('N') > 100:  # if it doesn't have gaps, don't bother
+            l_scaffolds.append(scaff)
+        else:
+            short_scaff.append(scaff)
+    long_sum = sum([len(c.seq) for c in l_scaffolds])
+    short_sum = sum([len(c.seq) for c in short_scaff])
     print(f"Eliminated {len(scaffolds) - len(l_scaffolds)} scaffolds")
+    if long_sum > short_sum:
+        print("WARNING: More than half of the sequence was eliminated in preprocessing.", file=sys.stderr)
 
     write_contigs_to_file(output_name, l_scaffolds)
     leftover_name = splitext(input_fasta)[0] + '__remaining_short_scaffolds' + splitext(input_fasta)[1]
