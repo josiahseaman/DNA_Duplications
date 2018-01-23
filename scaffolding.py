@@ -11,7 +11,7 @@ from os.path import splitext, join, dirname, exists
 
 
 output_dir = '/data/SBCS-BuggsLab/Josiah/scaffolding/'
-time_stamp = datetime.now().strftime('%y-%m-%d__%H.%M.%S')
+time_stamp = datetime.now().strftime('%yyyy-%mm-%dd__%HH.%MM.%SS')
 log_file_name = 'scaffold_' + time_stamp + '.log'
 
 
@@ -57,7 +57,7 @@ def gap_closer(frax_number, prefile, gap_file):
           '-a', prefile,
           '-b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/' + frax_number + '-GapCloser.config',
           '-o', gap_file,
-          '-t 4',
+          '-t 1',
           '>', splitext(gap_file)[0] + '.log', '2>&1',
           ])
 
