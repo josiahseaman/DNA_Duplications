@@ -161,7 +161,7 @@ def starter():
     print('Jobs', jobs)
 
     work_array = [
-        (None, None),  # one indexed:  use #$ -t 1-35
+        (None, None),  # one indexed:  use #$ -t 1-36
         ('/data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/Raw/Sample_1/1_ATTACTCG-CTTCGCCT_L001_R1_001.fastq.gz', 'FRAX01_L001_R1'),
         ('/data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/Raw/Sample_1/1_ATTACTCG-CTTCGCCT_L002_R1_001.fastq.gz', 'FRAX01_L002_R1'),
         ('/data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/Raw/Sample_1/1_ATTACTCG-CTTCGCCT_L003_R1_001.fastq.gz', 'FRAX01_L003_R1'),
