@@ -4,7 +4,7 @@
 #$ -j y           # Merge the standard output and standard error
 #$ -m aes
 #$ -M josiah.seaman@gmail.com
-#$ -l h_rt=16:0:0 # Request runtime
+#$ -l h_rt=32:0:0 # Request runtime
 #$ -pe smp 1      # Request 1 CPU cores
 #$ -l h_vmem=60G   # Request GB RAM
 
