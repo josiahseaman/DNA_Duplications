@@ -16,5 +16,5 @@ if m:
 
 
 print(count)
-with open('processor_count.txt') as outfile:
+with open('processor_count.txt', 'w') as outfile:
     outfile.write('Raw: %i\nCPU set:%i\n' % (count, cpuset))
