@@ -37,10 +37,24 @@ def SSPACE_scaffolding(frax_number, assembly_name, assembly_path, do_extension=F
           '-l /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/sspacelibraryfile_' + frax_number,
           '-b ', assembly_name,  # output folder to create
           '-x 1' if do_extension else '',  # extends read ends, added by Josiah
-          '-T 24',  # -T = threads'])
+          '-T %i' % linux_processors_available(24),  # -T = threads'])
           '2>&1 > "' + out_log_file_name(assembly_name) + '"',
           ])
     print("Done Scaffolding")
+
+
+def linux_processors_available(default):
+    """Detects the number of processors allocated to this program in a Linux environment.
+    Returns default with any other configuration."""
+    import re
+    m = re.search(r'(?m)^Cpus_allowed:\s*(.*)$',
+                  open('/proc/self/status').read())
+    if m:
+        try:
+            return bin(int(m.group(1).replace(',', ''), 16)).count('1')
+        except BaseException:
+            pass
+    return default
 
 
 def gap_closer(frax_number, prefile, gap_file):
@@ -57,7 +71,7 @@ def gap_closer(frax_number, prefile, gap_file):
           '-a', prefile,
           '-b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/data/' + frax_number + '-GapCloser.config',
           '-o', gap_file,
-          '-t 1',
+          '-t %i' % linux_processors_available(4),
           '>', splitext(gap_file)[0] + '.log', '2>&1',
           ])
 
