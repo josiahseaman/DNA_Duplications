@@ -94,18 +94,39 @@ def preprocess_for_gapcloser(input_fasta, output_name):
     write_contigs_to_file(output_name, l_scaffolds)
     leftover_name = splitext(input_fasta)[0] + '__remaining_short_scaffolds' + splitext(input_fasta)[1]
     write_contigs_to_file(leftover_name, short_scaff)
+    return leftover_name
 
 
 def check_if_done(target_output, do_job):
     print("Checking for file", target_output)
+    ret = None
     # Checks if existing file is of Zero size
     if exists(target_output) and os.path.getsize(target_output):
         print(target_output, "already exists, skipping to next step.")
     else:
-        do_job()
+        ret = do_job()
         assert exists(target_output), \
             "Job didn't create the intended file\nThere may be a name mismatch"
         print("Created", target_output)
+    return ret
+
+
+def merge_results(gap_file, leftover_name, merged_file):
+    """Merge the results from GapCloser with the contigs that were not touched.
+    There is a chance of a partial duplication of a short scaffold if GapCloser
+    reconstitutes the same short scaffold from raw sequence fastq.gz and uses it
+    to fill in an existing N gap.
+    I've previously used 'bwa fastmap' to detect these erroneous duplications
+    before the merge."""
+    call(["cat",
+          gap_file,
+          leftover_name,
+          ">", merged_file
+          ])
+
+
+def fasta_stats_to_sheets(merged_file):
+    pass
 
 
 def main(frax_number, assembly_name, path, options):
@@ -119,12 +140,15 @@ def main(frax_number, assembly_name, path, options):
 
     # Close gaps in scaffolded assembly
     prefile = splitext(scaffold_path)[0] + '__pre_gapcloser' + splitext(scaffold_path)[1]
-    check_if_done(prefile,
+    leftover_name = check_if_done(prefile,
                   lambda: preprocess_for_gapcloser(scaffold_path, prefile))
     working_dir = dirname(prefile)
     gap_file = join(working_dir, name + '__GAPCLOSER.fa')
     check_if_done(gap_file,
                   lambda: gap_closer(frax_number, prefile, gap_file))
+    merged_file = join(working_dir, frax_number + '__GAPCLOSER__cat_merged.fa')
+    merge_results(gap_file, leftover_name, merged_file)
+    # fasta_stats_to_sheets(merged_file)
     print("Done with everything")
 
 
