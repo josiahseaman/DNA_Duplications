@@ -1,6 +1,6 @@
 #!/bin/bash
 version="1.5";
-
+GEMOMA="/data/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5/GeMoMa-1.5.jar"
 # This script allows to run GeMoMa with minimal work from command line. 
 #
 # A simple example without RNA-seq is
@@ -47,7 +47,7 @@ if [ $# -ne 4 ]; then
 	echo "ERE:"
 	echo ""
 
-	java -jar GeMoMa-${version}.jar CLI ERE c=true s=${lib} m=${reads} outdir=${out}
+	java -jar ${GEMOMA} CLI ERE c=true s=${lib} m=${reads} outdir=${out}
 
 	echo ""
 	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -56,7 +56,7 @@ fi
 echo "Extractor:"
 echo ""
 
-java -jar GeMoMa-${version}.jar CLI Extractor a=${annotation} g=${reference} outdir=${out}
+java -jar ${GEMOMA} CLI Extractor a=${annotation} g=${reference} outdir=${out}
 
 echo ""
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -81,14 +81,14 @@ echo "GeMoMa:"
 echo ""
 
 if [ $# -eq 4 ]; then
-	java -jar GeMoMa-${version}.jar CLI GeMoMa t=${out}/tblastn.txt c=${out}/cds-parts.fasta a=${out}/assignment.tabular tg=${target} outdir=${out}
+	java -jar ${GEMOMA} CLI GeMoMa t=${out}/tblastn.txt c=${out}/cds-parts.fasta a=${out}/assignment.tabular tg=${target} outdir=${out}
 else
 	if [ ${lib} == "FR_UNSTRANDED" ]; then
 echo "UNSTRANDED"
-		java -jar GeMoMa-${version}.jar CLI GeMoMa t=${out}/tblastn.txt c=${out}/cds-parts.fasta a=${out}/assignment.tabular tg=${target} outdir=${out} i=${out}/introns.gff coverage=UNSTRANDED  coverage_unstranded=${out}/coverage.bedgraph
+		java -jar ${GEMOMA} CLI GeMoMa t=${out}/tblastn.txt c=${out}/cds-parts.fasta a=${out}/assignment.tabular tg=${target} outdir=${out} i=${out}/introns.gff coverage=UNSTRANDED  coverage_unstranded=${out}/coverage.bedgraph
 	else
 echo "STRANDED"
-		java -jar GeMoMa-${version}.jar CLI GeMoMa t=${out}/tblastn.txt c=${out}/cds-parts.fasta a=${out}/assignment.tabular tg=${target} outdir=${out} i=${out}/introns.gff coverage=STRANDED  coverage_forward=${out}/coverage_forward.bedgraph coverage_reverse=${out}/coverage_reverse.bedgraph
+		java -jar ${GEMOMA} CLI GeMoMa t=${out}/tblastn.txt c=${out}/cds-parts.fasta a=${out}/assignment.tabular tg=${target} outdir=${out} i=${out}/introns.gff coverage=STRANDED  coverage_forward=${out}/coverage_forward.bedgraph coverage_reverse=${out}/coverage_reverse.bedgraph
 	fi
 fi
 
@@ -98,4 +98,4 @@ echo ""
 echo "GAF:"
 echo ""
 
-java -jar GeMoMa-${version}.jar CLI GAF g=${out}/predicted_annotation.gff outdir=${out}
+java -jar ${GEMOMA} CLI GAF g=${out}/predicted_annotation.gff outdir=${out}
