@@ -5,7 +5,7 @@
 #$ -M josiah.seaman@gmail.com
 #$ -j y				 		 # and put all output (inc errors) into it
 #$ -pe smp 13         		 # Request CPU cores
-#$ -l h_rt=24:0:0	 		 # Request 24 hour runtime (upto 240 hours)
+#$ -l h_rt=12:0:0	 		 # Request 24 hour runtime (upto 240 hours)
 #$ -l h_vmem=2G      		 # Request 1GB RAM / core, i.e. 4GB total
 module load blast+/2.7.1
 module load java/1.8.0_152-oracle
