@@ -56,7 +56,7 @@ fi
 echo "Extractor:"
 echo ""
 
-java -jar ${GEMOMA} CLI Extractor a=${annotation} g=${reference} outdir=${out}
+java -jar ${GEMOMA} CLI Extractor a=${annotation} g=${reference} outdir=${out} f=false Ambiguity=AMBIGUOUS
 
 echo ""
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
