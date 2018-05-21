@@ -71,8 +71,8 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo ""
 echo "tblastn:"
 echo ""
-
-tblastn -query ${out}/cds-parts.fasta -db ${out}/blastdb -evalue 100.0 -out ${out}/tblastn.txt -outfmt "6 std sallseqid score nident positive gaps ppos qframe sframe qseq sseq qlen slen salltitles" -db_gencode 1 -matrix BLOSUM62 -seg no -word_size 3 -comp_based_stats F -gapopen 11 -gapextend 1
+#running BLAST search; have kept all parameter settings the same as the example given in run.sh, apart from the e-value (for which I changed it from 100 to 1e-5) + using multiple threads
+tblastn -num_threads 12 -query ${out}/cds-parts.fasta -db ${out}/blastdb -evalue 1e-5 -out ${out}/tblastn.txt -outfmt "6 std sallseqid score nident positive gaps ppos qframe sframe qseq sseq qlen slen salltitles" -db_gencode 1 -matrix BLOSUM62 -seg no -word_size 3 -comp_based_stats F -gapopen 11 -gapextend 1
 
 echo ""
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
