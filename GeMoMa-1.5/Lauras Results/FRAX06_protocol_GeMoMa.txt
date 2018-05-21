@@ -1,0 +1,38 @@
+Parameters of tool "GeneModelMapper" (GeMoMa, version: 1.3.2):
+t - tblastn results (The sorted tblastn results)	= /data/SBCS-BuggsLab/LauraKelly/tools/GeMoMa/runs_with_version_1.3.2/FRAX06/scaffolded_and_gap_closed_assembly/tblastn_FRAX06_bubble_5000_min_contig_200_scaffolded_and_gap_filled.txt
+tg - target genome (The target genome file (FASTA), i.e., the target sequences in the blast run. Should be in IUPAC code)	= /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX06_CLC_SSPACE_GAPCLOSER.fasta
+c - cds parts (The query cds parts file (FASTA), i.e., the cds parts that have been blasted)	= /data/SBCS-BuggsLab/LauraKelly/tools/GeMoMa/runs_with_version_1.3.2/cds-parts.fasta
+a - assignment (The assignment file, which combines parts of the CDS to transcripts, OPTIONAL)	= /data/SBCS-BuggsLab/LauraKelly/tools/GeMoMa/runs_with_version_1.3.2/assignment.tabular
+i - introns (Introns (GFF), which might be obtained from RNAseq, OPTIONAL)	= null
+r - reads (if introns are given by a GFF, only use those which have at least this number of supporting split reads, valid range = [1, 2147483647], default = 1)	= 1
+s - splice (if no intron is given by RNAseq, compute candidate splice sites or not, default = true)	= true
+coverage - coverage (experimental coverage (RNAseq), range={NO, UNSTRANDED, STRANDED}, default = NO)	= NO
+           No parameters for selection "NO"
+           Parameters for selection "UNSTRANDED":
+           	coverage_unstranded - coverage_unstranded (The coverage file contains the unstranded coverage of the genome per interval. Intervals with coverage 0 (zero) can be left out.)	= null
+           Parameters for selection "STRANDED":
+           	coverage_forward - coverage_forward (The coverage file contains the forward coverage of the genome per interval. Intervals with coverage 0 (zero) can be left out.)	= null
+           	coverage_reverse - coverage_reverse (The coverage file contains the reverse coverage of the genome per interval. Intervals with coverage 0 (zero) can be left out.)	= null
+q - query proteins (optional query protein file (FASTA) for computing the optimal alignment score against complete protein prediction, OPTIONAL)	= null
+g - genetic code (optional user-specified genetic code, OPTIONAL)	= null
+sm - substitution matrix (optional user-specified substitution matrix, OPTIONAL)	= null
+go - gap opening (The gap opening cost in the alignment, default = 11)	= 11
+ge - gap extension (The gap extension cost in the alignment, default = 1)	= 1
+m - maximum intron length (The maximum length of an intron, default = 15000)	= 15000
+intron-loss-gain-penalty - intron-loss-gain-penalty (The penalty used for intron loss and gain, default = 25)	= 25
+e - e-value (The e-value for filtering blast results, default = 100.0)	= 1.0E-5
+ct - contig threshold (The threshold for evaluating contigs, valid range = [0.0, 1.0], default = 0.9)	= 0.9
+rt - region threshold (The threshold for evaluating regions, valid range = [0.0, 1.0], default = 0.9)	= 0.9
+h - hit threshold (The threshold for adding additional hits, valid range = [0.0, 1.0], default = 0.9)	= 0.9
+p - predictions (The (maximal) number of predictions per transcript, default = 1)	= 1
+selected - selected (The path to list file, which allows to make only a predictions for the contained transcript ids. The first column should contain transcript IDs as given in the annotation. Remaining columns can be used to determine a target region that should be overlapped by the prediction, if columns 2 to 5 contain chromosome, strand, start and end of region, OPTIONAL)	= null
+as - avoid stop (A flag which allows to avoid stop codons in a transcript (except the last AS), default = true)	= true
+approx - approx (whether an approximation is used to compute the score for intron gain, default = true)	= true
+align - align (A flag which allows to output a tab-delimited file, which contains the results in a blast-like format (deprecated), default = false)	= false
+genomic - genomic (A flag which allows to output a fasta file containing the genomic regions of the predictions, default = false)	= false
+prefix - prefix (A prefix to be used for naming the predictions, default = )	= 
+tag - tag (A user-specified tag for transcript predictions in the third column of the returned gff. It might be beneficial to set this to a specific value for some genome browsers., default = prediction)	= prediction
+v - verbose (A flag which allows to output wealth of additional information per transcript, default = false)	= false
+timeout - timeout (The (maximal) number of seconds to be used for the predictions of one transcript, if exceeded GeMoMa does not ouput a prediction for this transcript., valid range = [0, 604800], default = 3600)	= 3600
+outdir - The output directory, defaults to the current working directory (.)	= .
+CDS: 203041 / 38821
