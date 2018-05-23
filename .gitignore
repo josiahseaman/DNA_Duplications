@@ -1,4 +1,44 @@
-data/HOGFasta/*
+
+#BLAST
+blastdb.nhd
+blastdb.nhi
+blastdb.nhr
+blastdb.nin
+blastdb.nog
+blastdb.nsd
+blastdb.nsi
+blastdb.nsq
+tblastn.txt
+
+#Unversioned
+data/HOGFasta/
+data/HOG_to_gene_listings/
+data/HierarchicalGroups.orthoxml
+data/Primary_concordance_tree_with_sample_CFs_full_length_sequences_all_taxa.tre
+data/WGDgc/
+data/WGDgc_formatted_EAB_group.simmap
+data/WGDgc_formatted_EAB_group.tre
+data/bucky_tree_with_coalescent_unit_lengths.tre
+data/bucky_tree_with_coalescent_unit_lengths__indented.tre
+data/bucky_tree_with_coalescent_unit_lengths__rooted.tre
+data/bucky_tree_with_coalescent_unit_lengths__rooted.tre.xtg
+data/bucky_tree_with_coalescent_unit_lengths__rooted__WGD.simmap
+data/bucky_tree_with_coalescent_unit_lengths__rooted__WGD.tre
+data/bucky_tree_with_coalescent_unit_lengths__rooted__scaled.tre
+data/cafe_prototype/
+data/candidates/
+data/created_by_muscle.fa
+data/example_HOGs/
+data/example_OGs/
+data/per species HOG count/
+data/phylogenetic_guides/
+data/super_hog_test_viz/
+fetch_colormap.ipynb
+interact.ipynb
+tmp/
+
+
+
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Linux template
@@ -109,4 +149,3 @@ ENV/
 ### IPythonNotebook template
 # Temporary data
 .ipynb_checkpoints/
-
