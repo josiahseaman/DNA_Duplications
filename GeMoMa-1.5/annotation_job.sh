@@ -11,6 +11,9 @@ module load blast+/2.7.1
 module load java/1.8.0_152-oracle
 name=$1
 target=$2
+
+echo $name $target Annotation
+
 out=/data/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5/${name}
 mkdir ${out}
 root=/data/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5/
