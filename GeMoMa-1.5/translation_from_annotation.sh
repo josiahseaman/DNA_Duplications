@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+module load cufflinks
 GEM_HOME="/data2/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5/"
 cd ${GEM_HOME}$1
 sed 's/prediction/mRNA/g' filtered_predictions.gff > filtered_predictions_EDITED.gff

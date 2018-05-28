@@ -9,6 +9,7 @@
 #$ -l h_vmem=1G      		 # Request GB RAM / core, total= cores * vmem
 name=$1
 genome=$2
+echo $1 $2
 
 module load ruby
 module load blast+
