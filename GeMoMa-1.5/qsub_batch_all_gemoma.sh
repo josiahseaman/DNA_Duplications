@@ -35,14 +35,14 @@ GEM_HOME="/data2/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5/"
 #qsub annotation_job.sh FRAX34 ${ASSEMBLY}FRAX34_CLC_SSPACE_GAPCLOSER.fasta
 
 
-./translation_from_annotation.sh FRAX27 ${ASSEMBLY}FRAX27_CLC_SSPACE_GAPCLOSER.fasta
-./translation_from_annotation.sh FRAX28 ${ASSEMBLY}FRAX28_CLC_SSPACE_GAPCLOSER.fasta
-./translation_from_annotation.sh FRAX29 ${ASSEMBLY}FRAX29_CLC_SSPACE_GAPCLOSER.fasta
-./translation_from_annotation.sh FRAX30 ${ASSEMBLY}FRAX30_CLC_SSPACE_GAPCLOSER.fasta
-./translation_from_annotation.sh FRAX31 ${ASSEMBLY}FRAX31_CLC_SSPACE_GAPCLOSER.fasta
-./translation_from_annotation.sh FRAX32 ${ASSEMBLY}FRAX32_CLC_SSPACE_GAPCLOSER.fasta
-./translation_from_annotation.sh FRAX33 ${ASSEMBLY}FRAX33_CLC_SSPACE_GAPCLOSER.fasta
-./translation_from_annotation.sh FRAX34 ${ASSEMBLY}FRAX34_CLC_SSPACE_GAPCLOSER.fasta
+#./translation_from_annotation.sh FRAX27 ${ASSEMBLY}FRAX27_CLC_SSPACE_GAPCLOSER.fasta
+#./translation_from_annotation.sh FRAX28 ${ASSEMBLY}FRAX28_CLC_SSPACE_GAPCLOSER.fasta
+#./translation_from_annotation.sh FRAX29 ${ASSEMBLY}FRAX29_CLC_SSPACE_GAPCLOSER.fasta
+#./translation_from_annotation.sh FRAX30 ${ASSEMBLY}FRAX30_CLC_SSPACE_GAPCLOSER.fasta
+#./translation_from_annotation.sh FRAX31 ${ASSEMBLY}FRAX31_CLC_SSPACE_GAPCLOSER.fasta
+#./translation_from_annotation.sh FRAX32 ${ASSEMBLY}FRAX32_CLC_SSPACE_GAPCLOSER.fasta
+#./translation_from_annotation.sh FRAX33 ${ASSEMBLY}FRAX33_CLC_SSPACE_GAPCLOSER.fasta
+#./translation_from_annotation.sh FRAX34 ${ASSEMBLY}FRAX34_CLC_SSPACE_GAPCLOSER.fasta
 
 
 qsub ${GEM_HOME}/gene_validator/validator_qsub.sh FRAX01 ${ASSEMBLY}FRAX01_800bp_CLC_SSPACE_GAPCLOSER.fasta
@@ -71,7 +71,7 @@ qsub ${GEM_HOME}/gene_validator/validator_qsub.sh FRAX29 ${ASSEMBLY}FRAX29_CLC_S
 qsub ${GEM_HOME}/gene_validator/validator_qsub.sh FRAX30 ${ASSEMBLY}FRAX30_CLC_SSPACE_GAPCLOSER.fasta
 qsub ${GEM_HOME}/gene_validator/validator_qsub.sh FRAX31 ${ASSEMBLY}FRAX31_CLC_SSPACE_GAPCLOSER.fasta
 qsub ${GEM_HOME}/gene_validator/validator_qsub.sh FRAX32 ${ASSEMBLY}FRAX32_CLC_SSPACE_GAPCLOSER.fasta
-qsub ${GEM_HOME}/gene_validator/validator_qsub.sh FRAX33 ${ASSEMBLY}FRAX33_CLC_SSPACE_GAPCLOSER.fasta
+#qsub ${GEM_HOME}/gene_validator/validator_qsub.sh FRAX33 ${ASSEMBLY}FRAX33_CLC_SSPACE_GAPCLOSER.fasta
 qsub ${GEM_HOME}/gene_validator/validator_qsub.sh FRAX34 ${ASSEMBLY}FRAX34_CLC_SSPACE_GAPCLOSER.fasta
 #translation_from_annotation.sh FRAX09 ${ASSEMBLY}F_pennsylvanica_Feb_2018_all_files/Fraxinus_pennsylvanica_20Feb2018_lPmM4.fasta
 
