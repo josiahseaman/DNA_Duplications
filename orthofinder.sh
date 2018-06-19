@@ -11,4 +11,5 @@ NUM_THREADS=16
 source /data/SBCS-BuggsLab/Josiah/symmetry_env/bin/activate
 module load blast+
 /data2/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py \
--f /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome -t $NUM_THREADS -S diamond
+-f /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome -t $NUM_THREADS -S diamond \
+-M msa -oa  # stop after producing MSA

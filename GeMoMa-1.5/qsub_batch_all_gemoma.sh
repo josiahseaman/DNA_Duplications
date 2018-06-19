@@ -14,7 +14,7 @@ export ASSEMBLY="/data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/"
 GEM_HOME="/data2/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5/"
 
 INPUT_LINE=$(sed -n "${SGE_TASK_ID}p" task_list.csv)
-${GEM_HOME}/gene_validator/validator_qsub.sh $INPUT_LINE
+#${GEM_HOME}/gene_validator/validator_qsub.sh $INPUT_LINE
 
 #"FRAX30", "/data2/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX30_CLC_SSPACE_GAPCLOSER.fasta"
 #Gemoma doesn't like symlinks
@@ -25,15 +25,15 @@ ${GEM_HOME}/gene_validator/validator_qsub.sh $INPUT_LINE
 #qsub annotation_job.sh FRAX04 ${ASSEMBLY}FRAX04_800bp_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX05 ${ASSEMBLY}FRAX05_800bp_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX06 ${ASSEMBLY}FRAX06_800bp_CLC_SSPACE_GAPCLOSER.fasta
-qsub annotation_job.sh FRAX07 ${ASSEMBLY}FRAX07_800bp_CLC_SSPACE_GAPCLOSER.fasta
-qsub annotation_job.sh FRAX08 ${ASSEMBLY}FRAX08_800bp_CLC_SSPACE_GAPCLOSER.fasta
-qsub annotation_job.sh FRAX11 ${ASSEMBLY}FRAX11_800bp_CLC_SSPACE_GAPCLOSER.fasta
-qsub annotation_job.sh FRAX12 ${ASSEMBLY}FRAX12_800bp_CLC_SSPACE_GAPCLOSER.fasta
-qsub annotation_job.sh FRAX13 ${ASSEMBLY}FRAX13_800bp_CLC_SSPACE_GAPCLOSER.fasta
-qsub annotation_job.sh FRAX14 ${ASSEMBLY}FRAX14_CLC_SSPACE_GAPCLOSER.fasta
+#qsub annotation_job.sh FRAX07 ${ASSEMBLY}FRAX07_800bp_CLC_SSPACE_GAPCLOSER.fasta
+#qsub annotation_job.sh FRAX08 ${ASSEMBLY}FRAX08_800bp_CLC_SSPACE_GAPCLOSER.fasta
+#qsub annotation_job.sh FRAX11 ${ASSEMBLY}FRAX11_800bp_CLC_SSPACE_GAPCLOSER.fasta
+#qsub annotation_job.sh FRAX12 ${ASSEMBLY}FRAX12_800bp_CLC_SSPACE_GAPCLOSER.fasta
+#qsub annotation_job.sh FRAX13 ${ASSEMBLY}FRAX13_800bp_CLC_SSPACE_GAPCLOSER.fasta
+#qsub annotation_job.sh FRAX14 ${ASSEMBLY}FRAX14_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX15 ${ASSEMBLY}FRAX15_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX16 ${ASSEMBLY}FRAX16_CLC_SSPACE_GAPCLOSER.fasta
-#qsub annotation_job.sh FRAX19 ${ASSEMBLY}FRAX19_CLC_SSPACE_GAPCLOSER.fasta
+qsub annotation_job.sh FRAX19 ${ASSEMBLY}FRAX19_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX20 ${ASSEMBLY}FRAX20_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX21 ${ASSEMBLY}FRAX21_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX23 ${ASSEMBLY}FRAX23_CLC_SSPACE_GAPCLOSER.fasta
@@ -45,7 +45,7 @@ qsub annotation_job.sh FRAX14 ${ASSEMBLY}FRAX14_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX30 ${ASSEMBLY}FRAX30_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX31 ${ASSEMBLY}FRAX31_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX32 ${ASSEMBLY}FRAX32_CLC_SSPACE_GAPCLOSER.fasta
-#qsub annotation_job.sh FRAX33 ${ASSEMBLY}FRAX33_CLC_SSPACE_GAPCLOSER.fasta
+qsub annotation_job.sh FRAX33 ${ASSEMBLY}FRAX33_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX34 ${ASSEMBLY}FRAX34_CLC_SSPACE_GAPCLOSER.fasta
 
 
