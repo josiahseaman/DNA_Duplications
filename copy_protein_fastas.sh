@@ -3,14 +3,14 @@
 GEMOMA=/data2/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5
 PROTEOME=/data2/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/Ash_Proteome
 
-for FRAXN in FRAX01 FRAX02 FRAX03 FRAX04 FRAX05 FRAX06 FRAX07 FRAX08 FRAX11 FRAX12 FRAX13 FRAX14 FRAX15 FRAX16 FRAX20 FRAX21 FRAX23 FRAX25 FRAX26 FRAX27 FRAX28 FRAX29 FRAX30 FRAX31 FRAX32 FRAX34 FRAX09_large_72hr
+for FRAXN in FRAX19 FRAX33 FRAX01 FRAX02 FRAX03 FRAX04 FRAX05 FRAX06 FRAX07 FRAX08 FRAX11 FRAX12 FRAX13 FRAX14 FRAX15 FRAX16 FRAX20 FRAX21 FRAX23 FRAX25 FRAX26 FRAX27 FRAX28 FRAX29 FRAX30 FRAX31 FRAX32 FRAX34 FRAX09_large_72hr
 do
-    cp ${GEMOMA}/${FRAXN}/gffread_filtered_protein.fasta  ${PROTEOME}/${FRAXN}.faa
-    cd ${PROTEOME}
+    cd ${GEMOMA}/${FRAXN}
     # add a newline to the end
-    echo >> ${FRAXN}.faa
+    echo >> gffread_filtered_protein.fasta
     # remove killer . at end of transcript
-    sed -i -e ':a;N;$!ba;s/\.\n/\n/g' ${FRAXN}.faa
+    sed -i -e ':a;N;$!ba;s/\.\n/\n/g' gffread_filtered_protein.fasta
+    cp ${GEMOMA}/${FRAXN}/gffread_filtered_protein.fasta  ${PROTEOME}/${FRAXN}.faa
 done
 
 #cp ${GEMOMA}/FRAX01/gffread_filtered_protein.fasta  ${PROTEOME}/FRAX01.faa
