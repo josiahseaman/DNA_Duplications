@@ -15,8 +15,8 @@ module load blast+
 
 #Add outgroups
 /data2/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py \
--f /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome/outgroup_proteome \
--b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome/Results_Jun19/WorkingDirectory -t $NUM_THREADS -S diamond
+-f /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome \
+-t $NUM_THREADS -S diamond -M msa
 
 
 # -M msa -oa  # stop after producing MSA
