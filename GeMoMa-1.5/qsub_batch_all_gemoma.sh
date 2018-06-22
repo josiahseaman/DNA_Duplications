@@ -16,7 +16,6 @@ GEM_HOME="/data2/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5/"
 INPUT_LINE=$(sed -n "${SGE_TASK_ID}p" task_list.csv)
 #${GEM_HOME}/gene_validator/validator_qsub.sh $INPUT_LINE
 
-#"FRAX30", "/data2/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX30_CLC_SSPACE_GAPCLOSER.fasta"
 #Gemoma doesn't like symlinks
 #qsub annotation_job.sh FRAX09 ${ASSEMBLY}F_pennsylvanica_Feb_2018_all_files/Fraxinus_pennsylvanica_20Feb2018_lPmM4.fasta
 #qsub annotation_job.sh FRAX01 ${ASSEMBLY}FRAX01_800bp_CLC_SSPACE_GAPCLOSER.fasta
@@ -48,15 +47,35 @@ INPUT_LINE=$(sed -n "${SGE_TASK_ID}p" task_list.csv)
 #qsub annotation_job.sh FRAX33 ${ASSEMBLY}FRAX33_CLC_SSPACE_GAPCLOSER.fasta
 #qsub annotation_job.sh FRAX34 ${ASSEMBLY}FRAX34_CLC_SSPACE_GAPCLOSER.fasta
 
-./translation_from_annotation.sh FRAX19 ${ASSEMBLY}FRAX19_CLC_SSPACE_GAPCLOSER.fasta
-#./translation_from_annotation.sh FRAX27 ${ASSEMBLY}FRAX27_CLC_SSPACE_GAPCLOSER.fasta
-#./translation_from_annotation.sh FRAX28 ${ASSEMBLY}FRAX28_CLC_SSPACE_GAPCLOSER.fasta
-#./translation_from_annotation.sh FRAX29 ${ASSEMBLY}FRAX29_CLC_SSPACE_GAPCLOSER.fasta
-#./translation_from_annotation.sh FRAX30 ${ASSEMBLY}FRAX30_CLC_SSPACE_GAPCLOSER.fasta
-#./translation_from_annotation.sh FRAX31 ${ASSEMBLY}FRAX31_CLC_SSPACE_GAPCLOSER.fasta
-#./translation_from_annotation.sh FRAX32 ${ASSEMBLY}FRAX32_CLC_SSPACE_GAPCLOSER.fasta
-./translation_from_annotation.sh FRAX33 ${ASSEMBLY}FRAX33_CLC_SSPACE_GAPCLOSER.fasta
-#./translation_from_annotation.sh FRAX34 ${ASSEMBLY}FRAX34_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX01 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX01_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX02 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX02_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX03 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX03_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX04 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX04_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX05 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX05_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX06 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX06_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX07 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX07_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX08 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX08_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX11 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX11_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX12 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX12_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX13 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX13_800bp_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX14 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX14_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX15 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX15_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX16 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX16_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX19 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX19_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX20 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX20_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX21 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX21_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX23 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX23_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX25 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX25_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX26 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX26_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX27 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX27_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX28 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX28_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX29 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX29_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX30 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX30_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX31 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX31_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX32 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX32_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX33 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX33_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX34 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX34_CLC_SSPACE_GAPCLOSER.fasta
+./translation_from_annotation.sh FRAX09 /data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/F_pennsylvanica_Feb_2018_all_files/fraxinus_pennsylvanica_20Feb2018_scaffolds_over5kbp.fa
 
 
 #${GEM_HOME}/gene_validator/validator_qsub.sh FRAX01 ${ASSEMBLY}FRAX01_800bp_CLC_SSPACE_GAPCLOSER.fasta
