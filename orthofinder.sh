@@ -11,13 +11,15 @@ NUM_THREADS=8
 source /data/SBCS-BuggsLab/Josiah/symmetry_env/bin/activate
 module load blast+
 module load mafft
+module load raxml
+
 #Original command lacking outgroups
-#/data2/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py -f /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome -t $NUM_THREADS -S diamond
+#/data2/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py -f /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome -t $NUM_THREADS -S diamond -T raxml
 
 #Add outgroups
 /data2/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py \
 -f /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome \
--t $NUM_THREADS -S diamond -M msa
+-t $NUM_THREADS -S diamond -M msa -T raxml
 
 
 # -M msa -oa  # stop after producing MSA
