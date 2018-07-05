@@ -5,7 +5,7 @@ PROTEOME=/data2/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome
 
 cd ${GEMOMA}/$1
 sed 's/prediction/mRNA/g' filtered_predictions.gff > $1_genes.gff
-sed -i 's/ID=FRAEX38873_V2_/ID='${1}'_/g' $1_genes.gff
+sed -i 's/FRAEX38873_V2_/'${1}'_/g' $1_genes.gff
 gffread $1_genes.gff -g $2 -y $1.faa
 gffread -w ${1}_cds.fa -g ${2} $1_genes.gff
 
