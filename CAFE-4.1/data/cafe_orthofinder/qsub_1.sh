@@ -16,5 +16,5 @@ cd /data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_orthofinder
 #-c="87,79,36,19,14,11"
 
 #python ../cafe_tutorial/python_scripts/cafetutorial_clade_and_size_filter.py -i Cafe_orthofinder_Orthogroups.GeneCount.csv -o filtered_OG_counts.txt -s
-
-cafe /data2/SBCS-BuggsLab/Josiah/DNA_duplications/CAFE-4.1/data/cafe_orthofinder/run1_cafe_orthofinder_full.sh
+#shuf -n 1000 filtered_OG_counts.txt > Random_Sample_1000.GeneCount.txt
+cafe /data2/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_orthofinder/run_cafe_orthofinder.sh
