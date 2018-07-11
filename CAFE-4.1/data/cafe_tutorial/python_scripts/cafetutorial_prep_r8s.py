@@ -4,6 +4,7 @@ This script defines and runs the r8s_prep function, which reads in input from th
 
 __author__ = "Fabio H. K. Mendes"
 
+from __future__ import print_function
 import os
 import argparse
 
@@ -56,7 +57,7 @@ if __name__ == "__main__":
 
     list_of_cal_points = args.cal_points.split(",")
 
-    print "\nRunning cafetutorial_clade_and_size_filter.py as a standalone...\n"
+    print("\nRunning cafetutorial_clade_and_size_filter.py as a standalone...\n")
     
     r8s_prep(args.input_file, args.sites_n, list_of_spp_tuples, list_of_cal_points, args.output_file)
 
