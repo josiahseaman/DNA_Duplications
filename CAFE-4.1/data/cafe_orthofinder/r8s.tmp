@@ -1,0 +1,2033 @@
+Reading tree nj_tree
+Executing blformat command...
+Number of sites in sequences set to 25182399
+Branch lengths assumed to be in units of numbers of substitutions per site
+All branch lengths multipled by the 25182399 sites in the sequence
+Branch lengths rounded to nearest integer
+(This may not be a good idea when using CALIBRATE on ultrametric user supplied input trees. Use ROUND=NO then)
+0 zero-length branches collapsed
+Defining clade name: X00tus
+********************* WARNING **********************
+
+MRCA is overwriting an existing node name
+
+****************************************************
+[** The overwritten node is X00tus **]
+Defining clade name: X00cum
+Defining clade name: X00pea
+Defining clade name: X11X07
+Defining clade name: X01X07
+Defining clade name: X11X14
+Fixing age of X00cum at 79.000000
+ (The age of this node will no longer be estimated.)
+ (This command overides any previous age constraints for this node.)
+ (The total number of fixed ages is now 1)
+Fixing age of X00pea at 36.000000
+ (The age of this node will no longer be estimated.)
+ (This command overides any previous age constraints for this node.)
+ (The total number of fixed ages is now 2)
+Fixing age of X11X07 at 19.000000
+ (The age of this node will no longer be estimated.)
+ (This command overides any previous age constraints for this node.)
+ (The total number of fixed ages is now 3)
+Fixing age of X01X07 at 14.000000
+ (The age of this node will no longer be estimated.)
+ (This command overides any previous age constraints for this node.)
+ (The total number of fixed ages is now 4)
+Fixing age of X11X14 at 11.000000
+ (The age of this node will no longer be estimated.)
+ (This command overides any previous age constraints for this node.)
+ (The total number of fixed ages is now 5)
+Begin cross-validation analyses...
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+
+.....................................................................
+
+CV Results for smoothing = 1.000000:
+Pruned taxon	Sq		ChiSq		Result
+Oeuropea	    0.00	    0.00	Failed
+  FRAX31	    0.00	    0.00	Failed
+  FRAX30	    0.00	    0.00	Failed
+  FRAX32	    0.00	    0.00	Failed
+  FRAX28	    0.00	    0.00	Failed
+  FRAX12	    0.00	    0.00	Failed
+  FRAX07	    0.00	    0.00	Failed
+  FRAX29	    0.00	    0.00	Failed
+  FRAX08	    0.00	    0.00	Failed
+  FRAX01	    0.00	    0.00	Failed
+  FRAX16	    0.00	    0.00	Failed
+  FRAX15	    0.00	    0.00	Failed
+  FRAX00	    0.00	    0.00	Failed
+  FRAX06	    0.00	    0.00	Failed
+  FRAX23	    0.00	    0.00	Failed
+  FRAX25	    0.00	    0.00	Failed
+  FRAX21	    0.00	    0.00	Failed
+  FRAX19	    0.00	    0.00	Failed
+  FRAX20	    0.00	    0.00	Failed
+  FRAX11	    0.00	    0.00	Failed
+  FRAX27	    0.00	    0.00	Failed
+  FRAX04	    0.00	    0.00	Failed
+  FRAX33	    0.00	    0.00	Failed
+  FRAX03	    0.00	    0.00	Failed
+  FRAX09	    0.00	    0.00	Failed
+  FRAX13	    0.00	    0.00	Failed
+00093110	    0.00	    0.00	Failed
+  FRAX26	    0.00	    0.00	Failed
+  FRAX14	    0.00	    0.00	Failed
+  FRAX05	    0.00	    0.00	Failed
+00056851	    0.00	    0.00	Failed
+Slycoper	    0.00	    0.00	Failed
+Mguttatu	    0.00	    0.00	Failed
+** Note that 33 failed prunings occurred **
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+
+.....................................................................
+
+CV Results for smoothing = 3.162278:
+Pruned taxon	Sq		ChiSq		Result
+Oeuropea	    0.00	    0.00	Failed
+  FRAX31	    0.00	    0.00	Failed
+  FRAX30	    0.00	    0.00	Failed
+  FRAX32	    0.00	    0.00	Failed
+  FRAX28	    0.00	    0.00	Failed
+  FRAX12	    0.00	    0.00	Failed
+  FRAX07	    0.00	    0.00	Failed
+  FRAX29	    0.00	    0.00	Failed
+  FRAX08	    0.00	    0.00	Failed
+  FRAX01	    0.00	    0.00	Failed
+  FRAX16	    0.00	    0.00	Failed
+  FRAX15	    0.00	    0.00	Failed
+  FRAX00	    0.00	    0.00	Failed
+  FRAX06	    0.00	    0.00	Failed
+  FRAX23	    0.00	    0.00	Failed
+  FRAX25	    0.00	    0.00	Failed
+  FRAX21	    0.00	    0.00	Failed
+  FRAX19	    0.00	    0.00	Failed
+  FRAX20	    0.00	    0.00	Failed
+  FRAX11	    0.00	    0.00	Failed
+  FRAX27	    0.00	    0.00	Failed
+  FRAX04	    0.00	    0.00	Failed
+  FRAX33	    0.00	    0.00	Failed
+  FRAX03	    0.00	    0.00	Failed
+  FRAX09	    0.00	    0.00	Failed
+  FRAX13	    0.00	    0.00	Failed
+00093110	    0.00	    0.00	Failed
+  FRAX26	    0.00	    0.00	Failed
+  FRAX14	    0.00	    0.00	Failed
+  FRAX05	    0.00	    0.00	Failed
+00056851	    0.00	    0.00	Failed
+Slycoper	    0.00	    0.00	Failed
+Mguttatu	    0.00	    0.00	Failed
+** Note that 33 failed prunings occurred **
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+
+.....................................................................
+
+CV Results for smoothing = 10.000000:
+Pruned taxon	Sq		ChiSq		Result
+Oeuropea	    0.00	    0.00	Failed
+  FRAX31	    0.00	    0.00	Failed
+  FRAX30	    0.00	    0.00	Failed
+  FRAX32	    0.00	    0.00	Failed
+  FRAX28	    0.00	    0.00	Failed
+  FRAX12	    0.00	    0.00	Failed
+  FRAX07	    0.00	    0.00	Failed
+  FRAX29	    0.00	    0.00	Failed
+  FRAX08	    0.00	    0.00	Failed
+  FRAX01	    0.00	    0.00	Failed
+  FRAX16	    0.00	    0.00	Failed
+  FRAX15	    0.00	    0.00	Failed
+  FRAX00	    0.00	    0.00	Failed
+  FRAX06	    0.00	    0.00	Failed
+  FRAX23	    0.00	    0.00	Failed
+  FRAX25	    0.00	    0.00	Failed
+  FRAX21	    0.00	    0.00	Failed
+  FRAX19	    0.00	    0.00	Failed
+  FRAX20	    0.00	    0.00	Failed
+  FRAX11	    0.00	    0.00	Failed
+  FRAX27	    0.00	    0.00	Failed
+  FRAX04	    0.00	    0.00	Failed
+  FRAX33	    0.00	    0.00	Failed
+  FRAX03	    0.00	    0.00	Failed
+  FRAX09	    0.00	    0.00	Failed
+  FRAX13	    0.00	    0.00	Failed
+00093110	    0.00	    0.00	Failed
+  FRAX26	    0.00	    0.00	Failed
+  FRAX14	    0.00	    0.00	Failed
+  FRAX05	    0.00	    0.00	Failed
+00056851	    0.00	    0.00	Failed
+Slycoper	    0.00	    0.00	Failed
+Mguttatu	    0.00	    0.00	Failed
+** Note that 33 failed prunings occurred **
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+
+.....................................................................
+
+CV Results for smoothing = 31.622777:
+Pruned taxon	Sq		ChiSq		Result
+Oeuropea	    0.00	    0.00	Failed
+  FRAX31	    0.00	    0.00	Failed
+  FRAX30	    0.00	    0.00	Failed
+  FRAX32	    0.00	    0.00	Failed
+  FRAX28	    0.00	    0.00	Failed
+  FRAX12	    0.00	    0.00	Failed
+  FRAX07	    0.00	    0.00	Failed
+  FRAX29	    0.00	    0.00	Failed
+  FRAX08	    0.00	    0.00	Failed
+  FRAX01	    0.00	    0.00	Failed
+  FRAX16	    0.00	    0.00	Failed
+  FRAX15	    0.00	    0.00	Failed
+  FRAX00	    0.00	    0.00	Failed
+  FRAX06	    0.00	    0.00	Failed
+  FRAX23	    0.00	    0.00	Failed
+  FRAX25	    0.00	    0.00	Failed
+  FRAX21	    0.00	    0.00	Failed
+  FRAX19	    0.00	    0.00	Failed
+  FRAX20	    0.00	    0.00	Failed
+  FRAX11	    0.00	    0.00	Failed
+  FRAX27	    0.00	    0.00	Failed
+  FRAX04	    0.00	    0.00	Failed
+  FRAX33	    0.00	    0.00	Failed
+  FRAX03	    0.00	    0.00	Failed
+  FRAX09	    0.00	    0.00	Failed
+  FRAX13	    0.00	    0.00	Failed
+00093110	    0.00	    0.00	Failed
+  FRAX26	    0.00	    0.00	Failed
+  FRAX14	    0.00	    0.00	Failed
+  FRAX05	    0.00	    0.00	Failed
+00056851	    0.00	    0.00	Failed
+Slycoper	    0.00	    0.00	Failed
+Mguttatu	    0.00	    0.00	Failed
+** Note that 33 failed prunings occurred **
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+
+.....................................................................
+
+CV Results for smoothing = 100.000000:
+Pruned taxon	Sq		ChiSq		Result
+Oeuropea	    0.00	    0.00	Failed
+  FRAX31	    0.00	    0.00	Failed
+  FRAX30	    0.00	    0.00	Failed
+  FRAX32	    0.00	    0.00	Failed
+  FRAX28	    0.00	    0.00	Failed
+  FRAX12	    0.00	    0.00	Failed
+  FRAX07	    0.00	    0.00	Failed
+  FRAX29	    0.00	    0.00	Failed
+  FRAX08	    0.00	    0.00	Failed
+  FRAX01	    0.00	    0.00	Failed
+  FRAX16	    0.00	    0.00	Failed
+  FRAX15	    0.00	    0.00	Failed
+  FRAX00	    0.00	    0.00	Failed
+  FRAX06	    0.00	    0.00	Failed
+  FRAX23	    0.00	    0.00	Failed
+  FRAX25	    0.00	    0.00	Failed
+  FRAX21	    0.00	    0.00	Failed
+  FRAX19	    0.00	    0.00	Failed
+  FRAX20	    0.00	    0.00	Failed
+  FRAX11	    0.00	    0.00	Failed
+  FRAX27	    0.00	    0.00	Failed
+  FRAX04	    0.00	    0.00	Failed
+  FRAX33	    0.00	    0.00	Failed
+  FRAX03	    0.00	    0.00	Failed
+  FRAX09	    0.00	    0.00	Failed
+  FRAX13	    0.00	    0.00	Failed
+00093110	    0.00	    0.00	Failed
+  FRAX26	    0.00	    0.00	Failed
+  FRAX14	    0.00	    0.00	Failed
+  FRAX05	    0.00	    0.00	Failed
+00056851	    0.00	    0.00	Failed
+Slycoper	    0.00	    0.00	Failed
+Mguttatu	    0.00	    0.00	Failed
+** Note that 33 failed prunings occurred **
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+
+.....................................................................
+
+CV Results for smoothing = 316.227766:
+Pruned taxon	Sq		ChiSq		Result
+Oeuropea	    0.00	    0.00	Failed
+  FRAX31	    0.00	    0.00	Failed
+  FRAX30	    0.00	    0.00	Failed
+  FRAX32	    0.00	    0.00	Failed
+  FRAX28	    0.00	    0.00	Failed
+  FRAX12	    0.00	    0.00	Failed
+  FRAX07	    0.00	    0.00	Failed
+  FRAX29	    0.00	    0.00	Failed
+  FRAX08	    0.00	    0.00	Failed
+  FRAX01	    0.00	    0.00	Failed
+  FRAX16	    0.00	    0.00	Failed
+  FRAX15	    0.00	    0.00	Failed
+  FRAX00	    0.00	    0.00	Failed
+  FRAX06	    0.00	    0.00	Failed
+  FRAX23	    0.00	    0.00	Failed
+  FRAX25	    0.00	    0.00	Failed
+  FRAX21	    0.00	    0.00	Failed
+  FRAX19	    0.00	    0.00	Failed
+  FRAX20	    0.00	    0.00	Failed
+  FRAX11	    0.00	    0.00	Failed
+  FRAX27	    0.00	    0.00	Failed
+  FRAX04	    0.00	    0.00	Failed
+  FRAX33	    0.00	    0.00	Failed
+  FRAX03	    0.00	    0.00	Failed
+  FRAX09	    0.00	    0.00	Failed
+  FRAX13	    0.00	    0.00	Failed
+00093110	    0.00	    0.00	Failed
+  FRAX26	    0.00	    0.00	Failed
+  FRAX14	    0.00	    0.00	Failed
+  FRAX05	    0.00	    0.00	Failed
+00056851	    0.00	    0.00	Failed
+Slycoper	    0.00	    0.00	Failed
+Mguttatu	    0.00	    0.00	Failed
+** Note that 33 failed prunings occurred **
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+
+.....................................................................
+
+CV Results for smoothing = 1000.000000:
+Pruned taxon	Sq		ChiSq		Result
+Oeuropea	    0.00	    0.00	Failed
+  FRAX31	    0.00	    0.00	Failed
+  FRAX30	    0.00	    0.00	Failed
+  FRAX32	    0.00	    0.00	Failed
+  FRAX28	    0.00	    0.00	Failed
+  FRAX12	    0.00	    0.00	Failed
+  FRAX07	    0.00	    0.00	Failed
+  FRAX29	    0.00	    0.00	Failed
+  FRAX08	    0.00	    0.00	Failed
+  FRAX01	    0.00	    0.00	Failed
+  FRAX16	    0.00	    0.00	Failed
+  FRAX15	    0.00	    0.00	Failed
+  FRAX00	    0.00	    0.00	Failed
+  FRAX06	    0.00	    0.00	Failed
+  FRAX23	    0.00	    0.00	Failed
+  FRAX25	    0.00	    0.00	Failed
+  FRAX21	    0.00	    0.00	Failed
+  FRAX19	    0.00	    0.00	Failed
+  FRAX20	    0.00	    0.00	Failed
+  FRAX11	    0.00	    0.00	Failed
+  FRAX27	    0.00	    0.00	Failed
+  FRAX04	    0.00	    0.00	Failed
+  FRAX33	    0.00	    0.00	Failed
+  FRAX03	    0.00	    0.00	Failed
+  FRAX09	    0.00	    0.00	Failed
+  FRAX13	    0.00	    0.00	Failed
+00093110	    0.00	    0.00	Failed
+  FRAX26	    0.00	    0.00	Failed
+  FRAX14	    0.00	    0.00	Failed
+  FRAX05	    0.00	    0.00	Failed
+00056851	    0.00	    0.00	Failed
+Slycoper	    0.00	    0.00	Failed
+Mguttatu	    0.00	    0.00	Failed
+** Note that 33 failed prunings occurred **
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+MinND returned failure in ConstrOpt on initial search (may restart!)
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+ THERE IS NO FEASIBLE POINT; TERMINATING ALGORITHM
+MinND returned failure in ConstrOpt (while retrying)
+Could not obtain a clock-based initial rate estimate in PL setup
+-
+
+.....................................................................
+
+CV Results for smoothing = 3162.277660:
+Pruned taxon	Sq		ChiSq		Result
+Oeuropea	    0.00	    0.00	Failed
+  FRAX31	    0.00	    0.00	Failed
+  FRAX30	    0.00	    0.00	Failed
+  FRAX32	    0.00	    0.00	Failed
+  FRAX28	    0.00	    0.00	Failed
+  FRAX12	    0.00	    0.00	Failed
+  FRAX07	    0.00	    0.00	Failed
+  FRAX29	    0.00	    0.00	Failed
+  FRAX08	    0.00	    0.00	Failed
+  FRAX01	    0.00	    0.00	Failed
+  FRAX16	    0.00	    0.00	Failed
+  FRAX15	    0.00	    0.00	Failed
+  FRAX00	    0.00	    0.00	Failed
+  FRAX06	    0.00	    0.00	Failed
+  FRAX23	    0.00	    0.00	Failed
+  FRAX25	    0.00	    0.00	Failed
+  FRAX21	    0.00	    0.00	Failed
+  FRAX19	    0.00	    0.00	Failed
+  FRAX20	    0.00	    0.00	Failed
+  FRAX11	    0.00	    0.00	Failed
+  FRAX27	    0.00	    0.00	Failed
+  FRAX04	    0.00	    0.00	Failed
+  FRAX33	    0.00	    0.00	Failed
+  FRAX03	    0.00	    0.00	Failed
+  FRAX09	    0.00	    0.00	Failed
+  FRAX13	    0.00	    0.00	Failed
+00093110	    0.00	    0.00	Failed
+  FRAX26	    0.00	    0.00	Failed
+  FRAX14	    0.00	    0.00	Failed
+  FRAX05	    0.00	    0.00	Failed
+00056851	    0.00	    0.00	Failed
+Slycoper	    0.00	    0.00	Failed
+Mguttatu	    0.00	    0.00	Failed
+** Note that 33 failed prunings occurred **
+********************************************************************************
+
+Results of cross validation analysis for tree nj_tree
+Method = Penalized Likelihood
+
+log10
+smooth	smooth		Sq Error	Chi Square Error
+--------------------------------------------------------------------------------
+  0.00	     1		  0.00	  0.00	(Failed)
+  0.50	   3.2		  0.00	  0.00	(Failed)
+  1.00	    10		  0.00	  0.00	(Failed)
+  1.50	    32		  0.00	  0.00	(Failed)
+  2.00	 1e+02		  0.00	  0.00	(Failed)
+  2.50	3.2e+02		  0.00	  0.00	(Failed)
+  3.00	 1e+03		  0.00	  0.00	(Failed)
+  3.50	3.2e+03		  0.00	  0.00	(Failed)
+********************************************************************************
+
+Optimum:   0.00	     1		  0.00	  0.00
+WARNING: Cross validation procedure had errors: optimum may be incorrect
+********************************************************************************
+
+[Printing tree 1]
+
+[CHRONOGRAM of tree nj_tree]
+                                                               +--FRAX30
+                                                              ++13
+                                                             ++12-FRAX32
+                                                             ||
+                                                         +---+11--FRAX28
+                                                         |   |
+                                                      +--+10 +----FRAX12
+                                                      |  |
+                                                      |  |+-------FRAX07
+                                                     ++9 ++18
+                                                     ||   +-------FRAX29
+                                                     ||
+                                                     |+-----------FRAX08
+                                                     |
+                                                     |         +--FRAX01
+                                                     |     +---+26
+                                                  +--+X01X0725 +--FRAX16
+                                                  |  |    ||
+                                                  |  |  +-+24-----FRAX15
+                                                  |  |  | |
+                                                  |  |+-+23-------FRAX00
+                                                  |  || |
+                                                 ++7 || |+--------FRAX06
+                                                 ||  ++22+31
+                                                 ||   |  +--------FRAX23
+                                                 ||   |
+                                                 ||   +-----------FRAX25
+                                                 ||
+                                                 |+---------------FRAX21
+                                                 |
+                                                 |       +--------FRAX19
+                                                 |      ++38
+                                                 |      |+--------FRAX20
+                                                 |     ++37
+                                                 |     ||   +-----FRAX11
+                                                 |     |+---+42
+                                                 |     |+41 +-----FRAX27
+                                                 |     ||
+                                                 |     |+---------FRAX04
+                                                 |     |
+                                     +-----------+X11X07        +-FRAX03
+                                     |           |     |       ++51
+                                     |           |-----+X11X14-+50FRAX09
+                                     |           |     |     | |
+                                     |           |     |     | +--FRAX13
+                                     |           |     |     |
+                                     |           |     |  +--+49--FRAX26
+                                     |           |     |  |  |-+56
+                                     |           |     |  |  | +--FRAX14
+                                   +-+4          |     | ++48|
+                                   | |           |     | ||  +----00093110957423
+                                   | |           |     +-+46
+                                   | |           |       |+-------FRAX05
+                                   | |           |       |
++----------------------------------+X00pea       |       +--------FRAX33
+|                                  | |           |
+|                                  | |           +----------------00056851802
+|                                  | |
++X00cum                            | +----------------------------FRAX31
+|                                  |
+|                                  +------------------------------Oeuropea
+|
+|                                 +-------------------------------Slycopersicum
++---------------------------------+61
+                                  +-------------------------------Mguttatus
+
+[Printing tree 1]
+
+[TREE DESCRIPTION of tree nj_tree]
+
+tree nj_tree = (((((((((((FRAX30:2.062238,FRAX32:2.062238):0.731180,FRAX28:2.793419):1.660572,FRAX12:4.453990):4.769510,(FRAX07:8.140409,FRAX29:8.140409):1.083092):3.809055,FRAX08:13.032555):0.967445,(((((FRAX01:2.412569,FRAX16:2.412569):3.979589,FRAX15:6.392158):1.962570,FRAX00:8.354728):1.687300,(FRAX06:8.890557,FRAX23:8.890557):1.151470):3.083198,FRAX25:13.125226):0.874774)X01X07:3.475312,FRAX21:17.475312):1.524688,(((FRAX19:8.534639,FRAX20:8.534639):1.589727,((FRAX11:5.067820,FRAX27:5.067820):5.009324,FRAX04:10.077145):0.047221):0.875635,(((((FRAX03:0.834928,FRAX09:0.834928):0.892633,FRAX13:1.727560):2.522183,(FRAX26:2.287722,FRAX14:2.287722):1.962021,00093110957423:4.249743):3.374113,FRAX05:7.623856):1.770855,FRAX33:9.394711):1.605289)X11X14:8.000000,00056851802:19.000000)X11X07:14.705751,FRAX31:33.705751):2.294249,Oeuropea:36.000000)X00pea:43.000000,(Slycopersicum:36.746625,Mguttatus:36.746625):42.253375)X00cum;
