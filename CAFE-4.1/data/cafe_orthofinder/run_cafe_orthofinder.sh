@@ -1,7 +1,7 @@
 #!cafe
-load -i Random_Sample_1000.GeneCount.txt -t 1 -l reports/run1__orthofinder_test.txt
+load -i filter_OG_counts.txt -t 8 -l reports/estimate_full.txt
 #Approximated ultrametric based on 763103 sites and 5 calibration points
 #A NEWICK-formatted tree containing branch lengths and taxon names as they are specified in the \ref Load "input file". Branch lengths should be integer units and the tree should be ultrametric (all paths from root to tip should have the same length). If the tree is not ultrametric to a tolerance of .01%, a warning will be logged. Please note that there should be no spaces in the tree string, nor semicolons at the end of the line.
-tree (((((((((((FRAX30:2.062238,FRAX32:2.062238):0.73118,FRAX28:2.793419):1.660572,FRAX12:4.45399):4.76951,(FRAX07:8.140409,FRAX29:8.140409):1.083092):3.809055,FRAX08:13.032555):0.967445,(((((FRAX01:2.412569,FRAX16:2.412569):3.979589,FRAX15:6.392158):1.96257,FRAX00:8.354728):1.6873,(FRAX06:8.890557,FRAX23:8.890557):1.15147):3.083198,FRAX25:13.125226):0.874774):3.475312,FRAX21:17.475312):1.524688,(((FRAX19:8.534639,FRAX20:8.534639):1.589727,((FRAX11:5.06782,FRAX27:5.06782):4.056545,FRAX04:9.124366):1.0):0.875635,(((((FRAX03:0.834928,FRAX09:0.834928):0.892633,FRAX13:1.72756):2.522183,(FRAX26:2.287722,FRAX14:2.287722):1.962021):3.374113,FRAX05:7.623856):1.770855,FRAX33:9.394711):1.605289):8.0):14.705751,FRAX31:33.705751):2.294249,Oeuropea:36.0):43.0,(Slycopersicum:36.746625,Mguttatus:36.746625):42.253375);
+tree (((((((((((FRAX30:2,FRAX32:2):1,FRAX28:3):2,FRAX12:5):4,(FRAX07:8,FRAX29:8):1):4,FRAX08:13):1,(((((FRAX01:2,FRAX16:2):4,FRAX15:6):2,FRAX00:8):2,(FRAX06:9,FRAX23:9):1):3,FRAX25:13):1):3,FRAX21:17):2,(((FRAX19:8,FRAX20:8):2,((FRAX11:5,FRAX27:5):4,FRAX04:9):1):1,(((((FRAX03:1,FRAX09:1):1,FRAX13:2):2,(FRAX26:2,FRAX14:2):2):3,FRAX05:7):2,FRAX33:9):2):8):15,FRAX31:34):2,Oeuropea:36):43,(Slycopersicum:37,Mguttatus:37):42);
 lambdamu -s 
-report reports/run1__orthofinder_test
+report reports/estimate_full
