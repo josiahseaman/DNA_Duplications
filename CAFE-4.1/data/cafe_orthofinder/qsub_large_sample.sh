@@ -4,7 +4,7 @@
 #$ -j y           # Merge the standard output and standard error
 #$ -m aes
 #$ -M josiah.seaman@gmail.com
-#$ -l h_rt=12:0:0 # Request runtime
+#$ -l h_rt=24:0:0 # Request runtime
 #$ -pe smp 8      # Request 1 CPU cores
 #$ -l h_vmem=1G   # Request GB RAM per core
 
@@ -20,7 +20,7 @@ cd /data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_orthofinder
 
 #python ../cafe_tutorial/python_scripts/cafetutorial_clade_and_size_filter.py -i Cafe_orthofinder_Orthogroups.GeneCount.csv -o filtered_OG_counts.txt -s
 
-#head filtered_OG_counts.txt -n 1 > Random_Sample_1000.GeneCount.txt  # important to add header
-#shuf -n 1000 filtered_OG_counts.txt >> Random_Sample_1000.GeneCount.txt
+head filtered_OG_counts.txt -n 1 > Random_Sample_1000.GeneCount.txt  # important to add header
+shuf -n 1000 filtered_OG_counts.txt >> Random_Sample_1000.GeneCount.txt
 
-cafe /data2/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_orthofinder/run_cafe_orthofinder.sh
+cafe large_sample.cafe
