@@ -1,0 +1,524 @@
+-----------------------------------------------------------
+Family information: Random_Sample_1000.GeneCount.txt
+Log: reports/run1__orthofinder_full.txt
+The number of families is 1000
+Root Family size : 1 ~ 31
+Family size : 0 ~ 75
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+Empirical Prior Estimation Result: (34 iterations)
+Poisson lambda: 0.765731 & Score: 27862.893288
+-----------------------------------------------------------
+Family information: Random_Sample_1000.GeneCount.txt
+Log: reports/run1__orthofinder_full.txt
+The number of families is 1000
+Root Family size : 1 ~ 34
+Family size : 0 ~ 77
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+Empirical Prior Estimation Result: (24 iterations)
+Poisson lambda: 0.735558 & Score: 26901.873410
+Lambda : 0.01498102251614 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01573007364194 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01573007364194 Mu : 0.07876089953839 & Score: -inf
+.Lambda : 0.01498102251614 Mu : -0.05250726635893 & Score: -inf
+.Lambda : 0.01516828529759 Mu : -0.01969022488460 & Score: -inf
+.Lambda : 0.01554281086049 Mu : 0.04594385806406 & Score: -inf
+.Lambda : 0.01544917946976 Mu : 0.02953533732690 & Score: -inf
+.Lambda : 0.01526191668831 Mu : -0.00328170414743 & Score: -inf
+.Lambda : 0.01530873238368 Mu : 0.00492255622115 & Score: -inf
+.Lambda : 0.01540236377440 Mu : 0.02133107695831 & Score: -inf
+.Lambda : 0.01537895592672 Mu : 0.01722894677402 & Score: -inf
+.Lambda : 0.01533214023136 Mu : 0.00902468640544 & Score: -inf
+.Lambda : 0.01534384415520 Mu : 0.01107575149759 & Score: -inf
+.Lambda : 0.01536725200288 Mu : 0.01517788168188 & Score: -inf
+.Lambda : 0.01536140004096 Mu : 0.01415234913580 & Score: -inf
+.Lambda : 0.01534969611712 Mu : 0.01210128404366 & Score: -inf
+.Lambda : 0.01535262209808 Mu : 0.01261405031670 & Score: -inf
+.Lambda : 0.01535847406000 Mu : 0.01363958286277 & Score: -inf
+.Lambda : 0.01535701106952 Mu : 0.01338319972625 & Score: -inf
+.Lambda : 0.01535408508856 Mu : 0.01287043345321 & Score: -inf
+.Lambda : 0.01535481658380 Mu : 0.01299862502147 & Score: -inf
+.Lambda : 0.01535627957428 Mu : 0.01325500815799 & Score: -inf
+.Lambda : 0.01535591382666 Mu : 0.01319091237386 & Score: -inf
+.Lambda : 0.01535518233142 Mu : 0.01306272080560 & Score: -inf
+.Lambda : 0.01535536520523 Mu : 0.01309476869767 & Score: -inf
+.Lambda : 0.01535573095285 Mu : 0.01315886448180 & Score: -inf
+.Lambda : 0.01535563951594 Mu : 0.01314284053576 & Score: -inf
+.Lambda : 0.01535545664213 Mu : 0.01311079264370 & Score: -inf
+.Lambda : 0.01535550236059 Mu : 0.01311880461672 & Score: -inf
+.Lambda : 0.01535559379749 Mu : 0.01313482856275 & Score: -inf
+.Lambda : 0.01535557093827 Mu : 0.01313082257624 & Score: -inf
+.Lambda : 0.01535552521981 Mu : 0.01312281060322 & Score: -inf
+.Lambda : 0.01535553664943 Mu : 0.01312481359648 & Score: -inf
+.Lambda : 0.01535555950865 Mu : 0.01312881958299 & Score: -inf
+.Lambda : 0.01535555379385 Mu : 0.01312781808636 & Score: -inf
+.Lambda : 0.01535554236423 Mu : 0.01312581509310 & Score: -inf
+.Lambda : 0.01535554522164 Mu : 0.01312631584142 & Score: -inf
+.Lambda : 0.01535555093644 Mu : 0.01312731733805 & Score: -inf
+.Lambda : 0.01535554950774 Mu : 0.01312706696389 & Score: -inf
+.Lambda : 0.01535554665034 Mu : 0.01312656621558 & Score: -inf
+.Lambda : 0.01535554736469 Mu : 0.01312669140265 & Score: -inf
+.Lambda : 0.01535554879339 Mu : 0.01312694177681 & Score: -inf
+.Lambda : 0.01535554843621 Mu : 0.01312687918327 & Score: -inf
+.Lambda : 0.01535554772186 Mu : 0.01312675399619 & Score: -inf
+.Lambda : 0.01535554790045 Mu : 0.01312678529296 & Score: -inf
+.Lambda : 0.01535554825763 Mu : 0.01312684788650 & Score: -inf
+.Lambda : 0.01535554816833 Mu : 0.01312683223812 & Score: -inf
+.Lambda : 0.01535554798975 Mu : 0.01312680094135 & Score: -inf
+.Lambda : 0.01535554803439 Mu : 0.01312680876554 & Score: -inf
+.Lambda : 0.01535554812369 Mu : 0.01312682441392 & Score: -inf
+.Lambda : 0.01535554810136 Mu : 0.01312682050183 & Score: -inf
+.Lambda : 0.01535554805672 Mu : 0.01312681267764 & Score: -inf
+.Lambda : 0.01535554806788 Mu : 0.01312681463368 & Score: -inf
+.Lambda : 0.01535554809020 Mu : 0.01312681854578 & Score: -inf
+.Lambda : 0.01535554808462 Mu : 0.01312681756776 & Score: -inf
+.Lambda : 0.01535554807346 Mu : 0.01312681561171 & Score: -inf
+.Lambda : 0.01535554807625 Mu : 0.01312681610072 & Score: -inf
+.Lambda : 0.01535554808183 Mu : 0.01312681707874 & Score: -inf
+.Lambda : 0.01535554808043 Mu : 0.01312681683424 & Score: -inf
+.Lambda : 0.01535554807764 Mu : 0.01312681634523 & Score: -inf
+.Lambda : 0.01535554807834 Mu : 0.01312681646748 & Score: -inf
+.Lambda : 0.01535554807974 Mu : 0.01312681671198 & Score: -inf
+.Lambda : 0.01535554807939 Mu : 0.01312681665086 & Score: -inf
+.Lambda : 0.01535554807869 Mu : 0.01312681652861 & Score: -inf
+.Lambda : 0.01535554807886 Mu : 0.01312681655917 & Score: -inf
+.Lambda : 0.01535554807921 Mu : 0.01312681662030 & Score: -inf
+.Lambda : 0.01535554807913 Mu : 0.01312681660501 & Score: -inf
+.Lambda : 0.01535554807895 Mu : 0.01312681657445 & Score: -inf
+.Lambda : 0.01535554807900 Mu : 0.01312681658209 & Score: -inf
+.Lambda : 0.01535554807908 Mu : 0.01312681659737 & Score: -inf
+.Lambda : 0.01535554807906 Mu : 0.01312681659355 & Score: -inf
+.Lambda : 0.01535554807902 Mu : 0.01312681658591 & Score: -inf
+.Lambda : 0.01535554807903 Mu : 0.01312681658782 & Score: -inf
+.Lambda : 0.01535554807905 Mu : 0.01312681659164 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681659069 & Score: -inf
+.Lambda : 0.01535554807903 Mu : 0.01312681658878 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658925 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681659021 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658997 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658949 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658961 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658985 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658979 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658967 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658970 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658976 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658975 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658972 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658972 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658974 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658974 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.Lambda : 0.01535554807904 Mu : 0.01312681658973 & Score: -inf
+.-----------------------------------------------------------
+Family information: Random_Sample_1000.GeneCount.txt
+Log: reports/run1__orthofinder_full.txt
+The number of families is 999
+Root Family size : 1 ~ 34
+Family size : 0 ~ 77
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+Empirical Prior Estimation Result: (33 iterations)
+Poisson lambda: 0.735282 & Score: 26868.433446
+Lambda : 0.02009263492817 Mu : 0.01844392035720 & Score: -inf
+.Lambda : 0.02109726667458 Mu : 0.01844392035720 & Score: -inf
+.Lambda : 0.02109726667458 Mu : 0.11066352214318 & Score: -inf
+.Lambda : 0.02009263492817 Mu : -0.07377568142878 & Score: -inf
+.Lambda : 0.02034379286478 Mu : -0.02766588053579 & Score: -inf
+.Lambda : 0.02084610873798 Mu : 0.06455372125019 & Score: -inf
+.Lambda : 0.02072052976968 Mu : 0.04149882080369 & Score: -inf
+.Lambda : 0.02046937183308 Mu : -0.00461098008930 & Score: -inf
+.Lambda : 0.02053216131723 Mu : 0.00691647013395 & Score: -inf
+.Lambda : 0.02065774028553 Mu : 0.02997137058044 & Score: -inf
+.Lambda : 0.02062634554345 Mu : 0.02420764546882 & Score: -inf
+.Lambda : 0.02056355605930 Mu : 0.01268019524557 & Score: -inf
+.Lambda : 0.02057925343034 Mu : 0.01556205780138 & Score: -inf
+.Lambda : 0.02061064817242 Mu : 0.02132578291301 & Score: -inf
+.Lambda : 0.02060279948690 Mu : 0.01988485163510 & Score: -inf
+.Lambda : 0.02058710211586 Mu : 0.01700298907929 & Score: -inf
+.Lambda : 0.02059102645862 Mu : 0.01772345471824 & Score: -inf
+.Lambda : 0.02059887514414 Mu : 0.01916438599615 & Score: -inf
+.Lambda : 0.02059691297276 Mu : 0.01880415317667 & Score: -inf
+.Lambda : 0.02059298863000 Mu : 0.01808368753772 & Score: -inf
+.Lambda : 0.02059396971569 Mu : 0.01826380394746 & Score: -inf
+.Lambda : 0.02059593188707 Mu : 0.01862403676693 & Score: -inf
+.Lambda : 0.02059544134422 Mu : 0.01853397856207 & Score: -inf
+.Lambda : 0.02059446025853 Mu : 0.01835386215233 & Score: -inf
+.Lambda : 0.02059470552996 Mu : 0.01839889125476 & Score: -inf
+.Lambda : 0.02059519607280 Mu : 0.01848894945963 & Score: -inf
+.Lambda : 0.02059507343709 Mu : 0.01846643490841 & Score: -inf
+.Lambda : 0.02059482816567 Mu : 0.01842140580598 & Score: -inf
+.Lambda : 0.02059488948352 Mu : 0.01843266308159 & Score: -inf
+.Lambda : 0.02059501211923 Mu : 0.01845517763280 & Score: -inf
+.Lambda : 0.02059498146031 Mu : 0.01844954899500 & Score: -inf
+.Lambda : 0.02059492014245 Mu : 0.01843829171939 & Score: -inf
+.Lambda : 0.02059493547191 Mu : 0.01844110603829 & Score: -inf
+.Lambda : 0.02059496613084 Mu : 0.01844673467610 & Score: -inf
+.Lambda : 0.02059495846611 Mu : 0.01844532751665 & Score: -inf
+.Lambda : 0.02059494313665 Mu : 0.01844251319775 & Score: -inf
+.Lambda : 0.02059494696901 Mu : 0.01844321677747 & Score: -inf
+.-----------------------------------------------------------
+Family information: Random_Sample_1000.GeneCount.txt
+Log: reports/run1__orthofinder_full.txt
+The number of families is 998
+Root Family size : 1 ~ 34
+Family size : 0 ~ 77
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+Empirical Prior Estimation Result: (29 iterations)
+Poisson lambda: 0.735406 & Score: 26864.449308
+Lambda : 0.01954455601138 Mu : 0.00061231367507 & Score: -inf
+.Lambda : 0.02052178381195 Mu : 0.00061231367507 & Score: -inf
+.Lambda : 0.02052178381195 Mu : 0.00367388205040 & Score: -inf
+.Lambda : 0.01954455601138 Mu : -0.00244925470026 & Score: -inf
+.Lambda : 0.01978886296152 Mu : -0.00091847051260 & Score: -inf
+.Lambda : 0.02027747686181 Mu : 0.00214309786273 & Score: -inf
+.Lambda : 0.02015532338674 Mu : 0.00137770576890 & Score: -inf
+.Lambda : 0.01991101643659 Mu : -0.00015307841877 & Score: -inf
+.Lambda : 0.01997209317413 Mu : 0.00022961762815 & Score: -inf
+.Lambda : 0.02009424664920 Mu : 0.00099500972198 & Score: -inf
+.Lambda : 0.02006370828043 Mu : 0.00080366169852 & Score: -inf
+.Lambda : 0.02000263154290 Mu : 0.00042096565161 & Score: -inf
+.Lambda : 0.02001790072728 Mu : 0.00051663966334 & Score: -inf
+.Lambda : 0.02004843909605 Mu : 0.00070798768680 & Score: -inf
+.Lambda : 0.02004080450386 Mu : 0.00066015068093 & Score: -inf
+.Lambda : 0.02002553531947 Mu : 0.00056447666920 & Score: -inf
+.Lambda : 0.02002935261557 Mu : 0.00058839517213 & Score: -inf
+.-----------------------------------------------------------
+Family information: Random_Sample_1000.GeneCount.txt
+Log: reports/run1__orthofinder_full.txt
+The number of families is 997
+Root Family size : 1 ~ 34
+Family size : 0 ~ 77
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+Empirical Prior Estimation Result: (25 iterations)
+Poisson lambda: 0.735463 & Score: 26861.935710
+Lambda : 0.01388035016134 Mu : 0.00079628935647 & Score: -inf
+.Lambda : 0.01457436766941 Mu : 0.00079628935647 & Score: -inf
+.Lambda : 0.01457436766941 Mu : 0.00477773613881 & Score: -inf
+.Lambda : 0.01388035016134 Mu : -0.00318515742587 & Score: -inf
+.Lambda : 0.01405385453836 Mu : -0.00119443403470 & Score: -inf
+.Lambda : 0.01440086329239 Mu : 0.00278701274764 & Score: -inf
+.Lambda : 0.01431411110389 Mu : 0.00179165105205 & Score: -inf
+.Lambda : 0.01414060672687 Mu : -0.00019907233912 & Score: -inf
+.Lambda : 0.01418398282112 Mu : 0.00029860850868 & Score: -inf
+.Lambda : 0.01427073500963 Mu : 0.00129397020426 & Score: -inf
+.Lambda : 0.01424904696250 Mu : 0.00104512978037 & Score: -inf
+.Lambda : 0.01420567086825 Mu : 0.00054744893257 & Score: -inf
+.Lambda : 0.01421651489181 Mu : 0.00067186914452 & Score: -inf
+.Lambda : 0.01423820293894 Mu : 0.00092070956842 & Score: -inf
+.Lambda : 0.01423278092716 Mu : 0.00085849946244 & Score: -inf
+.Lambda : 0.01422193690360 Mu : 0.00073407925049 & Score: -inf
+.Lambda : 0.01422464790949 Mu : 0.00076518430348 & Score: -inf
+.Lambda : 0.01423006992127 Mu : 0.00082739440946 & Score: -inf
+.Lambda : 0.01422871441832 Mu : 0.00081184188296 & Score: -inf
+.Lambda : 0.01422600341243 Mu : 0.00078073682998 & Score: -inf
+.-----------------------------------------------------------
+Family information: Random_Sample_1000.GeneCount.txt
+Log: reports/run1__orthofinder_full.txt
+The number of families is 997
+Root Family size : 1 ~ 34
+Family size : 0 ~ 77
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+Empirical Prior Estimation Result: (25 iterations)
+Poisson lambda: 0.735464 & Score: 26861.935710
+Lambda : 0.01668628667979 Mu : 0.01239467503200 & Score: -inf
+.Lambda : 0.01752060101378 Mu : 0.01239467503200 & Score: -inf
+.Lambda : 0.01752060101378 Mu : 0.07436805019198 & Score: -inf
+.Lambda : 0.01668628667979 Mu : -0.04957870012799 & Score: -inf
+.Lambda : 0.01689486526329 Mu : -0.01859201254800 & Score: -inf
+.Lambda : 0.01731202243029 Mu : 0.04338136261199 & Score: -inf
+.Lambda : 0.01720773313854 Mu : 0.02788801882199 & Score: -inf
+.Lambda : 0.01699915455504 Mu : -0.00309866875800 & Score: -inf
+.Lambda : 0.01705129920091 Mu : 0.00464800313700 & Score: -inf
+.Lambda : 0.01715558849266 Mu : 0.02014134692700 & Score: -inf
+.Lambda : 0.01712951616973 Mu : 0.01626801097950 & Score: -inf
+.Lambda : 0.01707737152385 Mu : 0.00852133908450 & Score: -inf
+.Lambda : 0.01709040768532 Mu : 0.01045800705825 & Score: -inf
+.Lambda : 0.01711648000826 Mu : 0.01433134300575 & Score: -inf
+.Lambda : 0.01710996192752 Mu : 0.01336300901887 & Score: -inf
+.Lambda : 0.01709692576605 Mu : 0.01142634104512 & Score: -inf
+.
