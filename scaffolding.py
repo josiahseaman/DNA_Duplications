@@ -87,7 +87,7 @@ def preprocess_for_gapcloser(input_fasta, output_name):
             short_scaff.append(scaff)
     long_sum = sum([len(c.seq) for c in l_scaffolds])
     short_sum = sum([len(c.seq) for c in short_scaff])
-    print(f"Eliminated {len(scaffolds) - len(l_scaffolds)} scaffolds")
+    print("Eliminated %i scaffolds" % (len(scaffolds) - len(l_scaffolds)))
     if long_sum > short_sum:
         print("WARNING: More than half of the sequence was eliminated in preprocessing.", file=sys.stderr)
 
