@@ -1,3 +1,4 @@
+*.gsheet
 
 #BLAST
 blastdb.nhd
@@ -36,6 +37,70 @@ data/super_hog_test_viz/
 fetch_colormap.ipynb
 interact.ipynb
 tmp/
+Ash_Proteome/Fraxinus_excelsior_38873_TGAC_v2.longestCDStranscript.gff3.pep.fa
+Ash_Proteome/Mguttatus_256_v2.0.protein_primaryTranscriptOnly.fa
+Ash_Proteome/OE6A.longestpeptide.fa
+Ash_Proteome/Orthologues_Jul04_2/
+Ash_Proteome/Results_Jun19/
+Ash_Proteome/Results_Jun25/
+Ash_Proteome/Slycopersicum_390_ITAG2.4.protein_primaryTranscriptOnly.fa
+Ash_Proteome/Species Overlap June25.gsheet
+Ash_Proteome/data_sources_notes.txt
+CAFE-4.1/data/cafe_orthofinder/Frax_species_tree_ultrametric_integers__with_WGD.tre
+CAFE-4.1/data/cafe_orthofinder/Primary_concordance__short_names_convenience.xtg
+CAFE-4.1/data/cafe_orthofinder/RAxML_result__rearranged_to_lauras_order.xtg
+CAFE-4.1/data/cafe_orthofinder/RAxML_result__translated.tre
+CAFE-4.1/data/cafe_orthofinder/filtered_OG_counts.csv
+CAFE-4.1/data/cafe_orthofinder/filtered_OG_counts.txt_filesize_discrepancy
+CAFE-4.1/data/cafe_orthofinder/rates.tre
+CAFE-4.1/data/cafe_orthofinder/reports/WGD_rates_loose.tre
+CAFE-4.1/data/cafe_orthofinder/reports/WGD_rates_loose__functional_categories_with_rapid_evolution.txt
+CAFE-4.1/data/cafe_orthofinder/reports/WGD_rates_loose_summary_anc.csv
+CAFE-4.1/data/cafe_orthofinder/reports/WGD_rates_loose_summary_anc__worksheet.gsheet
+CAFE-4.1/data/cafe_orthofinder/reports/estimate_full.csv
+CAFE-4.1/data/cafe_orthofinder/reports/rates.tre
+CAFE-4.1/data/cafe_orthofinder/reports/rates_fix.tre
+CAFE-4.1/data/cafe_orthofinder/tree_sanity.tre
+CAFE-4.1/data/cafe_tutorial/filtered_HOG_counts.txt
+CAFE-4.1/r8s_manual.pdf
+CAFE-4.2/data/WGD_rates_loose__duplicates_worksheet.gsheet
+CAFE-4.2/data/exemplars/Exemplar_Frax_species_tree__gain_and_loss.xtg
+CAFE-4.2/data/exemplars/Exemplar_Frax_species_tree_internal_labeled.tre
+CAFE-4.2/data/exemplars/Exemplar_Frax_species_tree_ultrametric_integers.tre
+CAFE-4.2/data/exemplars/reports/exemplar_reestimate__grown.list
+CAFE-4.2/data/exemplars/reports/exemplar_reestimate_summary.csv
+CAFE-4.2/data/exemplars/reports/exemplar_reestimate_summary_anc.csv
+CAFE-4.2/data/exemplars/reports/exemplar_reestimate_summary_anc.gsheet
+CAFE-4.2/data/exemplars/reports/exemplar_reestimate_summary_anc.ods
+CAFE-4.2/data/exemplars/reports/exemplar_reestimate_summary_fams.csv
+GOenrich_db/archived/
+GOenrich_db/goslim_plant.obo
+GOenrich_db/graphviz-2.38.msi
+GeMoMa-1.5/Extractor/
+GeMoMa-1.5/FRAX02/
+GeMoMa-1.5/FRAX09_large_72hr/annot09.sh.o327090
+GeMoMa-1.5/FRAX09_large_72hr/cds-parts.fasta
+GeMoMa-1.5/FRAX09_large_72hr/cds-parts__minus_FRAX09_large_72hr.png
+GeMoMa-1.5/FRAX09_large_72hr/cds-parts__minus_tblastn.fasta
+GeMoMa-1.5/FRAX09_large_72hr/gffread_filtered_protein.fasta
+GeMoMa-1.5/FRAX09_large_72hr/tblastn-coverage.txt
+GeMoMa-1.5/FRAX29/gffread_filtered_protein.fasta
+GeMoMa-1.5/FRAX34/
+GeMoMa-1.5/gene_validator/sample_gffread_filtered_protein.fasta.html/
+RaXML8-Manual.pdf
+data/Pennsylvanica_Feb2018_BRAKER_RNASeqandEA_augustus_051818.hints.gff
+data/cds-parts.fasta
+data/cds-parts.png
+data/check_for_redundant_GeMoMa_models_in_OMA_results.pl
+data/filtered_predictions_1.gff
+data/gapcloser_merge_sample.csv
+data/gff_files_for_diploid_taxa/.~lock.Fraxinus_excelsior_38873_TGAC_v2.gff3.functional_annotation.tsv#
+data/gff_files_for_diploid_taxa/Fraxinus_excelsior_38873_TGAC_v2.gff3.functional_annotation.tsv.gz
+data/number_of_FRAX08_sequences_in_each_HOG.txt
+data/pennsylvanica annotation/
+data/primary_concordance_tree_with_sample_CFs_full_length_sequences_EAB_group.tre
+goenrich_notes_offline.txt
+webgestalt.py
 
 
 
