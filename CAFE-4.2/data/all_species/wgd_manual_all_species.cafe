@@ -1,7 +1,9 @@
 #!cafe
 load -i filtered_JSG_GeneCounts.txt -t 8 -l reports/WGD_manual_all_species.log
-#Approximated ultrametric based on 763103 sites and 5 calibration points
-#A NEWICK-formatted tree containing branch lengths and taxon names as they are specified in the \ref Load "input file". Branch lengths should be integer units and the tree should be ultrametric (all paths from root to tip should have the same length). If the tree is not ultrametric to a tolerance of .01%, a warning will be logged. Please note that there should be no spaces in the tree string, nor semicolons at the end of the line.
-tree (((((((((((FRAX30:2,FRAX32:2):1,FRAX28:3):2,FRAX12:5):4,(FRAX07:8,FRAX29:8):1):4,FRAX08:13):1,(((((FRAX01:2,FRAX16:2):4,FRAX15:6):2,FRAX00:8):2,(FRAX06:9,FRAX23:9):1):3,FRAX25:13):1):3,FRAX21:17):2,(((FRAX19:8,FRAX20:8):2,((FRAX11:5,FRAX27:5):4,FRAX04:9):1):1,(((((FRAX03:1,FRAX09:1):1,FRAX13:2):2,(FRAX26:2,FRAX14:2):2):3,FRAX05:7):2,FRAX33:9):2):8):15,FRAX31:34):2,Oeuropea:36):43,(Slycopersicum:37,Mguttatus:37):42);
-lambdamu -l 0.00838787136466 0.00218017911224 0.00507182476416 0.00242439476197 -m 0.02151446469673 0.00000000000000 0.00382259606791 0.00281548974321 -t (((((((((((1,1)1,1)1,1)1,(1,1)1)1,1)1,(((((1,1)1,1)1,1)1,(1,1)1)1,1)1)1,1)1,(((1,1)1,((1,1)1,1)1)1,(((((1,1)1,1)1,(1,1)1)1,1)1,1)1)1)1,1)1,3)2,(4,4)4);
+#Ks Analysis shows 30% of all genes show WGD.  Meaning lambda rate at WGD = 0.3.  Goal: add in a singleton node for the WGD and change other Oleaceae rates to compensate proportionately for the large introduction.
+#Take 0.3957 - .3 = 0.0957 and distribute it back out over the 79 Mya = 0.001211
+#We also need to compensate for Olea branch in the same way: 0.00507182476416 + compensating change in Oleaceae.
+#0.09374770182632 total oleaceae changed to 0.001211*43 +.3 = 0.352073  the total change in Olea is smaller than the difference created.  I think I should just drop the separate rate for Olea and see how that goes.  Either that, or half the rate as an approx.
+tree ((((((((((((FRAX30:2,FRAX32:2):1,FRAX28:3):2,FRAX12:5):4,(FRAX07:8,FRAX29:8):1):4,FRAX08:13):1,(((((FRAX01:2,FRAX16:2):4,FRAX15:6):2,FRAX00:8):2,(FRAX06:9,FRAX23:9):1):3,FRAX25:13):1):3,FRAX21:17):2,(((FRAX19:8,FRAX20:8):2,((FRAX11:5,FRAX27:5):4,FRAX04:9):1):1,(((((FRAX03:1,FRAX09:1):1,FRAX13:2):2,(FRAX26:2,FRAX14:2):2):3,FRAX05:7):2,FRAX33:9):2):8):15,FRAX31:34):2,Oeuropea:36):1):42,(Slycopersicum:37,Mguttatus:37):42);
+lambdamu -l 0.001211 0.3 0.001211 0.00242439476197 -m 0.02151446469673 0.00000000000000 0.00382259606791 0.00281548974321 -t ((((((((((((1,1)1,1)1,1)1,(1,1)1)1,1)1,(((((1,1)1,1)1,1)1,(1,1)1)1,1)1)1,1)1,(((1,1)1,((1,1)1,1)1)1,(((((1,1)1,1)1,(1,1)1)1,1)1,1)1)1)1,1)1,3)2)1,(4,4)4);
 report reports/WGD_manual_all_species
