@@ -1,5 +1,7 @@
 import re
 
+"""Translate FRAX00 names to Species names"""
+
 translation = dict([
     (1, 'Solanum_lycopersicum'),
     (2, 'Mimulus_guttatus'),
@@ -34,13 +36,13 @@ translation = dict([
     (31, 'F_chinensis_Frax30'),
     (32, 'F_floribunda_Frax32')])
 aliases = [
-    (1,  '"Solanum lycopersicum"', 'Solanum'),
-    (2,  '"Mimulus guttatus"', 'Mimulus'),
-    (3,  '"Olea europaea"', 'Olea'),
+    (1,  '"Solanum lycopersicum"', 'Slycopersicum'),
+    (2,  '"Mimulus guttatus"',   'Mguttatus'),
+    (3,  '"Olea europaea"',      'Oeuropea'),
     (4,  '"F. angustifolia"','FRAX01'),
     (5,  '"F. mandshurica"','FRAX06'),
     (6,  '"F. nigra"','FRAX23'),
-    (7,  '"F. excelsior BATG0"','FEXC'),
+    (7,  '"F. excelsior"','FRAX00'),
     (8,  '"F. angustifolia subsp syriaca"','FRAX16'),
     (9,  '"F. angustifolia subsp oxycarpa"','FRAX15'),
     (10, '"F. griffithii"','FRAX21'),
@@ -102,14 +104,10 @@ speciesID = {
     '32': 'Slycopersicum',
 }
 
-# filename = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\data\cafe_prototype\reports\summary\run8_summary__all_lambda_003__mu_012_pub.csv"
-# filename = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\data\cafe_prototype\reports\run8_internal_labels.tre"
-filename = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\Ash_Proteome\Results_Jun25\RAxML_result.SpeciesTree"
-file_str = open(filename, 'r').read()
-
 def with_aliases(file_str):
     for id, full_name, short in aliases:
-        file_str = file_str.replace(short, full_name)
+        full_name_no_quotes = full_name.replace('"', '').replace('.', '').replace(' ', '_')
+        file_str = file_str.replace(short, full_name_no_quotes)
     return file_str
 
 def with_speciesID(file_str):
@@ -119,14 +117,23 @@ def with_speciesID(file_str):
 
     return file_str
 
+def do_transform(filename):
+    import os
+    file_str = open(filename, 'r').read()
+    transformed = with_aliases(file_str)
+    print(transformed)
+    file, ext = os.path.splitext(filename)
+    open(file + '__translated' + ext, 'w').write(transformed)
 
-transformed = with_speciesID(file_str)
-print(transformed)
-import os
-file, ext = os.path.splitext(filename)
-open(file + '__translated' + ext, 'w').write(transformed)
+if __name__ == "__main__":
+    # filename = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\data\cafe_prototype\reports\summary\run8_summary__all_lambda_003__mu_012_pub.csv"
+    # filename = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\data\cafe_prototype\reports\run8_internal_labels.tre"
+    # filename = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\Ash_Proteome\Results_Jun25\RAxML_result.SpeciesTree"
+    do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.1\data\cafe_orthofinder\graph_tree.bat")
+    do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.1\data\cafe_orthofinder\reports\WGD_rates_loose_summary_node.txt")
 
-# tree = "(((((((((((1:10.000,2:10.000):5.549,3:10.000):1.778,((11:10.000,(12:10.000,(((((13:10.000,19:10.000):0.206,14:10.000):0.144,15:10.000):0.202,(16:10.000,17:10.000):0.821):0.298,18:10.000):3.352):1.709):0.049,((22:10.000,24:10.000):0.350,23:10.000):4.122):0.064):0.013,(20:10.000,21:10.000):4.387):1.030,10:10.000):0.874,(((((4:10.000,8:10.000):0.133,9:10.000):0.228,7:10.000):0.770,(5:10.000,6:10.000):0.169):4.279,25:10.000):0.028):2.893,26:10.000):0.290,(29:10.000,30:10.000):0.849):0.368,28:10.000):0.201,27:10.000):1.325,31:10.000,32:10.000);"
+
+    # tree = "(((((((((((1:10.000,2:10.000):5.549,3:10.000):1.778,((11:10.000,(12:10.000,(((((13:10.000,19:10.000):0.206,14:10.000):0.144,15:10.000):0.202,(16:10.000,17:10.000):0.821):0.298,18:10.000):3.352):1.709):0.049,((22:10.000,24:10.000):0.350,23:10.000):4.122):0.064):0.013,(20:10.000,21:10.000):4.387):1.030,10:10.000):0.874,(((((4:10.000,8:10.000):0.133,9:10.000):0.228,7:10.000):0.770,(5:10.000,6:10.000):0.169):4.279,25:10.000):0.028):2.893,26:10.000):0.290,(29:10.000,30:10.000):0.849):0.368,28:10.000):0.201,27:10.000):1.325,31:10.000,32:10.000);"
 # translated = editable_str(tree)
 # this = re.finditer(r'(\(\d\d?|,\d\d?)', tree)
 # for match in this:
