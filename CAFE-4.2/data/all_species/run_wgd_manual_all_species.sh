@@ -1,4 +1,4 @@
-cafe wgd_manual_all_species.cafe
+#cafe wgd_manual_all_species.cafe
 
 #summarize results with python2.7
 #IMPORTANT: you need to input the name of the current result file
