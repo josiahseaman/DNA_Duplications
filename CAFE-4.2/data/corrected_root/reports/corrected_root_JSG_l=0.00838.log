@@ -29,3 +29,5 @@ Empirical Prior Estimation Result: (30 iterations)
 Poisson lambda: 1.481974 & Score: 948593.292702
 DONE: Lambda Search or setting, for command:
 lambda -l 0.00838787136466 
+Running Viterbi algorithm....
+Report Done
