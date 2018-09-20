@@ -1,5 +1,5 @@
 #!cafe
-load -i filtered_JSG_GeneCounts.txt -t 1 -l reports/corrected_root_JSG_l=0.00838.log
+load -i ../all_species/filtered_JSG_GeneCounts.txt -t 1 -l reports/corrected_root_JSG_l=0.00838.log
 #Approximated ultrametric based on 763103 sites and 5 calibration points
 #A NEWICK-formatted tree containing branch lengths and taxon names as they are specified in the \ref Load "input file". Branch lengths should be integer units and the tree should be ultrametric (all paths from root to tip should have the same length). If the tree is not ultrametric to a tolerance of .01%, a warning will be logged. Please note that there should be no spaces in the tree string, nor semicolons at the end of the line.
 tree -i Species_tree_corrected_root_ultrametric_integers.tre

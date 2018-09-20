@@ -190,8 +190,12 @@ def cra(inlines, results, node_fams, linestart, afilename, s_nodes, v):
 			# Get the ancestor and the map of the current node.
 
 			curcount = int(tlinfo[tlnode][4]);
-			anccount = int(tlinfo[curanc][4]);
-			# Get the gene counts of the current node and the ancestor.
+			try:
+				anccount = int(tlinfo[curanc][4]);
+				# Get the gene counts of the current node and the ancestor.
+			except ValueError as e:
+				# print(e)
+				anccount = int(tlinfo[curanc][4].replace('_',''))
 
 			outlist[s_nodes.index(curmap)] = str(curcount);
 			# Save the count of the current node to be sent to the anc states file.
