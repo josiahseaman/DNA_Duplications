@@ -11,8 +11,8 @@ mrca X00pea FRAX00 Oeuropea;
 mrca X11X07 FRAX11 FRAX07;
 mrca X01X07 FRAX01 FRAX07;
 mrca X11X14 FRAX11 FRAX14;
-fixage taxon=X00tus age=87;
-fixage taxon=X00cum age=79;
+#fixage taxon=X00tus age=72; #Roalson 2016 ratio scaled to Zedane
+fixage taxon=X00cum age=79; #timetree.org
 fixage taxon=X00pea age=36;
 fixage taxon=X11X07 age=19;
 fixage taxon=X01X07 age=14;
