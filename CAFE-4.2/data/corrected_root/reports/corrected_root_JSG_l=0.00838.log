@@ -1,0 +1,31 @@
+-----------------------------------------------------------
+Family information: filtered_JSG_GeneCounts.txt
+Log: reports/corrected_root_JSG_l=0.00838.log
+The number of families is 16191
+Root Family size : 1 ~ 112
+Family size : 0 ~ 140
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+-----------------------------------------------------------
+Family information: filtered_JSG_GeneCounts.txt
+Log: reports/corrected_root_JSG_l=0.00838.log
+The number of families is 16191
+Root Family size : 1 ~ 112
+Family size : 0 ~ 140
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+-----------------------------------------------------------
+Family information: filtered_JSG_GeneCounts.txt
+Log: reports/corrected_root_JSG_l=0.00838.log
+The number of families is 16191
+Root Family size : 1 ~ 112
+Family size : 0 ~ 140
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+Empirical Prior Estimation Result: (30 iterations)
+Poisson lambda: 1.481974 & Score: 948593.292702
+DONE: Lambda Search or setting, for command:
+lambda -l 0.00838787136466 
