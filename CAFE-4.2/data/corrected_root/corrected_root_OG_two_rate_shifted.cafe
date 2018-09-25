@@ -1,0 +1,6 @@
+#!cafe
+load -i ../../../CAFE-4.1/data/cafe_orthofinder/filtered_OG_counts.txt -t 8 -l reports/corrected_root_OG_two_rate_shifted.log
+#Approximated ultrametric based on 763103 sites and 5 calibration points
+tree -i Species_tree_corrected_root_ultrametric_integers.tre
+lambdamu -s -t ((((((((((((1,1)1,1)1,1)1,(1,1)1)1,1)1,(((((1,1)1,1)1,1)1,(1,1)1)1,1)1)1,1)1,(((1,1)1,((1,1)1,1)1)1,(((((1,1)1,1)1,(1,1)1)1,1)1,1)1)1)1,1)1,2)2,2)2,2)
+report reports/corrected_root_OG_two_rate_shifted
