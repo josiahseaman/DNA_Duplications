@@ -23,10 +23,15 @@ alias raxml=raxmlHPC
 #-t $NUM_THREADS -S diamond -M msa -T raxml
 
 #Now force our species tree for the Ortholog identification
-/data2/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py \
--fg /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome/Results_Jun25 \
--s /data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_orthofinder/Primary_concordance__short_names.tre \
--t $NUM_THREADS -S diamond -M msa -T raxml
+#/data2/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py \
+#-fg /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome/Results_Jun25 \
+#-s /data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_orthofinder/Primary_concordance__short_names.tre \
+#-t $NUM_THREADS -S diamond -M msa -T raxml
 
+#Using corrected species tree with correct outgroup rooting
+/data/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py \
+-fg /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome/Results_Jun25 \
+-s /data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.2/data/corrected_root/Species_tree_corrected_root_ultrametric_integers.tre \
+-t $NUM_THREADS -S diamond -M msa -T raxml
 
 # -M msa -oa  # stop after producing MSA
