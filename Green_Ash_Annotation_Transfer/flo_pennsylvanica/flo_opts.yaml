@@ -18,7 +18,7 @@
 
 # Number of processes that will be used to parallelise flo. Ideally, this
 # will be the number of CPU cores you have.
-:processes: '1'
+:processes: '8'
 
 # Parameters to run BLAT with.
 #

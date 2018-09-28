@@ -5,11 +5,22 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from os.path import splitext
 
-fasta_file = "fraxinus_pennsylvanica_20Feb2018_lPmM4.fasta"
+fasta_file = "fraxinus_pennsylvanica_20Feb2018_lPmM4.fa"
 
 new_fasta_file = splitext(fasta_file)[0] + '_psuedochromosomes' + splitext(fasta_file)[1]
 
 outhandle = open(new_fasta_file, 'w')
+liftover = open('Pennsylvanica_July2017ToSept2018.over.chain')
+id_count = 0
+
+def note_liftover(oldName, oldStrand, N_gap, newName):
+    """chain score tName tSize tStrand tStart tEnd qName qSize qStrand qStart qEnd id"""
+    length = str(len(dict[oldName].seq))
+    start = '0' if oldStrand == '+' else length
+    end = length if oldStrand == '+' else '0'
+    line = '\t'.join(['chain', length, oldName, length, oldStrand, start])
+    liftover.write('chain score tName tSize tStrand tStart tEnd qName qSize qStrand qStart qEnd id')
+
 
 ## get an indexed file as a dictionary
 dict = SeqIO.index(fasta_file, "fasta")
