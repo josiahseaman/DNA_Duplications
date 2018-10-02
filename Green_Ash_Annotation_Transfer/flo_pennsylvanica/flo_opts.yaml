@@ -38,4 +38,6 @@
 # Path to the GFF files containing annotations on the source assembly that
 # will be lifted to the target assembly.
 :lift:
-  - '../scrubbed_BRAKER_RNASeqandEA_augustus_060618.hints.hasevidenceMANUAL.gff'
+  - 'scrubbed_BRAKER_RNASeqandEA_augustus_060618.hints.noevidenceMANUAL.gff'
+  - '../fraxinus_pennsylvanica_20Feb2018_repeatmasker.fasta.out.gff'
+  - 'scrubbed_BRAKER_RNASeqandEA_augustus_060618.hints.hasevidenceMANUAL.gff'
