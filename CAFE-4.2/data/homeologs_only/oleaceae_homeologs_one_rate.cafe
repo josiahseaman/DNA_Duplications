@@ -1,0 +1,5 @@
+#!cafe
+load -i homeolog_counts.txt -t 8 -l reports/oleaceae_homeologs_one_rate.log
+tree -i Species_tree_Oleaceae.tre
+lambdamu -s
+report reports/oleaceae_homeologs_one_rate

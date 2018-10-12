@@ -10,9 +10,13 @@
 
 REPORT_SCRIPT=/data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_tutorial/python_scripts/cafetutorial_report_analysis.py
 
-cafe oleaceae_homeologs_l009_m015.cafe
-#Switched back to OGs, see how that influences the results
-python $REPORT_SCRIPT -i reports/oleaceae_homeologs_l009_m015.cafe -o reports/oleaceae_homeologs_l009_m015
+#Just used preset values to see if it parses.
+#cafe oleaceae_homeologs_l009_m015.cafe
+#python $REPORT_SCRIPT -i reports/oleaceae_homeologs_l009_m015.cafe -o reports/oleaceae_homeologs_l009_m015
+
+#Actually search for ideal parameters QSUB
+cafe oleaceae_homeologs_one_rate.cafe
+python $REPORT_SCRIPT -i reports/oleaceae_homeologs_one_rate.cafe -o reports/oleaceae_homeologs_one_rate
 
 
 ##IMPORTANT: you need to input the name of the current result file
