@@ -1,0 +1,33 @@
+-----------------------------------------------------------
+Family information: homeolog_counts.txt
+Log: reports/oleaceae_homeologs_l009_m015.log
+The number of families is 8484
+Root Family size : 1 ~ 30
+Family size : 0 ~ 66
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+-----------------------------------------------------------
+Family information: homeolog_counts.txt
+Log: reports/oleaceae_homeologs_l009_m015.log
+The number of families is 8484
+Root Family size : 1 ~ 30
+Family size : 0 ~ 66
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+-----------------------------------------------------------
+Family information: homeolog_counts.txt
+Log: reports/oleaceae_homeologs_l009_m015.log
+The number of families is 8484
+Root Family size : 1 ~ 30
+Family size : 0 ~ 63
+P-value: 0.01
+Num of Threads: 1
+Num of Random: 1000
+Empirical Prior Estimation Result: (30 iterations)
+Poisson lambda: 0.100378 & Score: 61254.735402
+DONE: Lamda,Mu Search or setting, for command:
+lambdamu -l 0.00926726384078 -m 0.01510387577501 
+Running Viterbi algorithm....
+Report Done
