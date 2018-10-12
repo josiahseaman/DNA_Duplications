@@ -1,0 +1,5 @@
+#!cafe
+load -i homeolog_counts.txt -t 1 -l reports/oleaceae_homeologs_l009_m015.log
+tree -i Species_tree_Oleaceae.tre
+lambdamu -l 0.00926726384078 -m 0.01510387577501
+report reports/oleaceae_homeologs_l009_m015
