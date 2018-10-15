@@ -133,11 +133,12 @@ if __name__ == "__main__":
     # do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\all_species\graph_tree.bat")
     # do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\all_species\reports\WGD_manual_all_species_node.txt")
     # do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\all_species\reports\simple_JSG_all_species_node.txt")
-    do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\corrected_root\graph_tree.bat")
+    # do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\corrected_root\graph_tree.bat")
     # do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\corrected_root\reports\corrected_root_JSG_l=0.00838_pub.txt")
     #reports/corrected_root_JSG_l=0.00838
-    do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\corrected_root\reports\corrected_root_JSG_l=0.00838.csv")
-
+    # do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\corrected_root\reports\corrected_root_JSG_l=0.00838.csv")
+    do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\homeologs_only\node_labelled_species_tree.tre")
+    do_transform(r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\CAFE-4.2\data\homeologs_only\reports\oleaceae_homeologs_one_rate.csv")
 
     # tree = "(((((((((((1:10.000,2:10.000):5.549,3:10.000):1.778,((11:10.000,(12:10.000,(((((13:10.000,19:10.000):0.206,14:10.000):0.144,15:10.000):0.202,(16:10.000,17:10.000):0.821):0.298,18:10.000):3.352):1.709):0.049,((22:10.000,24:10.000):0.350,23:10.000):4.122):0.064):0.013,(20:10.000,21:10.000):4.387):1.030,10:10.000):0.874,(((((4:10.000,8:10.000):0.133,9:10.000):0.228,7:10.000):0.770,(5:10.000,6:10.000):0.169):4.279,25:10.000):0.028):2.893,26:10.000):0.290,(29:10.000,30:10.000):0.849):0.368,28:10.000):0.201,27:10.000):1.325,31:10.000,32:10.000);"
 # translated = editable_str(tree)
