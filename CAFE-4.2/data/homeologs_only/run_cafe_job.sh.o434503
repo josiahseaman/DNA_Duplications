@@ -1,0 +1,37 @@
+mkdir: cannot create directory ‘reports/error_files/’: File exists
+# =========================================================================
+#		Assembly/annotation error estimation
+#			10.15.2018 | 06:27:58
+# Using CAFE shell file:           oleaceae_homeologs_l003_m019.cafe
+# --------------------------
+#			INPUT INFO
+# CAFE path set as:                #!/data/SBCS-BuggsLab/Josiah/tools/cafe
+# Using gene family file:          homeolog_counts.txt
+# Using tree command:              tree ((((((((((FRAX30:2.0,FRAX32:2.0):1.0,FRAX28:3.0):2.0,FRAX12:5.0):4.0,(FRAX07:8.0,FRAX29:8.0):1.0):4.0,FRAX08:13.0):1.0,(((((FRAX01:2.0,FRAX16:2.0):4.0,FRAX15:6.0):2.0,FRAX00:8.0):2.0,(FRAX06:9.0,FRAX23:9.0):1.0):3.0,FRAX25:13.0):1.0):3.0,FRAX21:17.0):2.0,(((FRAX19:8.0,FRAX20:8.0):2.0,((FRAX11:5.0,FRAX27:5.0):4.0,FRAX04:9.0):1.0):1.0,(((((FRAX03:1.0,FRAX09:1.0):1.0,FRAX13:2.0):2.0,(FRAX26:2.0,FRAX14:2.0):2.0):3.0,FRAX05:7.0):2.0,FRAX33:9.0):2.0):8.0):15.0,FRAX31:34.0):2.0,Oeuropea:36.0):36.0;
+# Using lambda command             lambdamu -l 0.00312885131707 -m 0.01967130811162
+# --------------------------
+#			OPTIONS INFO
+# -c 0                             Global grid search option.
+# -e 0.08                          Starting error estimate of 0.08.
+# -f 1                             Initial CAFE run option.
+# -v 0                             CAFE verbosity option.
+# -s 0                             Individual species minimization option.
+# --------------------------
+#			OUTPUT INFO
+# Putting all files in:            reports/error_files/
+# Log file for all runs:           reports/error_files/caferrorLog.txt
+# Output file:                     reports/error_files/caferror_default_output.txt
+# =========================================================================
+# Beginning Global Error Prediction...
+--------------------------
+CAFE run number 1
+Pre run (no error models)
+Rewriting CAFE shell script...
+Running CAFE [silently] with error models listed above...
+CAFE run complete! Retrieving Score..........
+Traceback (most recent call last):
+  File "caferror.py", line 519, in <module>
+    lastScore, lastLam, initCheck = getScore(initError, spec_to_min, tmpDir, 1, caferrorLog);
+  File "caferror.py", line 296, in getScore
+    initFile.write(str(score));
+UnboundLocalError: local variable 'score' referenced before assignment

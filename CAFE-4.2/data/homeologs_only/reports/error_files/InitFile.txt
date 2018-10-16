@@ -1,0 +1,17 @@
+reports/error_files/cafe_pre_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+reports/error_files/cafe_pre_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100377 & Score: 61254.735402
+reports/error_files/cafe_pre_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100377 & Score: 61254.735402
+reports/error_files/cafe_pre_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100377 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+reports/error_files/cafe_pre_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100377 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
