@@ -18,19 +18,16 @@
 from __future__ import print_function
 import sys, argparse, os, random, datetime, time, re
 
-############################################
-#Function Definitions
-############################################
+
 def errorOut(errnum, errmsg):
-# Formatting for error messages.
+	""""Formatting for error messages."""
 	fullmsg = "|**Error " + str(errnum) + ": " + errmsg + " |"
 	border = " " + "-" * (len(fullmsg)-2)
 	print ("\n" + border + "\n" + fullmsg + "\n" + border + "\n")
 
 
-############################################
 def optParse(errorflag):
-# This function handles the command line options.
+	"""This function handles the command line options."""
 
 	parser = argparse.ArgumentParser()
 
@@ -272,34 +269,34 @@ def getScore(error, spectomin, tempDir, wout, cafLog):
 	sLines = sFile.readlines()
 	sFile.close()
 
-	initFile = open(tempDir + "InitFile.txt", "a")
-	initFile.write(scoreFile)
-	initFile.write("\n")
+	with open(tempDir + "InitFile.txt", "a") as initFile:
+		initFile.write(scoreFile)
+		initFile.write("\n")
+		score = 0  # or should this be a very large negative number?
+		lamval = 0
+		for s in range(len(sLines)):
+			if sLines[s][:7] == "Poisson":
+				initFile.write(sLines[s])
+			#if sLines[s][:7] == "Poisson" and sLines[s].find("inf") != -1:
+			#	init = "bad"
+			if sLines[s][:7] == ".Lambda":
+				lcount = lcount + 1
+			if sLines[s][:7] == ".Lambda" and sLines[s].find("inf") != -1:
+				linfcount = linfcount + 1
 
-	for s in range(len(sLines)):
-		if sLines[s][:7] == "Poisson":
-			initFile.write(sLines[s])
-		#if sLines[s][:7] == "Poisson" and sLines[s].find("inf") != -1:
-		#	init = "bad"
-		if sLines[s][:7] == ".Lambda":
-			lcount = lcount + 1
-		if sLines[s][:7] == ".Lambda" and sLines[s].find("inf") != -1:
-			linfcount = linfcount + 1
+			if sLines[s].find("Lambda Search Result:") != -1:
+				lamval = sLines[s+1][9:sLines[s+1].index("&") - 1]
+				# It's crucial the search is rindex for lambdamu there are two scores
+				score = sLines[s+1][sLines[s+1].rindex("Score: ") + 7:].replace("\n","")
+				#score = score.replace('\n', '')
 
-		if sLines[s].find("Lambda Search Result:") != -1:
-			lamval = sLines[s+1][9:sLines[s+1].index("&") - 1]
-			score = sLines[s+1][sLines[s+1].index("Score: ") + 7:].replace("\n","")
-			#score = score.replace('\n', '')
+		if lcount == linfcount:
+			init = "bad"
 
-	if lcount == linfcount:
-		init = "bad"
-
-	initFile.write(str(score))
-	initFile.write("\n")
-	initFile.write(init)
-	initFile.write("\n\n")
-	initFile.close()
-
+		initFile.write(str(score))
+		initFile.write("\n")
+		initFile.write(init)
+		initFile.write("\n\n")
 
 	printWrite(cafLog, 1, "Score with above error models:", str(score), 35)
 	printWrite(cafLog, 1, "Lambda with above error models:", str(lamval), 35)
@@ -325,54 +322,53 @@ def getScore(error, spectomin, tempDir, wout, cafLog):
 
 	return float(score), lamval, init
 
-############################################
+
 def maxfamsize(inFilename, totError, errFilename):
-# This function creates an error file in the proper format for CAFE by reading the input gene family file and
-# finding the gene family with the largest number of genes.
+	""" This function creates an error file in the proper format for CAFE by reading the input gene family file and
+	 finding the gene family with the largest number of genes."""
 
 	negAsym = 0.5
 	posAsym = 1 - negAsym
 	# I used this to run some simulations with asymmetric error distributions. Right now it is set to split the error evenly
 	# between +1 and -1, but go ahead and change negAsym if needed.
 
-	inFile = open(inFilename, "r")
-	lines = inFile.readlines()
-	inFile.close()
+	with open(inFilename, "r") as inFile:
+		lines = inFile.readlines()
+		inFile.close()
 
-	maxfs = 0
+		maxfs = 0
 
-	for i in range(len(lines)):
-		if i == 0:
-			continue		
-		cline = lines[i].replace("\n","").split("\t")	
-		k = 2
-	
-		while k <= len(cline) - 1:
-			if int(cline[k]) > maxfs:
-				maxfs = int(cline[k])			
-			k = k + 1
+		for i in range(len(lines)):
+			if i == 0:
+				continue
+			cline = lines[i].replace("\n","").split("\t")
+			k = 2
 
-	erroutFile = open(errFilename, "w")
-	erroutFile.write("maxcnt:")
-	erroutFile.write(str(maxfs))
-	erroutFile.write("\n")
-	erroutFile.write("cntdiff -1 0 1\n")
+			while k <= len(cline) - 1:
+				if int(cline[k]) > maxfs:
+					maxfs = int(cline[k])
+				k = k + 1
 
-	j = 0
+		erroutFile = open(errFilename, "w")
+		erroutFile.write("maxcnt:")
+		erroutFile.write(str(maxfs))
+		erroutFile.write("\n")
+		erroutFile.write("cntdiff -1 0 1\n")
 
-	while j <= maxfs:
-		if j == 0:
-			pline = str(j) + " 0.00 " + str((totError / 2) + (1 - totError)) + " " + str(totError / 2)	
-			erroutFile.write(pline)
-		else:
-			pline = str(j) + " " + str(totError * negAsym) + " " + str(1 - totError) + " " + str(totError * posAsym)		
-			erroutFile.write(pline)
+		j = 0
 
-		if j != maxfs:
-			erroutFile.write("\n")
-		j = j + 1
-	
-	erroutFile.close()
+		while j <= maxfs:
+			if j == 0:
+				pline = str(j) + " 0.00 " + str((totError / 2) + (1 - totError)) + " " + str(totError / 2)
+				erroutFile.write(pline)
+			else:
+				pline = str(j) + " " + str(totError * negAsym) + " " + str(1 - totError) + " " + str(totError * posAsym)
+				erroutFile.write(pline)
+
+			if j != maxfs:
+				erroutFile.write("\n")
+			j = j + 1
+
 
 ############################################
 #Main Block
