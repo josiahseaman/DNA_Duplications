@@ -1,0 +1,175 @@
+reports/error_sim/cafe_pre_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+166021
+good
+
+reports/error_sim/cafe_0.08_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+149415
+good
+
+reports/error_sim/cafe_0.04_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+151677
+good
+
+reports/error_sim/cafe_0.16_all_log.txt
+Poisson lambda: 0.100377 & Score: 61254.735402
+150835
+good
+
+reports/error_sim/cafe_0.1_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.05_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+150807
+good
+
+reports/error_sim/cafe_0.2_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+153365
+good
+
+reports/error_sim/cafe_0.125_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+149519
+good
+
+reports/error_sim/cafe_0.0875_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735403
+149279
+good
+
+reports/error_sim/cafe_0.10625_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+149225
+good
+
+reports/error_sim/cafe_0.096875_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+149205
+good
+
+reports/error_sim/cafe_0.1015625_all_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+149204
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_0.09921875_all_log.txt
+Poisson lambda: 0.100379 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+
+reports/error_sim/cafe_final_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+

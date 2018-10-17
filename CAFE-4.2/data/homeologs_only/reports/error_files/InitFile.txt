@@ -1,17 +1,25 @@
 reports/error_files/cafe_pre_log.txt
 Poisson lambda: 0.100378 & Score: 61254.735402
-reports/error_files/cafe_pre_log.txt
-Poisson lambda: 0.100378 & Score: 61254.735402
+166021
+good
+
+reports/error_files/cafe_0.08_all_log.txt
 Poisson lambda: 0.100377 & Score: 61254.735402
-reports/error_files/cafe_pre_log.txt
-Poisson lambda: 0.100378 & Score: 61254.735402
+149415
+good
+
+reports/error_files/cafe_0.04_all_log.txt
 Poisson lambda: 0.100377 & Score: 61254.735402
-reports/error_files/cafe_pre_log.txt
+151677
+good
+
+reports/error_files/cafe_0.16_all_log.txt
 Poisson lambda: 0.100378 & Score: 61254.735402
-Poisson lambda: 0.100377 & Score: 61254.735402
+150835
+good
+
+reports/error_files/cafe_0.1_all_log.txt
 Poisson lambda: 0.100378 & Score: 61254.735402
-reports/error_files/cafe_pre_log.txt
-Poisson lambda: 0.100378 & Score: 61254.735402
-Poisson lambda: 0.100377 & Score: 61254.735402
-Poisson lambda: 0.100378 & Score: 61254.735402
-Poisson lambda: 0.100378 & Score: 61254.735402
+149201
+good
+

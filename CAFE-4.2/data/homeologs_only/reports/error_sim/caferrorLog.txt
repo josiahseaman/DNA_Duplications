@@ -1,0 +1,920 @@
+# =========================================================================
+#		Assembly/annotation error estimation
+#			10.17.2018 | 01:18:06
+# Using CAFE shell file:           oleaceae_homeologs_one_rate.cafe
+# --------------------------
+#			INPUT INFO
+# CAFE path set as:                #!/data/SBCS-BuggsLab/Josiah/tools/cafe
+# Using gene family file:          homeolog_counts.txt
+# Using tree command:              tree ((((((((((FRAX30:2.0,FRAX32:2.0):1.0,FRAX28:3.0):2.0,FRAX12:5.0):4.0,(FRAX07:8.0,FRAX29:8.0):1.0):4.0,FRAX08:13.0):1.0,(((((FRAX01:2.0,FRAX16:2.0):4.0,FRAX15:6.0):2.0,FRAX00:8.0):2.0,(FRAX06:9.0,FRAX23:9.0):1.0):3.0,FRAX25:13.0):1.0):3.0,FRAX21:17.0):2.0,(((FRAX19:8.0,FRAX20:8.0):2.0,((FRAX11:5.0,FRAX27:5.0):4.0,FRAX04:9.0):1.0):1.0,(((((FRAX03:1.0,FRAX09:1.0):1.0,FRAX13:2.0):2.0,(FRAX26:2.0,FRAX14:2.0):2.0):3.0,FRAX05:7.0):2.0,FRAX33:9.0):2.0):8.0):15.0,FRAX31:34.0):2.0,Oeuropea:36.0):36.0;
+# Using lambda command             lambdamu -s
+# --------------------------
+#			OPTIONS INFO
+# -c 0                             Global grid search option.
+# -e 0.08                          Starting error estimate of 0.08.
+# -f 1                             Initial CAFE run option.
+# -v 1                             CAFE verbosity option.
+# -s 0                             Individual species minimization option.
+# --------------------------
+#			OUTPUT INFO
+# Putting all files in:            reports/error_sim/
+# Log file for all runs:           reports/error_sim/caferrorLog.txt
+# Output file:                     reports/error_sim/caferror_default_output.txt
+# =========================================================================
+# Beginning Global Error Prediction...
+--------------------------
+CAFE run number 1
+Pre run (no error models)
+-----
+## No error models generated
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     166021
+Lambda with above error models:    0.00312887406363
+--------------------------
+CAFE run number 2
+0.08 Error Model Run for all
+-----
+## Generating 0.08 Error File for FRAX29
+## 0.08 Error File Already Created for FRAX16
+## 0.08 Error File Already Created for FRAX31
+## 0.08 Error File Already Created for FRAX32
+## 0.08 Error File Already Created for FRAX15
+## 0.08 Error File Already Created for FRAX12
+## 0.08 Error File Already Created for FRAX13
+## 0.08 Error File Already Created for FRAX11
+## 0.08 Error File Already Created for FRAX19
+## 0.08 Error File Already Created for FRAX23
+## 0.08 Error File Already Created for FRAX05
+## 0.08 Error File Already Created for FRAX04
+## 0.08 Error File Already Created for FRAX07
+## 0.08 Error File Already Created for FRAX06
+## 0.08 Error File Already Created for FRAX01
+## 0.08 Error File Already Created for FRAX00
+## 0.08 Error File Already Created for FRAX03
+## 0.08 Error File Already Created for FRAX28
+## 0.08 Error File Already Created for FRAX27
+## 0.08 Error File Already Created for FRAX26
+## 0.08 Error File Already Created for FRAX25
+## 0.08 Error File Already Created for FRAX09
+## 0.08 Error File Already Created for FRAX08
+## 0.08 Error File Already Created for FRAX21
+## 0.08 Error File Already Created for FRAX20
+## 0.08 Error File Already Created for FRAX30
+## 0.08 Error File Already Created for FRAX14
+## 0.08 Error File Already Created for FRAX33
+## 0.08 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149415
+Lambda with above error models:    0.00165736842756
+--------------------------
+CAFE run number 3
+0.04 Error Model Run for all
+-----
+## Generating 0.04 Error File for FRAX29
+## 0.04 Error File Already Created for FRAX16
+## 0.04 Error File Already Created for FRAX31
+## 0.04 Error File Already Created for FRAX32
+## 0.04 Error File Already Created for FRAX15
+## 0.04 Error File Already Created for FRAX12
+## 0.04 Error File Already Created for FRAX13
+## 0.04 Error File Already Created for FRAX11
+## 0.04 Error File Already Created for FRAX19
+## 0.04 Error File Already Created for FRAX23
+## 0.04 Error File Already Created for FRAX05
+## 0.04 Error File Already Created for FRAX04
+## 0.04 Error File Already Created for FRAX07
+## 0.04 Error File Already Created for FRAX06
+## 0.04 Error File Already Created for FRAX01
+## 0.04 Error File Already Created for FRAX00
+## 0.04 Error File Already Created for FRAX03
+## 0.04 Error File Already Created for FRAX28
+## 0.04 Error File Already Created for FRAX27
+## 0.04 Error File Already Created for FRAX26
+## 0.04 Error File Already Created for FRAX25
+## 0.04 Error File Already Created for FRAX09
+## 0.04 Error File Already Created for FRAX08
+## 0.04 Error File Already Created for FRAX21
+## 0.04 Error File Already Created for FRAX20
+## 0.04 Error File Already Created for FRAX30
+## 0.04 Error File Already Created for FRAX14
+## 0.04 Error File Already Created for FRAX33
+## 0.04 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     151677
+Lambda with above error models:    0.00202469771923
+--------------------------
+CAFE run number 4
+0.16 Error Model Run for all
+-----
+## Generating 0.16 Error File for FRAX29
+## 0.16 Error File Already Created for FRAX16
+## 0.16 Error File Already Created for FRAX31
+## 0.16 Error File Already Created for FRAX32
+## 0.16 Error File Already Created for FRAX15
+## 0.16 Error File Already Created for FRAX12
+## 0.16 Error File Already Created for FRAX13
+## 0.16 Error File Already Created for FRAX11
+## 0.16 Error File Already Created for FRAX19
+## 0.16 Error File Already Created for FRAX23
+## 0.16 Error File Already Created for FRAX05
+## 0.16 Error File Already Created for FRAX04
+## 0.16 Error File Already Created for FRAX07
+## 0.16 Error File Already Created for FRAX06
+## 0.16 Error File Already Created for FRAX01
+## 0.16 Error File Already Created for FRAX00
+## 0.16 Error File Already Created for FRAX03
+## 0.16 Error File Already Created for FRAX28
+## 0.16 Error File Already Created for FRAX27
+## 0.16 Error File Already Created for FRAX26
+## 0.16 Error File Already Created for FRAX25
+## 0.16 Error File Already Created for FRAX09
+## 0.16 Error File Already Created for FRAX08
+## 0.16 Error File Already Created for FRAX21
+## 0.16 Error File Already Created for FRAX20
+## 0.16 Error File Already Created for FRAX30
+## 0.16 Error File Already Created for FRAX14
+## 0.16 Error File Already Created for FRAX33
+## 0.16 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     150835
+Lambda with above error models:    0.00144350536026
+--------------------------
+CAFE run number 5
+0.1 Error Model Run for all
+-----
+## Generating 0.1 Error File for FRAX29
+## 0.1 Error File Already Created for FRAX16
+## 0.1 Error File Already Created for FRAX31
+## 0.1 Error File Already Created for FRAX32
+## 0.1 Error File Already Created for FRAX15
+## 0.1 Error File Already Created for FRAX12
+## 0.1 Error File Already Created for FRAX13
+## 0.1 Error File Already Created for FRAX11
+## 0.1 Error File Already Created for FRAX19
+## 0.1 Error File Already Created for FRAX23
+## 0.1 Error File Already Created for FRAX05
+## 0.1 Error File Already Created for FRAX04
+## 0.1 Error File Already Created for FRAX07
+## 0.1 Error File Already Created for FRAX06
+## 0.1 Error File Already Created for FRAX01
+## 0.1 Error File Already Created for FRAX00
+## 0.1 Error File Already Created for FRAX03
+## 0.1 Error File Already Created for FRAX28
+## 0.1 Error File Already Created for FRAX27
+## 0.1 Error File Already Created for FRAX26
+## 0.1 Error File Already Created for FRAX25
+## 0.1 Error File Already Created for FRAX09
+## 0.1 Error File Already Created for FRAX08
+## 0.1 Error File Already Created for FRAX21
+## 0.1 Error File Already Created for FRAX20
+## 0.1 Error File Already Created for FRAX30
+## 0.1 Error File Already Created for FRAX14
+## 0.1 Error File Already Created for FRAX33
+## 0.1 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156116089190
+--------------------------
+CAFE run number 6
+0.05 Error Model Run for all
+-----
+## Generating 0.05 Error File for FRAX29
+## 0.05 Error File Already Created for FRAX16
+## 0.05 Error File Already Created for FRAX31
+## 0.05 Error File Already Created for FRAX32
+## 0.05 Error File Already Created for FRAX15
+## 0.05 Error File Already Created for FRAX12
+## 0.05 Error File Already Created for FRAX13
+## 0.05 Error File Already Created for FRAX11
+## 0.05 Error File Already Created for FRAX19
+## 0.05 Error File Already Created for FRAX23
+## 0.05 Error File Already Created for FRAX05
+## 0.05 Error File Already Created for FRAX04
+## 0.05 Error File Already Created for FRAX07
+## 0.05 Error File Already Created for FRAX06
+## 0.05 Error File Already Created for FRAX01
+## 0.05 Error File Already Created for FRAX00
+## 0.05 Error File Already Created for FRAX03
+## 0.05 Error File Already Created for FRAX28
+## 0.05 Error File Already Created for FRAX27
+## 0.05 Error File Already Created for FRAX26
+## 0.05 Error File Already Created for FRAX25
+## 0.05 Error File Already Created for FRAX09
+## 0.05 Error File Already Created for FRAX08
+## 0.05 Error File Already Created for FRAX21
+## 0.05 Error File Already Created for FRAX20
+## 0.05 Error File Already Created for FRAX30
+## 0.05 Error File Already Created for FRAX14
+## 0.05 Error File Already Created for FRAX33
+## 0.05 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     150807
+Lambda with above error models:    0.00190341688657
+--------------------------
+CAFE run number 7
+0.2 Error Model Run for all
+-----
+## Generating 0.2 Error File for FRAX29
+## 0.2 Error File Already Created for FRAX16
+## 0.2 Error File Already Created for FRAX31
+## 0.2 Error File Already Created for FRAX32
+## 0.2 Error File Already Created for FRAX15
+## 0.2 Error File Already Created for FRAX12
+## 0.2 Error File Already Created for FRAX13
+## 0.2 Error File Already Created for FRAX11
+## 0.2 Error File Already Created for FRAX19
+## 0.2 Error File Already Created for FRAX23
+## 0.2 Error File Already Created for FRAX05
+## 0.2 Error File Already Created for FRAX04
+## 0.2 Error File Already Created for FRAX07
+## 0.2 Error File Already Created for FRAX06
+## 0.2 Error File Already Created for FRAX01
+## 0.2 Error File Already Created for FRAX00
+## 0.2 Error File Already Created for FRAX03
+## 0.2 Error File Already Created for FRAX28
+## 0.2 Error File Already Created for FRAX27
+## 0.2 Error File Already Created for FRAX26
+## 0.2 Error File Already Created for FRAX25
+## 0.2 Error File Already Created for FRAX09
+## 0.2 Error File Already Created for FRAX08
+## 0.2 Error File Already Created for FRAX21
+## 0.2 Error File Already Created for FRAX20
+## 0.2 Error File Already Created for FRAX30
+## 0.2 Error File Already Created for FRAX14
+## 0.2 Error File Already Created for FRAX33
+## 0.2 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     153365
+Lambda with above error models:    0.00139672843226
+--------------------------
+CAFE run number 8
+0.125 Error Model Run for all
+-----
+## Generating 0.125 Error File for FRAX29
+## 0.125 Error File Already Created for FRAX16
+## 0.125 Error File Already Created for FRAX31
+## 0.125 Error File Already Created for FRAX32
+## 0.125 Error File Already Created for FRAX15
+## 0.125 Error File Already Created for FRAX12
+## 0.125 Error File Already Created for FRAX13
+## 0.125 Error File Already Created for FRAX11
+## 0.125 Error File Already Created for FRAX19
+## 0.125 Error File Already Created for FRAX23
+## 0.125 Error File Already Created for FRAX05
+## 0.125 Error File Already Created for FRAX04
+## 0.125 Error File Already Created for FRAX07
+## 0.125 Error File Already Created for FRAX06
+## 0.125 Error File Already Created for FRAX01
+## 0.125 Error File Already Created for FRAX00
+## 0.125 Error File Already Created for FRAX03
+## 0.125 Error File Already Created for FRAX28
+## 0.125 Error File Already Created for FRAX27
+## 0.125 Error File Already Created for FRAX26
+## 0.125 Error File Already Created for FRAX25
+## 0.125 Error File Already Created for FRAX09
+## 0.125 Error File Already Created for FRAX08
+## 0.125 Error File Already Created for FRAX21
+## 0.125 Error File Already Created for FRAX20
+## 0.125 Error File Already Created for FRAX30
+## 0.125 Error File Already Created for FRAX14
+## 0.125 Error File Already Created for FRAX33
+## 0.125 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149519
+Lambda with above error models:    0.00147860140688
+--------------------------
+CAFE run number 9
+0.0875 Error Model Run for all
+-----
+## Generating 0.0875 Error File for FRAX29
+## 0.0875 Error File Already Created for FRAX16
+## 0.0875 Error File Already Created for FRAX31
+## 0.0875 Error File Already Created for FRAX32
+## 0.0875 Error File Already Created for FRAX15
+## 0.0875 Error File Already Created for FRAX12
+## 0.0875 Error File Already Created for FRAX13
+## 0.0875 Error File Already Created for FRAX11
+## 0.0875 Error File Already Created for FRAX19
+## 0.0875 Error File Already Created for FRAX23
+## 0.0875 Error File Already Created for FRAX05
+## 0.0875 Error File Already Created for FRAX04
+## 0.0875 Error File Already Created for FRAX07
+## 0.0875 Error File Already Created for FRAX06
+## 0.0875 Error File Already Created for FRAX01
+## 0.0875 Error File Already Created for FRAX00
+## 0.0875 Error File Already Created for FRAX03
+## 0.0875 Error File Already Created for FRAX28
+## 0.0875 Error File Already Created for FRAX27
+## 0.0875 Error File Already Created for FRAX26
+## 0.0875 Error File Already Created for FRAX25
+## 0.0875 Error File Already Created for FRAX09
+## 0.0875 Error File Already Created for FRAX08
+## 0.0875 Error File Already Created for FRAX21
+## 0.0875 Error File Already Created for FRAX20
+## 0.0875 Error File Already Created for FRAX30
+## 0.0875 Error File Already Created for FRAX14
+## 0.0875 Error File Already Created for FRAX33
+## 0.0875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149279
+Lambda with above error models:    0.00161589845428
+--------------------------
+CAFE run number 10
+0.10625 Error Model Run for all
+-----
+## Generating 0.10625 Error File for FRAX29
+## 0.10625 Error File Already Created for FRAX16
+## 0.10625 Error File Already Created for FRAX31
+## 0.10625 Error File Already Created for FRAX32
+## 0.10625 Error File Already Created for FRAX15
+## 0.10625 Error File Already Created for FRAX12
+## 0.10625 Error File Already Created for FRAX13
+## 0.10625 Error File Already Created for FRAX11
+## 0.10625 Error File Already Created for FRAX19
+## 0.10625 Error File Already Created for FRAX23
+## 0.10625 Error File Already Created for FRAX05
+## 0.10625 Error File Already Created for FRAX04
+## 0.10625 Error File Already Created for FRAX07
+## 0.10625 Error File Already Created for FRAX06
+## 0.10625 Error File Already Created for FRAX01
+## 0.10625 Error File Already Created for FRAX00
+## 0.10625 Error File Already Created for FRAX03
+## 0.10625 Error File Already Created for FRAX28
+## 0.10625 Error File Already Created for FRAX27
+## 0.10625 Error File Already Created for FRAX26
+## 0.10625 Error File Already Created for FRAX25
+## 0.10625 Error File Already Created for FRAX09
+## 0.10625 Error File Already Created for FRAX08
+## 0.10625 Error File Already Created for FRAX21
+## 0.10625 Error File Already Created for FRAX20
+## 0.10625 Error File Already Created for FRAX30
+## 0.10625 Error File Already Created for FRAX14
+## 0.10625 Error File Already Created for FRAX33
+## 0.10625 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149225
+Lambda with above error models:    0.00154023249253
+--------------------------
+CAFE run number 11
+0.096875 Error Model Run for all
+-----
+## Generating 0.096875 Error File for FRAX29
+## 0.096875 Error File Already Created for FRAX16
+## 0.096875 Error File Already Created for FRAX31
+## 0.096875 Error File Already Created for FRAX32
+## 0.096875 Error File Already Created for FRAX15
+## 0.096875 Error File Already Created for FRAX12
+## 0.096875 Error File Already Created for FRAX13
+## 0.096875 Error File Already Created for FRAX11
+## 0.096875 Error File Already Created for FRAX19
+## 0.096875 Error File Already Created for FRAX23
+## 0.096875 Error File Already Created for FRAX05
+## 0.096875 Error File Already Created for FRAX04
+## 0.096875 Error File Already Created for FRAX07
+## 0.096875 Error File Already Created for FRAX06
+## 0.096875 Error File Already Created for FRAX01
+## 0.096875 Error File Already Created for FRAX00
+## 0.096875 Error File Already Created for FRAX03
+## 0.096875 Error File Already Created for FRAX28
+## 0.096875 Error File Already Created for FRAX27
+## 0.096875 Error File Already Created for FRAX26
+## 0.096875 Error File Already Created for FRAX25
+## 0.096875 Error File Already Created for FRAX09
+## 0.096875 Error File Already Created for FRAX08
+## 0.096875 Error File Already Created for FRAX21
+## 0.096875 Error File Already Created for FRAX20
+## 0.096875 Error File Already Created for FRAX30
+## 0.096875 Error File Already Created for FRAX14
+## 0.096875 Error File Already Created for FRAX33
+## 0.096875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149205
+Lambda with above error models:    0.00157441787005
+--------------------------
+CAFE run number 12
+0.1015625 Error Model Run for all
+-----
+## Generating 0.1015625 Error File for FRAX29
+## 0.1015625 Error File Already Created for FRAX16
+## 0.1015625 Error File Already Created for FRAX31
+## 0.1015625 Error File Already Created for FRAX32
+## 0.1015625 Error File Already Created for FRAX15
+## 0.1015625 Error File Already Created for FRAX12
+## 0.1015625 Error File Already Created for FRAX13
+## 0.1015625 Error File Already Created for FRAX11
+## 0.1015625 Error File Already Created for FRAX19
+## 0.1015625 Error File Already Created for FRAX23
+## 0.1015625 Error File Already Created for FRAX05
+## 0.1015625 Error File Already Created for FRAX04
+## 0.1015625 Error File Already Created for FRAX07
+## 0.1015625 Error File Already Created for FRAX06
+## 0.1015625 Error File Already Created for FRAX01
+## 0.1015625 Error File Already Created for FRAX00
+## 0.1015625 Error File Already Created for FRAX03
+## 0.1015625 Error File Already Created for FRAX28
+## 0.1015625 Error File Already Created for FRAX27
+## 0.1015625 Error File Already Created for FRAX26
+## 0.1015625 Error File Already Created for FRAX25
+## 0.1015625 Error File Already Created for FRAX09
+## 0.1015625 Error File Already Created for FRAX08
+## 0.1015625 Error File Already Created for FRAX21
+## 0.1015625 Error File Already Created for FRAX20
+## 0.1015625 Error File Already Created for FRAX30
+## 0.1015625 Error File Already Created for FRAX14
+## 0.1015625 Error File Already Created for FRAX33
+## 0.1015625 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149204
+Lambda with above error models:    0.00155554400774
+--------------------------
+CAFE run number 13
+0.09921875 Error Model Run for all
+-----
+## Generating 0.09921875 Error File for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156495520173
+--------------------------
+CAFE run number 14
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156497725412
+--------------------------
+CAFE run number 15
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156492369045
+--------------------------
+CAFE run number 16
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156493794091
+--------------------------
+CAFE run number 17
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156495795523
+--------------------------
+CAFE run number 18
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00154870479683
+--------------------------
+CAFE run number 19
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156497587795
+--------------------------
+CAFE run number 20
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156495725807
+--------------------------
+CAFE run number 21
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156492553921
+--------------------------
+CAFE run number 22
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156497570401
+--------------------------
+CAFE run number 23
+0.09921875 Error Model Run for all
+-----
+## 0.09921875 Error File Already Created for FRAX29
+## 0.09921875 Error File Already Created for FRAX16
+## 0.09921875 Error File Already Created for FRAX31
+## 0.09921875 Error File Already Created for FRAX32
+## 0.09921875 Error File Already Created for FRAX15
+## 0.09921875 Error File Already Created for FRAX12
+## 0.09921875 Error File Already Created for FRAX13
+## 0.09921875 Error File Already Created for FRAX11
+## 0.09921875 Error File Already Created for FRAX19
+## 0.09921875 Error File Already Created for FRAX23
+## 0.09921875 Error File Already Created for FRAX05
+## 0.09921875 Error File Already Created for FRAX04
+## 0.09921875 Error File Already Created for FRAX07
+## 0.09921875 Error File Already Created for FRAX06
+## 0.09921875 Error File Already Created for FRAX01
+## 0.09921875 Error File Already Created for FRAX00
+## 0.09921875 Error File Already Created for FRAX03
+## 0.09921875 Error File Already Created for FRAX28
+## 0.09921875 Error File Already Created for FRAX27
+## 0.09921875 Error File Already Created for FRAX26
+## 0.09921875 Error File Already Created for FRAX25
+## 0.09921875 Error File Already Created for FRAX09
+## 0.09921875 Error File Already Created for FRAX08
+## 0.09921875 Error File Already Created for FRAX21
+## 0.09921875 Error File Already Created for FRAX20
+## 0.09921875 Error File Already Created for FRAX30
+## 0.09921875 Error File Already Created for FRAX14
+## 0.09921875 Error File Already Created for FRAX33
+## 0.09921875 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156496189148
+--------------------------
+CAFE run number 24(FINAL RUN)
+With minimized error models
+-----
+## 0.1 Error File Already Created for FRAX29
+## 0.1 Error File Already Created for FRAX16
+## 0.1 Error File Already Created for FRAX31
+## 0.1 Error File Already Created for FRAX32
+## 0.1 Error File Already Created for FRAX15
+## 0.1 Error File Already Created for FRAX12
+## 0.1 Error File Already Created for FRAX13
+## 0.1 Error File Already Created for FRAX11
+## 0.1 Error File Already Created for FRAX19
+## 0.1 Error File Already Created for FRAX23
+## 0.1 Error File Already Created for FRAX05
+## 0.1 Error File Already Created for FRAX04
+## 0.1 Error File Already Created for FRAX07
+## 0.1 Error File Already Created for FRAX06
+## 0.1 Error File Already Created for FRAX01
+## 0.1 Error File Already Created for FRAX00
+## 0.1 Error File Already Created for FRAX03
+## 0.1 Error File Already Created for FRAX28
+## 0.1 Error File Already Created for FRAX27
+## 0.1 Error File Already Created for FRAX26
+## 0.1 Error File Already Created for FRAX25
+## 0.1 Error File Already Created for FRAX09
+## 0.1 Error File Already Created for FRAX08
+## 0.1 Error File Already Created for FRAX21
+## 0.1 Error File Already Created for FRAX20
+## 0.1 Error File Already Created for FRAX30
+## 0.1 Error File Already Created for FRAX14
+## 0.1 Error File Already Created for FRAX33
+## 0.1 Error File Already Created for Oeuropea;
+-----
+Rewriting CAFE shell script...
+Running CAFE with error models listed above...
+Score with above error models:     149201
+Lambda with above error models:    0.00156122737591
+# =======================================================================
+# ************************************
+# Score with no errormodel:        166021.0
+# Lambda with no errormodel:       0.00312887406363
+# ************************************
+# Global Error Estimation:         0.1
+# Score with global errormodel:    149201.0
+# Lambda with global errormodel:   0.00156116089190
+# ************************************
+# =======================================================================
+# Caferror finished at:            10.17.2018 | 02:53:32
+# Runtime:                         95.4310599844 minutes
