@@ -4,7 +4,7 @@
 #$ -j y           # Merge the standard output and standard error
 #$ -m aes
 #$ -M josiah.seaman@gmail.com
-#$ -l h_rt=02:0:0 # Request runtime
+#$ -l h_rt=04:0:0 # Request runtime
 #$ -pe smp 8      # Request 1 CPU cores
 #$ -l h_vmem=1G   # Request GB RAM per core
 
@@ -19,6 +19,7 @@ REPORT_SCRIPT=/data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_tut
 #python $REPORT_SCRIPT -i reports/oleaceae_homeologs_one_rate.cafe -o reports/oleaceae_homeologs_one_rate
 
 cd /data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.2/data/homeologs_only
-python caferror.py -i oleaceae_homeologs_one_rate.cafe -d reports/error_files -e .08 -f 1
+# python caferror.py -i oleaceae_homeologs_one_rate.cafe -d reports/error_files -e .08 -f 1
+python caferror.py -i oleaceae_homeologs_one_rate.cafe -d reports/species_error_files -e .08 -f 1 -s 1
 
 ##IMPORTANT: you need to input the name of the current result file
