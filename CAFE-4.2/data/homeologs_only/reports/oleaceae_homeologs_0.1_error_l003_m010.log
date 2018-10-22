@@ -13,3 +13,18 @@ DONE: Lamda,Mu Search or setting, for command:
 lambdamu -l 0.00312885131707 -m 0.010000 
 Running Viterbi algorithm....
 Report Done
+-----------------------------------------------------------
+Family information: homeolog_counts.txt
+Log: reports/oleaceae_homeologs_0.1_error_l003_m010.log
+The number of families is 8484
+Root Family size : 1 ~ 30
+Family size : 0 ~ 63
+P-value: 0.01
+Num of Threads: 8
+Num of Random: 1000
+Empirical Prior Estimation Result: (29 iterations)
+Poisson lambda: 0.100378 & Score: 61254.735402
+DONE: Lamda,Mu Search or setting, for command:
+lambdamu -l 0.00312885131707 -m 0.010000 
+Running Viterbi algorithm....
+Report Done

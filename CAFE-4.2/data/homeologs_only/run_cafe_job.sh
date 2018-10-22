@@ -4,8 +4,8 @@
 #$ -j y           # Merge the standard output and standard error
 #$ -m aes
 #$ -M josiah.seaman@gmail.com
-#$ -l h_rt=08:0:0 # Request runtime
-#$ -pe smp 1      # Request 1 CPU cores
+#$ -l h_rt=01:0:0 # Request runtime
+#$ -pe smp 8      # Request 1 CPU cores
 #$ -l h_vmem=1G   # Request GB RAM per core
 
 REPORT_SCRIPT=/data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_tutorial/python_scripts/cafetutorial_report_analysis.py

@@ -2175,3 +2175,43 @@ Poisson lambda: 0.100378 & Score: 61254.735402
 149191
 good
 
+reports/species_error_files/cafe_0.13_FRAX28_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735403
+Poisson lambda: 0.100378 & Score: 61254.735402
+149193
+good
+
+reports/species_error_files/cafe_0.11_FRAX12_log.txt
+Poisson lambda: 0.100377 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149190
+good
+
+reports/species_error_files/cafe_0.12_FRAX12_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100377 & Score: 61254.735403
+Poisson lambda: 0.100378 & Score: 61254.735402
+149184
+good
+
+reports/species_error_files/cafe_0.13_FRAX12_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149181
+good
+
+reports/species_error_files/cafe_0.14_FRAX12_log.txt
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100377 & Score: 61254.735403
+Poisson lambda: 0.100378 & Score: 61254.735402
+Poisson lambda: 0.100378 & Score: 61254.735402
+149183
+good
+
