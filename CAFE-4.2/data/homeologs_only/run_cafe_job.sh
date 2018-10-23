@@ -23,7 +23,13 @@ cd /data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.2/data/homeologs_only
 # python caferror.py -i oleaceae_homeologs_one_rate.cafe -d reports/species_error_files -e .08 -f 1 -s 1
 
 ## Rate search with fixed error model
-cafe oleaceae_homeologs_0.1_error.cafe
-python $REPORT_SCRIPT -i reports/oleaceae_homeologs_0.1_error.cafe -o reports/oleaceae_homeologs_0.1_error
+#cafe oleaceae_homeologs_0.1_error.cafe
+#python $REPORT_SCRIPT -i reports/oleaceae_homeologs_0.1_error.cafe -o reports/oleaceae_homeologs_0.1_error
+
+## Final results with fixed rates and fixed error model
+#cafe oleaceae_homeologs_0.1_error_l00097_m010.cafe
+#python $REPORT_SCRIPT -i reports/oleaceae_homeologs_0.1_error_l00097_m010.cafe -o reports/oleaceae_homeologs_0.1_error_l00097_m010
+
+
 
 ##IMPORTANT: you need to input the name of the current result file

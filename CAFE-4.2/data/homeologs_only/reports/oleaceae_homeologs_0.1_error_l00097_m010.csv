@@ -1,21 +1,4 @@
-=======================================================================
-		CAFE Report File Analysis
-		10.23.2018 | 09:51:49
----------
-Parsing format information...
-
----------
-Initializing output structures...
-
----------
-Counting changes per branch...
-
-
-Done!
-=======================================================================
-Writing output files...
-RESULTS TABLE -- tab delimted for easy copy/pasting into your favorite spreadsheet program
-	Expansions	Genes Gained	Equal	Contractions	Genes Lost	Families Lost	Average Expansion	Sig Expansions	Sig Contractions	Total Sig Changes
+Node	Expansions	Genes Gained	Equal	Contractions	Genes Lost	Families Lost	Average Expansion	Sig Expansions	Sig Contractions	Total Sig Changes
 FRAX08<12>	115	128	6369	2000	2048	1787	-0.226308	46	35	81	
 <33>	8	8	8117	359	361	320	-0.0416077	3	224	227	
 FRAX25<26>	92	101	6167	2225	2276	1981	-0.256365	35	33	68	
