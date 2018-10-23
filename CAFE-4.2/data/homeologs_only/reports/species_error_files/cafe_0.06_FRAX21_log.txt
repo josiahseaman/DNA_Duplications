@@ -130,3 +130,21 @@ lambdamu -s
 
 Lambda Search Result: 61
 Lambda : 0.00156985604343 & Score: 149174Mu : 0.01004145510945 & Score: 149174
+-----------------------------------------------------------
+Family information: homeolog_counts.txt
+Log: reports/species_error_files/cafe_0.06_FRAX21_log.txt
+Tree: ((((((((((FRAX30:2,FRAX32:2):1,FRAX28:3):2,FRAX12:5):4,(FRAX07:8,FRAX29:8):1):4,FRAX08:13):1,(((((FRAX01:2,FRAX16:2):4,FRAX15:6):2,FRAX00:8):2,(FRAX06:9,FRAX23:9):1):3,FRAX25:13):1):3,FRAX21:17):2,(((FRAX19:8,FRAX20:8):2,((FRAX11:5,FRAX27:5):4,FRAX04:9):1):1,(((((FRAX03:1,FRAX09:1):1,FRAX13:2):2,(FRAX26:2,FRAX14:2):2):3,FRAX05:7):2,FRAX33:9):2):8):15,FRAX31:34):2,Oeuropea:36):36
+The number of families is 8484
+Root Family size : 1 ~ 30
+Family size : 0 ~ 63
+P-value: 0.01
+Num of Threads: 10
+Num of Random: 1000
+Empirical Prior Estimation Result: (26 iterations)
+Poisson lambda: 0.100378 & Score: 61254.735402
+Lambda : 0.01629730193721 Mu : 0.02009502687078 & Score: -168784.732249
+.Lambda : 0.01711216703407 Mu : 0.02009502687078 & Score: -169866.247840
+.Lambda : 0.01711216703407 Mu : 0.02109977821431 & Score: -170400.501494
+.Lambda : 0.01629730193721 Mu : 0.01909027552724 & Score: -168279.967950
+.Lambda : 0.01588986938877 Mu : 0.01808552418370 & Score: -167271.823921
+.
