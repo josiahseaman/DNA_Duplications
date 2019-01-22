@@ -1,0 +1,13 @@
+python: can't open file '../cafe_tutorial/python_scripts/cafetutorial_clade_and_size_filter.py': [Errno 2] No such file or directory
+Failed to load file
+
+=======================================================================
+		CAFE Report File Analysis
+		07.27.2018 | 11:57:50
+---------
+Parsing format information...
+
+Traceback (most recent call last):
+  File "/data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_tutorial/python_scripts/cafetutorial_report_analysis.py", line 302, in <module>
+    infile = open(infilename, "r");
+IOError: [Errno 2] No such file or directory: 'reports/internal_node_test.cafe'
