@@ -20,7 +20,7 @@ def do_alignment(args):
             stdout, stderr = muscle_cline()
         except subprocess.CalledProcessError as err:
             print(err.stderr)
-        print(datetime.now(), just_the_name(fa), '{:%}'.format(index / 5347))
+        print(datetime.now(), just_the_name(fa), '{:%}'.format(index / 64652))
 
 
 def batch_align_sequences(input_folder, output_folder):
@@ -33,15 +33,18 @@ def batch_align_sequences(input_folder, output_folder):
     #for line in args:
     #    do_alignment(line)
     pool.map(do_alignment, args)
+    print("Alignment took ", datetime.now() - start)
 
     return os.path.abspath(output_folder)
 
 # You can't actually do multiprocessing from a notebook
 if __name__ == '__main__':  # https://github.com/jupyter/notebook/issues/2080
     pool = multiprocessing.Pool(6)
-
-    family_aligned_dir = r"D:\Genomes\Ash_Gene_Families\aligned"
-    family_fasta_dir = r"D:\Genomes\Ash_Gene_Families"
+    #
+    # family_aligned_dir = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\Ash_Proteome\Results_Jun25\Orthologues_Jul06\Sequences\test\aligned"
+    # family_fasta_dir = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\Ash_Proteome\Results_Jun25\Orthologues_Jul06\Sequences\test"
+    family_aligned_dir = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\Ogs\Jun25\Sequences\aligned"
+    family_fasta_dir = r"D:\josiah\Documents\Research\Thesis - Genome Symmetry\DNA_Duplications\Ogs\Jun25\Sequences"
 
     batch_align_sequences(input_folder=family_fasta_dir,
                           output_folder=family_aligned_dir)

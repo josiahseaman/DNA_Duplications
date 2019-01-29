@@ -13,7 +13,7 @@ ASSEMBLY="/data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/"
 export ASSEMBLY="/data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/"
 GEM_HOME="/data2/SBCS-BuggsLab/Josiah/DNA_Duplications/GeMoMa-1.5/"
 
-INPUT_LINE=$(sed -n "${SGE_TASK_ID}p" task_list.csv)
+#INPUT_LINE=$(sed -n "${SGE_TASK_ID}p" task_list.csv)
 #${GEM_HOME}/gene_validator/validator_qsub.sh $INPUT_LINE
 
 #Gemoma doesn't like symlinks
