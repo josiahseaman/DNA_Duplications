@@ -223,11 +223,12 @@ def write_complete_fasta(file_path, seq_content_array, header=None):
         _write_fasta_lines(filestream, ''.join(seq_content_array))
 
 
-def write_contigs_to_file(out_filename, contigs):
+def write_contigs_to_file(out_filename, contigs, verbose=True):
     with open(out_filename, 'w') as outfile:
         for contig in contigs:
             __do_write(outfile, header='>' + contig.name, seq=contig.seq)
-    print("Done writing ", len(contigs), "contigs and {:,}bp".format(sum([len(x.seq) for x in contigs])))
+    if verbose:
+        print("Done writing ", len(contigs), "contigs and {:,}bp".format(sum([len(x.seq) for x in contigs])))
 
 
 class BlankIterator:
