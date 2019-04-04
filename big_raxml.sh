@@ -4,10 +4,10 @@
 #$ -m aes
 #$ -M josiah.seaman@gmail.com
 #$ -j y                                          # and put all output (inc errors) into it
-#$ -pe smp 8                     # Request CPU cores
+#$ -pe smp 16                     # Request CPU cores
 #$ -l h_rt=50:0:0                         # Request hours runtime (upto 240 hours)
 #$ -l h_vmem=5G                 # Request GB RAM / core, total= cores * vmem
-NUM_THREADS=8
+NUM_THREADS=16
 source /data/SBCS-BuggsLab/Josiah/symmetry_env/bin/activate
 module load blast+
 module load mafft
