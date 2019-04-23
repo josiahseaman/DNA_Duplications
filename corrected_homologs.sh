@@ -4,10 +4,10 @@
 #$ -m aes
 #$ -M josiah.seaman@gmail.com
 #$ -j y                                          # and put all output (inc errors) into it
-#$ -pe smp 4                     # Request CPU cores
-#$ -l h_rt=16:0:0                         # Request hours runtime (upto 240 hours)
+#$ -pe smp 1                     # Request CPU cores
+#$ -l h_rt=24:00:00            # Request hours runtime (upto 240 hours)
 #$ -l h_vmem=4G                 # Request GB RAM / core, total= cores * vmem
-NUM_THREADS=4
+NUM_THREADS=1
 source /data/SBCS-BuggsLab/Josiah/symmetry_env/bin/activate
 module load blast+
 module load mafft
@@ -35,4 +35,5 @@ module load raxml
 /data/SBCS-BuggsLab/Josiah/OrthoFinder-2.2.6_source/orthofinder.py \
 -b /data/SBCS-BuggsLab/Josiah/DNA_Duplications/Ash_Proteome/Results_Jun25/WorkingDirectory \
 -s /data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.2/data/corrected_orthologs/Species_tree_corrected_root_without_02_34.tre \
+--only-groups \
 -t $NUM_THREADS -S diamond -M msa -T raxml 
