@@ -1,0 +1,59 @@
+
+<-- Information for assembly '/data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX03_800bp_CLC_SSPACE_GAPCLOSER.fasta' -->
+
+
+                                         Number of scaffolds     501322
+                                     Total size of scaffolds  761576543
+    Total scaffold length as percentage of known genome size     677.0%
+                                            Longest scaffold     195695
+                                           Shortest scaffold        200
+                                Number of scaffolds > 500 nt     236811  47.2%
+                                 Number of scaffolds > 1K nt     159762  31.9%
+                                Number of scaffolds > 10K nt      10898   2.2%
+                               Number of scaffolds > 100K nt          4   0.0%
+                                 Number of scaffolds > 1M nt          0   0.0%
+                                          Mean scaffold size       1519
+                                        Median scaffold size        466
+                                         N50 scaffold length       4361
+                                          L50 scaffold count      45350
+                                        NG50 scaffold length      16101
+                                         LG50 scaffold count       2703
+              N50 scaffold - NG50 scaffold length difference      11740
+                                                 scaffold %A      32.37
+                                                 scaffold %C      17.61
+                                                 scaffold %G      17.60
+                                                 scaffold %T      32.36
+                                                 scaffold %N       0.07
+                                         scaffold %non-ACGTN       0.00
+                             Number of scaffold non-ACGTN nt          0
+
+                Percentage of assembly in scaffolded contigs       5.9%
+              Percentage of assembly in unscaffolded contigs      94.1%
+                      Average number of contigs per scaffold        1.0
+Average length of break (>25 Ns) between contigs in scaffold          1
+
+                                           Number of contigs     509053
+                              Number of contigs in scaffolds      15355
+                          Number of contigs not in scaffolds     493698
+                                       Total size of contigs  761129989
+                                              Longest contig     195695
+                                             Shortest contig        200
+                                  Number of contigs > 500 nt     242303  47.6%
+                                   Number of contigs > 1K nt     162397  31.9%
+                                  Number of contigs > 10K nt      10428   2.0%
+                                 Number of contigs > 100K nt          4   0.0%
+                                   Number of contigs > 1M nt          0   0.0%
+                                            Mean contig size       1495
+                                          Median contig size        471
+                                           N50 contig length       4204
+                                            L50 contig count      46851
+                                          NG50 contig length      15650
+                                           LG50 contig count       2779
+                  N50 contig - NG50 contig length difference      11446
+                                                   contig %A      32.39
+                                                   contig %C      17.62
+                                                   contig %G      17.61
+                                                   contig %T      32.38
+                                                   contig %N       0.01
+                                           contig %non-ACGTN       0.00
+                               Number of contig non-ACGTN nt          0

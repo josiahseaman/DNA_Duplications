@@ -1,0 +1,32 @@
+
+<-- Information for assembly '/data/SBCS-BuggsLab/Fraxinus_scaffolded_assemblies/FRAX02_800bp_CLC_SSPACE_GAPCLOSER.fasta' -->
+
+
+                                         Number of scaffolds     858070
+                                     Total size of scaffolds 1138437068
+    Total scaffold length as percentage of known genome size    1011.9%
+                                            Longest scaffold     131292
+                                           Shortest scaffold        200
+                                Number of scaffolds > 500 nt     475205  55.4%
+                                 Number of scaffolds > 1K nt     315645  36.8%
+                                Number of scaffolds > 10K nt       6511   0.8%
+                               Number of scaffolds > 100K nt          1   0.0%
+                                 Number of scaffolds > 1M nt          0   0.0%
+                                          Mean scaffold size       1327
+                                        Median scaffold size        588
+                                         N50 scaffold length       2665
+                                          L50 scaffold count     112899
+                                        NG50 scaffold length      11666
+                                         LG50 scaffold count       3777
+              N50 scaffold - NG50 scaffold length difference       9001
+                                                 scaffold %A      32.69
+                                                 scaffold %C      17.27
+                                                 scaffold %G      17.30
+                                                 scaffold %T      32.70
+                                                 scaffold %N       0.05
+                                         scaffold %non-ACGTN       0.00
+                             Number of scaffold non-ACGTN nt          0
+
+                Percentage of assembly in scaffolded contigs       3.0%
+              Percentage of assembly in unscaffolded contigs      97.0%
+                      Average number of contigs per scaffold        1.0
