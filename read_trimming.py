@@ -67,10 +67,6 @@ def clip_5bp(source_fastq_path, base_clipped_name, run):
     # Step 1, trimming reads with fast_trimmer [i.e. you have to load the fastx module]
     output_path = os.path.join(output_dir, base_clipped_name) + '_first_5bp_clipped.fastq'
     if run:
-        try:
-            call(['module load fastx'])
-        except OSError:
-            pass  # loaded in starter script
         report_stage('Clipping')
         if os.path.exists(output_path):
             print(output_path, "already exists")
@@ -78,7 +74,7 @@ def clip_5bp(source_fastq_path, base_clipped_name, run):
             print("Generating file:", output_path)
             call(['zcat', source_fastq_path,
                   '|',
-                  'fastx_trimmer -Q33 -f 6 -v',
+                  '/data/SBCS-BuggsLab/Josiah/tools/fastx/fastx_trimmer -Q33 -f 6 -v',
                   '-o ' + output_path
                   ])
     return output_path
