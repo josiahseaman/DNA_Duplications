@@ -38,3 +38,17 @@ perl /data/SBCS-BuggsLab/LauraKelly/tools/assemblathon_stats/assemblathon_stats.
 # perl /data/SBCS-BuggsLab/LauraKelly/tools/assemblathon_stats/assemblathon_stats.pl FRAX33_CLC_SSPACE_GAPCLOSER.fasta -graph > FRAX33_CLC_SSPACE_GAPCLOSER_ASSEMBLETHON.txt
 # perl /data/SBCS-BuggsLab/LauraKelly/tools/assemblathon_stats/assemblathon_stats.pl FRAX34_CLC_SSPACE_GAPCLOSER.fasta -graph > FRAX34_CLC_SSPACE_GAPCLOSER_ASSEMBLETHON.txt
 #
+
+
+mv FRAX01.fasta Fraxinus_angustifolia_subsp_angustifolia_v0.2.fasta
+mv FRAX02.fasta Fraxinus_apertisquamifera_v0.2.fasta
+mv FRAX03.fasta Fraxinus_caroliniana_v0.2.fasta
+mv FRAX04.fasta Fraxinus_dipetala_v0.2.fasta
+mv FRAX05.fasta Fraxinus_latifolia_v0.2.fasta
+mv FRAX06.fasta Fraxinus_mandshurica_v0.2.fasta
+mv FRAX07.fasta Fraxinus_ornus_v0.2.fasta
+mv FRAX08.fasta Fraxinus_paxiana_v0.2.fasta
+
+
+mv FRAX11.fasta Fraxinus_quadrangulata_v0.2.fasta
+mv FRAX12.fasta Fraxinus_sieboldiana_v0.2.fasta

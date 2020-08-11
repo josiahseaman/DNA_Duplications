@@ -77,7 +77,6 @@ GOenrich_db/archived/
 GOenrich_db/goslim_plant.obo
 GOenrich_db/graphviz-2.38.msi
 GeMoMa-1.5/Extractor/
-GeMoMa-1.5/FRAX02/
 GeMoMa-1.5/FRAX09_large_72hr/annot09.sh.o327090
 GeMoMa-1.5/FRAX09_large_72hr/cds-parts.fasta
 GeMoMa-1.5/FRAX09_large_72hr/cds-parts__minus_FRAX09_large_72hr.png
@@ -85,7 +84,6 @@ GeMoMa-1.5/FRAX09_large_72hr/cds-parts__minus_tblastn.fasta
 GeMoMa-1.5/FRAX09_large_72hr/gffread_filtered_protein.fasta
 GeMoMa-1.5/FRAX09_large_72hr/tblastn-coverage.txt
 GeMoMa-1.5/FRAX29/gffread_filtered_protein.fasta
-GeMoMa-1.5/FRAX34/
 GeMoMa-1.5/gene_validator/sample_gffread_filtered_protein.fasta.html/
 RaXML8-Manual.pdf
 data/Pennsylvanica_Feb2018_BRAKER_RNASeqandEA_augustus_051818.hints.gff

@@ -105,6 +105,41 @@ speciesID = {
     '32': 'Slycopersicum',
 }
 
+filenames = {
+    # ("FRAX00", 'Fraxinus_excelsior_BATG0.5'),
+    ("FRAX01", 'Fraxinus_angustifolia_FRAX01_v0.2'),
+    ("FRAX06", 'Fraxinus_mandshurica_FRAX06_v0.2'),
+    ("FRAX23", 'Fraxinus_nigra_FRAX23_v0.2'),
+    ("FRAX16", 'Fraxinus_angustifolia_subsp_syriaca_FRAX16_v0.2'),
+    ("FRAX15", 'Fraxinus_angustifolia_subsp_oxycarpa_FRAX15_v0.2'),
+    ("FRAX21", 'Fraxinus_griffithii_FRAX21_v0.2'),
+    ("FRAX31", 'Fraxinus_cuspidata_FRAX31_v0.2'),
+    ("FRAX33", 'Fraxinus_platypoda_FRAX33_v0.2'),
+    ("FRAX03", 'Fraxinus_caroliniana_FRAX03_v0.2'),
+    ("FRAX10", 'Fraxinus_pennsylvanica_FRAX10_v0.2'),
+    ("FRAX13", 'Fraxinus_velutina_FRAX13_v0.2'),
+    ("FRAX26", 'Fraxinus_albicans_FRAX26_v0.2'),
+    ("FRAX14", 'Fraxinus_americana_FRAX14_v0.2'),
+    ("FRAX05", 'Fraxinus_latifolia_FRAX05_v0.2'),
+    ("FRAX09", 'Fraxinus_pennsylvanica_FRAX09_v0.2'),
+    ("FRAX19", 'Fraxinus_goodingii_FRAX19_v0.2'),
+    ("FRAX20", 'Fraxinus_greggii_FRAX20_v0.2'),
+    ("FRAX11", 'Fraxinus_quadrangulata_FRAX11_v0.2'),
+    ("FRAX04", 'Fraxinus_dipetala_FRAX04_v0.2'),
+    ("FRAX27", 'Fraxinus_anomala_FRAX27_v0.2'),
+    ("FRAX25", 'Fraxinus_xanthoxyloides_FRAX25_v0.2'),
+    ("FRAX08", 'Fraxinus_paxiana_FRAX08_v0.2'),
+    ("FRAX28", 'Fraxinus_baroniana_FRAX28_v0.2'),
+    ("FRAX12", 'Fraxinus_sieboldiana_FRAX12_v0.2'),
+    ("FRAX07", 'Fraxinus_ornus_FRAX07_v0.2'),
+    ("FRAX29", 'Fraxinus_bungeana_FRAX29_v0.2'),
+    ("FRAX30", 'Fraxinus_chinensis_FRAX30_v0.2'),
+    ("FRAX32", 'Fraxinus_floribunda_FRAX32_v0.2')
+}
+
+def move_files():
+    pass
+
 def with_aliases(file_str):
     for id, full_name, short in aliases:
         full_name_no_quotes = full_name.replace('"', '').replace('.', '').replace(' ', '_')
@@ -143,7 +178,8 @@ if __name__ == "__main__":
     # do_transform(r"CAFE-4.2\data\homeologs_only\reports\oleaceae_homeologs_one_rate.csv")
     # do_transform(r"CAFE-4.2\data\homeologs_only\simulated\reports\simulation_viterbi.csv")
     # do_transform(r"CAFE-4.2\data\homeologs_only\reports\oleaceae_homeologs_0.1_error_l00097_m010.csv")
-    do_transform(r"CAFE-4.2\data\corrected_root\reports\corrected_root_OG_two_rate_shifted_pub.txt")
+    # do_transform(r"CAFE-4.2\data\corrected_root\reports\corrected_root_OG_two_rate_shifted_pub.txt")
+    move_files()
 
     # tree = "(((((((((((1:10.000,2:10.000):5.549,3:10.000):1.778,((11:10.000,(12:10.000,(((((13:10.000,19:10.000):0.206,14:10.000):0.144,15:10.000):0.202,(16:10.000,17:10.000):0.821):0.298,18:10.000):3.352):1.709):0.049,((22:10.000,24:10.000):0.350,23:10.000):4.122):0.064):0.013,(20:10.000,21:10.000):4.387):1.030,10:10.000):0.874,(((((4:10.000,8:10.000):0.133,9:10.000):0.228,7:10.000):0.770,(5:10.000,6:10.000):0.169):4.279,25:10.000):0.028):2.893,26:10.000):0.290,(29:10.000,30:10.000):0.849):0.368,28:10.000):0.201,27:10.000):1.325,31:10.000,32:10.000);"
 # translated = editable_str(tree)
@@ -153,3 +189,14 @@ if __name__ == "__main__":
 #     coerce = int(orig.replace('(', '').replace(',', ''))
 #     print(orig, coerce)
 #     translated.remove()
+
+# Fraxinus_angustifolia_subsp_angustifolia_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_apertisquamifera_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_caroliniana_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_dipetala_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_latifolia_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_mandshurica_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_ornus_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_paxiana_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_quadrangulata_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
+# Fraxinus_sieboldiana_v.0.2_CLC_SSPACE_GAPCLOSER.fasta
