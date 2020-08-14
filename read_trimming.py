@@ -11,13 +11,13 @@ output_dir = '/data/SBCS-BuggsLab/Josiah/Liverpool_800bp_HiSeq2500/processed/'
 
 
 def delete_file_contents(file_path):
-    # if 'scratch' in file_path:
+    if 'scratch' in file_path:
         if os.path.exists(file_path):
             with open(file_path, 'w') as big_file:
                 big_file.write('Contents deleted to save scratch space')
                 print('File contents deleted:', file_path)
-    # else:
-    #     print('ERROR: Not blanking file because it's not in a scratch folder', file_path, file=sys.stderr)
+    else:
+        print("ERROR: Not blanking file because it's not in a scratch folder", file_path, file=sys.stderr)
 
 
 def trim_adapters(clipped_file_path, base_clipped_name, run):
