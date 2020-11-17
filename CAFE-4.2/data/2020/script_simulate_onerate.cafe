@@ -1,0 +1,8 @@
+load -i 2020_Feb08_homeolog_filtered_counts.txt -t 8 -l simulate_onerate/simulate_onerate.log
+tree ((((((((((FRAX30:2.0,FRAX32:2.0):1.0,FRAX28:3.0):2.0,FRAX12:5.0):4.0,(FRAX07:8.0,FRAX29:8.0):1.0):4.0,FRAX08:13.0):1.0,(((((FRAX01:2.0,FRAX16:2.0):4.0,FRAX15:6.0):2.0,FRAX00:8.0):2.0,(FRAX06:9.0,FRAX23:9.0):1.0):3.0,FRAX25:13.0):1.0):3.0,FRAX21:17.0):2.0,(((FRAX19:8.0,FRAX20:8.0):2.0,((FRAX11:5.0,FRAX27:5.0):4.0,FRAX04:9.0):1.0):1.0,(((((FRAX03:1.0,FRAX09:1.0):1.0,FRAX13:2.0):2.0,(FRAX26:2.0,FRAX14:2.0):2.0):3.0,FRAX05:7.0):2.0,FRAX33:9.0):2.0):8.0):15.0,FRAX31:34.0):2.0,Oeuropea:36.0)
+#rootdist -i single_copy_root.txt # caused segmentation errors
+errormodel -model cafe_errormodel_0.1.txt -all
+lambdamu -s
+report simulate_onerate/simulate_onerate
+#export REPORT_SCRIPT=/data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_tutorial/python_scripts/cafetutorial_report_analysis.py
+#python $REPORT_SCRIPT -i simulate_onerate/simulate_onerate.cafe -o simulate_onerate/simulate_onerate_analysis

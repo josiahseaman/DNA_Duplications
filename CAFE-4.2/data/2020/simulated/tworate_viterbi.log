@@ -1,0 +1,39 @@
+-----------------------------------------------------------
+Family information: simulated/simulated_tworate_1.tab
+Log: simulated/tworate_viterbi.log
+Tree: (((((((((((FRAX30:2,FRAX32:2):1,FRAX28:3):2,FRAX12:5):4,(FRAX07:8,FRAX29:8):1):4,FRAX08:13):1,(((((FRAX01:2,FRAX16:2):4,FRAX15:6):2,FRAX00:8):2,(FRAX06:9,FRAX23:9):1):3,FRAX25:13):1):3,FRAX21:17):2,(((FRAX19:8,FRAX20:8):2,((FRAX11:5,FRAX27:5):4,FRAX04:9):1):1,(((((FRAX03:1,FRAX09:1):1,FRAX13:2):2,(FRAX26:2,FRAX14:2):2):3,FRAX05:7):2,FRAX33:9):2):8):15,FRAX31:34):2,Oeuropea:36):24,empty:60)
+The number of families is 8134
+Root Family size : 1 ~ 30
+Family size : 0 ~ 58
+P-value: 0.01
+Num of Threads: 8
+Num of Random: 1000
+Empirical Prior Estimation Result: (27 iterations)
+Poisson lambda: 0.075416 & Score: 42483.474595
+Lambda Tree: (((((((((((1,1)1,1)1,1)1,(1,1)1)1,1)1,(((((1,1)1,1)1,1)1,(1,1)1)1,1)1)1,1)1,(((1,1)1,((1,1)1,1)1)1,(((((1,1)1,1)1,(1,1)1)1,1)1,1)1)1)1,1)1,1)1,2)
+Empirical Prior Estimation Result: (26 iterations)
+Poisson lambda: 0.075416 & Score: 42483.474595
+Empirical Prior Estimation Result: (30 iterations)
+Poisson lambda: 0.075415 & Score: 42483.474595
+Lambda Tree: (((((((((((1,1)1,1)1,1)1,(1,1)1)1,1)1,(((((1,1)1,1)1,1)1,(1,1)1)1,1)1)1,1)1,(((1,1)1,((1,1)1,1)1)1,(((((1,1)1,1)1,(1,1)1)1,1)1,1)1)1)1,1)1,1)1,2)
+Empirical Prior Estimation Result: (26 iterations)
+Poisson lambda: 0.075415 & Score: 42483.474595
+DONE: Lamda,Mu Search or setting, for command:
+lambdamu -l 0.00077023476245 0.0 -m 0.00856975728757 0.0 -t (((((((((((1,1)1,1)1,1)1,(1,1)1)1,1)1,(((((1,1)1,1)1,1)1,(1,1)1)1,1)1)1,1)1,(((1,1)1,((1,1)1,1)1)1,(((((1,1)1,1)1,(1,1)1)1,1)1,1)1)1)1,1)1,1)1,2) 
+-----------------------------------------------------------
+Family information: simulated/simulated_tworate_1.tab
+Log: simulated/tworate_viterbi.log
+Tree: (((((((((((FRAX30:2,FRAX32:2):1,FRAX28:3):2,FRAX12:5):4,(FRAX07:8,FRAX29:8):1):4,FRAX08:13):1,(((((FRAX01:2,FRAX16:2):4,FRAX15:6):2,FRAX00:8):2,(FRAX06:9,FRAX23:9):1):3,FRAX25:13):1):3,FRAX21:17):2,(((FRAX19:8,FRAX20:8):2,((FRAX11:5,FRAX27:5):4,FRAX04:9):1):1,(((((FRAX03:1,FRAX09:1):1,FRAX13:2):2,(FRAX26:2,FRAX14:2):2):3,FRAX05:7):2,FRAX33:9):2):8):15,FRAX31:34):2,Oeuropea:36):24,empty:60)
+The number of families is 8134
+Root Family size : 1 ~ 30
+Family size : 0 ~ 58
+P-value: 0.01
+Num of Threads: 8
+Num of Random: 1000
+Lambda Tree: (((((((((((1,1)1,1)1,1)1,(1,1)1)1,1)1,(((((1,1)1,1)1,1)1,(1,1)1)1,1)1)1,1)1,(((1,1)1,((1,1)1,1)1)1,(((((1,1)1,1)1,(1,1)1)1,1)1,1)1)1)1,1)1,1)1,2)
+Empirical Prior Estimation Result: (24 iterations)
+Poisson lambda: 0.075416 & Score: 42483.474595
+DONE: Lamda,Mu Search or setting, for command:
+lambdamu -l 0.00077023476245 0.0 -m 0.00856975728757 0.0 -t (((((((((((1,1)1,1)1,1)1,(1,1)1)1,1)1,(((((1,1)1,1)1,1)1,(1,1)1)1,1)1)1,1)1,(((1,1)1,((1,1)1,1)1)1,(((((1,1)1,1)1,(1,1)1)1,1)1,1)1)1)1,1)1,1)1,2) 
+Running Viterbi algorithm....
+Report Done

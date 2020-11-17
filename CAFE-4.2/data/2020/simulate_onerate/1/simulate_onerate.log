@@ -1,0 +1,15 @@
+-----------------------------------------------------------
+Family information: 2020_Feb08_homeolog_filtered_counts.txt
+Log: simulate_onerate/simulate_onerate.log
+The number of families is 7837
+Root Family size : 1 ~ 30
+Family size : 0 ~ 63
+P-value: 0.01
+Num of Threads: 8
+Num of Random: 1000
+Empirical Prior Estimation Result: (27 iterations)
+Poisson lambda: 0.089539 & Score: 54522.024478
+DONE: Lamda,Mu Search or setting, for command:
+lambdamu -l 0.00093971443748 -m 0.00947308078407 
+Running Viterbi algorithm....
+Report Done
