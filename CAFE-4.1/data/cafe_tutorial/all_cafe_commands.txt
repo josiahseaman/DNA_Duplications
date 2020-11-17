@@ -78,3 +78,14 @@ cafe cafe_shell_scripts/cafetutorial_run5.sh
 python caferror.py -i cafe_shell_scripts/cafetutorial_run6.sh -d reports/run6_caferror_files -v 0 -f 1
 
 cafe cafe_shell_scripts/cafetutorial_run7.sh
+
+#=========================================================
+cd DNA_Duplications\CAFE-4.2\data\2020
+export FILTER_SCRIPT=/data/SBCS-BuggsLab/Josiah/DNA_Duplications/CAFE-4.1/data/cafe_tutorial/python_scripts/cafetutorial_clade_and_size_filter.py
+python $FILTER_SCRIPT -i unfiltered_inputs/2020_Feb08_homeolog_counts.txt -o 2020_Feb08_homeolog_filtered_counts.txt -s
+python $FILTER_SCRIPT -i unfiltered_inputs/2020_Feb08_homeolog_counts_empty_WGD.txt -o 2020_Feb08_homeolog_filtered_empty_WGD.txt -s
+
+Feb008_homeologs_static_empty_analysis_node.txt
+Feb008_homeologs_static_empty_analysis_node.txt
+
+

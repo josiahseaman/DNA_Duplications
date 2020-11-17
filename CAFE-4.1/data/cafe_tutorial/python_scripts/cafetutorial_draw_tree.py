@@ -14,8 +14,8 @@ labels = dict()
 
 def display(tree_type):
     d = {'Rapid': 'Rapidly evolving families',
-         'Gains': 'Genes Gained',
-         'Losses': 'Genes Lost'}
+         'Gains': 'Expansions',
+         'Losses': 'Contractions'}
     if tree_type in d:
         return d[tree_type]
     else:

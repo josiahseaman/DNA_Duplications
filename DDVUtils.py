@@ -48,7 +48,6 @@ class Contig:
         self.nuc_seq_start = title_index + title_length
 
 
-
 comp = {'A': 'T', 'G': 'C', 'T': 'A', 'C': 'G', 'N': 'N', 'X': 'X'}
 def complement(plus_strand):
     return comp[plus_strand]
@@ -56,7 +55,6 @@ def complement(plus_strand):
 
 def rev_comp(plus_strand):
     return ''.join([comp[a] for a in reversed(plus_strand)])
-
 
 
 class ReverseComplement:
